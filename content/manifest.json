@@ -1,0 +1,50 @@
+{
+  "version": "2.0.0",
+  "updatedAt": "2026-11-25",
+  "descriptionZh": "KiwiPath 新西兰人全维度离线百科官方数据库（8 大模块 48 节完整精讲 + 2025–2026 最新政策库）",
+  "totalLessons": 48,
+  "totalPolicies": 12,
+  "modules": [
+    {
+      "moduleId": "mod-1",
+      "file": "modules/mod-1.json",
+      "lessonCount": 6
+    },
+    {
+      "moduleId": "mod-2",
+      "file": "modules/mod-2.json",
+      "lessonCount": 6
+    },
+    {
+      "moduleId": "mod-3",
+      "file": "modules/mod-3.json",
+      "lessonCount": 5
+    },
+    {
+      "moduleId": "mod-4",
+      "file": "modules/mod-4.json",
+      "lessonCount": 7
+    },
+    {
+      "moduleId": "mod-5",
+      "file": "modules/mod-5.json",
+      "lessonCount": 6
+    },
+    {
+      "moduleId": "mod-6",
+      "file": "modules/mod-6.json",
+      "lessonCount": 6
+    },
+    {
+      "moduleId": "mod-7",
+      "file": "modules/mod-7.json",
+      "lessonCount": 6
+    },
+    {
+      "moduleId": "mod-8",
+      "file": "modules/mod-8.json",
+      "lessonCount": 6
+    }
+  ],
+  "policiesFile": "policies.json"
+}

@@ -1,0 +1,571 @@
+import type { Lesson } from '../../types';
+
+/**
+ * Module 6: 语言通关：Kiwi 英语、口音与日常毛利语 (Lessons #31 – #36)
+ * Verified against Te Aka Māori Dictionary (maoridictionary.co.nz) & NZ English linguistic guides.
+ */
+export const MOD6_LESSONS: Lesson[] = [
+  {
+    id: 'l-31',
+    number: 31,
+    moduleId: 'mod-6',
+    title: {
+      zh: '听懂 Kiwi 口音：新西兰元音大漂移与句尾上扬语调训练',
+      en: 'Decoding the Kiwi Accent: Vowel Shifts & High Rising Terminal',
+    },
+    summary: {
+      zh: '为什么雅思听力 8 分落地新西兰还是听懵？一次性破解短元音 i/e/a 整体漂移规律（fish & chips → fush & chups）、ear/air 合并与友善的句尾上扬语调。',
+      en: 'Crack why NZ English sounds distinct: the KIT/DRESS/TRAP vowel chain shift, NEAR–SQUARE merger, and friendly High Rising Terminal intonation.',
+    },
+    targetLevel: 1,
+    durationMin: 7,
+    xpReward: 70,
+    isFlagship: true,
+    verifiedDate: '2026-11',
+    officialSource: 'NZ English Linguistics / Te Ara Encyclopedia of NZ',
+    terms: [
+      { term: 'Fush & Chups (fish & chips)', phonetic: '/fəʃ ænd tʃəps/', zh: 'Kiwi 短元音 i 央化偏“呃/u”音的最经典例子（six→sux, milk→mulk, pin→pun）' },
+      { term: 'Deck / Pen → "Dick / Pin"', phonetic: '/dɪk / pɪn/', zh: 'Kiwi 短元音 e 抬高听起来像 i（yes→yis, ten→tin, check→chick）' },
+      { term: 'NEAR–SQUARE Merger', phonetic: '/bɪə = beə/', zh: 'ear 与 air 合并同音（bear=beer, chair=cheer, hair=here，靠语境区分！）' },
+      { term: 'High Rising Terminal (HRT)', phonetic: '/↗/', zh: '陈述句句尾语调上扬（不是在反问你，而是 Kiwi 友善拉近距离的确认语气！）' },
+      { term: 'Non-Rhotic', phonetic: '/nɒn ˈrəʊtɪk/', zh: '和英澳一样词尾 r 不卷舌（car→cah, water→wah-tuh）' },
+    ],
+    cards: [
+      {
+        id: 'l31-c1',
+        type: 'comparison',
+        title: {
+          zh: '30 秒听懂 80% 新西兰口音：元音“顺时针搬家”规律！',
+          en: 'The Kiwi Vowel Chain Shift Explained in 30 Seconds',
+        },
+        body: {
+          zh: '新西兰英语其实极有规律——只是短元音 a → e → i 整体往上/往中间挪了一格！掌握下面 4 条对照，你在超市和办公室瞬间开窍：',
+          en: 'NZ short vowels shifted systematically—learn these 4 patterns and Kiwi speech clicks immediately:',
+        },
+        keyPoints: [
+          { zh: '① 短 i → 听起来像“u / 呃”：six 像 sux（六十 suxty）、fish & chips 像 fush & chups、chilly bin 像 chully bun、milk 像 mulk！', en: 'Short "i" lowers toward "uh/u": six → sux, chips → chups, tin → tun.' },
+          { zh: '② 短 e → 抬高听起来像 i：pen 像 pin、ten 像 tin、yes 像 yis、check 像 chick、deck（木露台）像 dick（别想歪！）！', en: 'Short "e" raises toward "i": pen → pin, ten → tin, deck → dick.' },
+          { zh: '③ 短 a → 抬高听起来像 e：bad 像 bed、pan 像 pen、cat 像 ket、Auckland 读成 Awk-lind！', en: 'Short "a" raises toward "e": bad → bed, man → men.' },
+          { zh: '④ air & ear 完全合并成同一个音：hair 听起来像 here，chair 像 cheer，bear 像 beer——听到 "Pull up a cheer over here" 其实是请你拉把椅子坐！', en: 'NEAR–SQUARE merger: bear/beer, hair/here, chair/cheer sound identical.' },
+        ],
+      },
+      {
+        id: 'l31-c2',
+        type: 'concept',
+        title: {
+          zh: '为什么 Kiwi 说陈述句听起来全像在提问？理解句尾上扬（HRT）',
+          en: 'Why Statements Sound Like Questions: High Rising Terminal',
+        },
+        body: {
+          zh: '很多新移民刚跟新西兰同事聊天时会纳闷：“他怎么连说自己昨天去超市都要用疑问语气？”这在语言学上叫 High Rising Terminal（句尾升调），它不是不自信或提问，而是 Kiwi 表达热情友善、确认“你在听我对吧”的社交习惯！',
+          en: 'Rising pitch at the end of a statement is a warm Kiwi engagement cue meaning "Are you following along?"—not uncertainty.',
+        },
+        keyPoints: [
+          { zh: '练耳免费神资源：每天通勤听 15 分钟 RNZ National（新西兰国家广播电台，免费 App）或看 TVNZ+ 本地新闻与剧集（开英文字幕），两周耳朵就彻底适应 Kiwi 音色！', en: 'Train your ear free with RNZ National podcasts and TVNZ+ with English subtitles.' },
+          { zh: '千万别因为听不懂不好意思装懂！大方微笑说 "Sorry, could you say that again? I’m still getting used to the Kiwi accent!"——新西兰人立刻会放慢语速并觉得你超坦诚可爱！', en: 'Never pretend to understand—say warmly "Sorry, still tuning my ear to the Kiwi accent!" and Kiwis will gladly slow down.' },
+        ],
+      },
+    ],
+    quiz: [
+      {
+        id: 'l31-q1',
+        prompt: {
+          zh: '新西兰邻居热情对你说："Come over on Saturday, I just painted my new dick out the back and we’ll grab some fush and chups around sux!" 他到底想干嘛？',
+          en: 'Your NZ neighbour says he painted his "dick" out back and wants "fush and chups around sux." What does he actually mean?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: '周六约你去他家看刚刷好漆的后院木露台（deck），六点（six）一起吃炸鱼薯条（fish and chips）！', en: 'Inviting you Saturday to see his freshly painted backyard deck and eat fish & chips around 6pm!' },
+            isCorrect: true,
+            feedback: { zh: '哈哈太地道了！成功解锁新西兰元音大漂移！', en: 'Classic Kiwi accent decoded!' },
+          },
+          {
+            id: 'b',
+            text: { zh: '他在骂脏话，赶紧躲远点', en: 'He is being rude—stay away' },
+            isCorrect: false,
+            feedback: { zh: '误会大啦！这是经典的 NZ 短元音 e→i、i→u 口音梗！', en: 'Classic vowel-shift misunderstanding!' },
+          },
+        ],
+      },
+    ],
+    actionTip: {
+      zh: '去「语言实验室」筛选「Kiwi 口音元音规律」，逐条点发音按钮跟读对比！',
+      en: 'Open Language Lab → Accent Vowels and play every example aloud.',
+    },
+  },
+
+  {
+    id: 'l-32',
+    number: 32,
+    moduleId: 'mod-6',
+    title: {
+      zh: '日常高频 Kiwi 俚语 50 词（生活、购物、聚餐、海滩全场景）',
+      en: '50 Everyday Kiwi Slang Essentials (Shops, Beach, BBQ & Daily Life)',
+    },
+    summary: {
+      zh: '搞懂超市/海滩/街角天天听到的核心新西兰本土词汇：Sweet as, Chur, Choice, Dairy, Togs, Jandals, Chilly bin, Heaps, Ta, Wop-wops 等。',
+      en: 'Master the everyday NZ English vocabulary you hear at dairies, beaches, and BBQs: sweet as, chur, dairy, togs, jandals, chilly bin, and heaps more.',
+    },
+    targetLevel: 2,
+    durationMin: 8,
+    xpReward: 70,
+    isFlagship: true,
+    verifiedDate: '2026-11',
+    officialSource: 'NZ Dictionary Centre / Te Ara',
+    terms: [
+      { term: 'Sweet as', phonetic: '/swiːt æz/', zh: '太棒了 / 没问题 / 稳了（新西兰高频万能回复！）' },
+      { term: 'Chur / Ta / Cheers', phonetic: '/tʃɜː / tɑː/', zh: '谢了 / 酷 / 稳（Chur 更年轻随性，Ta/Cheers 全年龄通用）' },
+      { term: 'Dairy', phonetic: '/ˈdeəri/', zh: '街角小便利店（不是奶牛场！买牛奶、冰淇淋、应急小东西的社区小店）' },
+      { term: 'Togs & Jandals', phonetic: '/tɒɡz / ˈdʒændlz/', zh: '泳衣（Togs）与人字拖（Jandals，源于 Japanese Sandals）' },
+      { term: 'Chilly Bin', phonetic: '/ˈtʃɪli bɪn/', zh: '野餐保温箱（澳洲叫 Esky，美国叫 Cooler）' },
+      { term: 'Heaps / Choice / Hard out', phonetic: '/hiːps/', zh: '很多（thanks heaps）/ 超赞（choice）/ 非常同意（hard out）' },
+    ],
+    cards: [
+      {
+        id: 'l32-c1',
+        type: 'comparison',
+        title: {
+          zh: '生活必背 15 个“跟英美完全不一样”的新西兰日常名词',
+          en: '15 Everyday NZ Words That Differ from US/UK English',
+        },
+        body: {
+          zh: '在新西兰说 flip-flops 或 trunk 别人也懂，但听到下面这些本地词你要能一秒反应：',
+          en: 'Recognise these everyday Kiwi nouns immediately:',
+        },
+        keyPoints: [
+          { zh: '🏪 Dairy = 街角便利店；Bottle store / Bottle-O = 卖酒专卖店（新西兰超市只卖啤酒和葡萄酒，烈酒只能去专卖店买！）', en: 'Dairy = corner store; Bottle store = liquor shop (supermarkets only sell beer & wine).' },
+          { zh: '🏖️ Togs = 泳衣；Jandals = 人字拖；Bach / Crib = 度假小木屋（北岛叫 Bach，南岛下端叫 Crib）；Chilly bin = 保温箱；Gumboots = 雨靴。', en: 'Togs = swimwear; Jandals = flip-flops; Bach/Crib = holiday home; Chilly bin = cooler.' },
+          { zh: '🚗 Boot = 汽车后备箱；Bonnet = 引擎盖；Petrol = 汽油；Ute = 皮卡车；Wop-wops = 极偏僻乡下地方。', en: 'Boot = trunk; Bonnet = hood; Ute = pickup truck; Wop-wops = middle of nowhere.' },
+          { zh: '🍽️ Tea = 有时指“晚饭 Dinner！”（"What’s for tea?" 是在问晚上吃啥，不是喝茶！）；Smoko = 工地/体力活上午茶歇；Snag = 烤香肠；Tomato sauce = 番茄酱（不是 ketchup）。', en: '"Tea" often means dinner! Smoko = tea break; Snag = sausage.' },
+        ],
+      },
+      {
+        id: 'l32-c2',
+        type: 'dialogue',
+        title: {
+          zh: '把高频口头禅用得像本地人：Sweet as / Choice / No worries / Yeah nah',
+          en: 'Using Everyday Kiwi Slang Naturally in Real Conversation',
+        },
+        body: {
+          zh: '感受一下新西兰朋友之间周末约去海边有多松弛：',
+          en: 'Hear how effortlessly Kiwis weave slang into weekend plans:',
+        },
+        dialogueLines: [
+          {
+            speaker: 'Kiwi Mate',
+            en: 'Chur bro! Keen as for a beach mish this arvo? Bring your togs and I’ll chuck some drinks in the chilly bin.',
+            zh: '谢啦哥们！今天下午想去海边转转吗？带上泳衣，我往保温箱里扔点饮料。',
+          },
+          {
+            speaker: 'You',
+            en: 'Choice! Sweet as—I’ll grab some snacks from the dairy on the way. Thanks heaps!',
+            zh: '太赞了！没问题——我顺路去街角便利店买点零食。多谢啦！',
+            subtextZh: 'arvo = afternoon（下午），mish = mission（跑一趟/出行），keen as = 超级乐意！',
+          },
+        ],
+      },
+    ],
+    quiz: [
+      {
+        id: 'l32-q1',
+        prompt: {
+          zh: '傍晚 5 点，新西兰房东笑眯眯问你："What are you having for tea tonight?" 她在问什么？',
+          en: 'At 5pm your Kiwi host asks: "What are you having for tea tonight?" What is she asking?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: '问你今晚吃什么晚饭（在新西兰口语中 "tea" 经常指晚餐 Dinner！）', en: 'Asking what you are having for dinner' },
+            isCorrect: true,
+            feedback: { zh: '超级地道！以后听到 "Come over for tea" 别以为只喝杯红茶，那是请你吃晚饭！', en: 'Spot on!' },
+          },
+          {
+            id: 'b',
+            text: { zh: '问你要不要泡铁观音或红茶', en: 'Asking which variety of tea leaves you want to brew' },
+            isCorrect: false,
+            feedback: { zh: '在傍晚语境里，Kiwi 说的 tea 绝大多数是指晚餐哦！', en: 'In NZ evening conversation, "tea" usually means dinner!' },
+          },
+        ],
+      },
+    ],
+    actionTip: {
+      zh: '在「语言实验室」把 16 条日常 Kiwi 俚语全部听一遍，这周去买咖啡或收快递时试着说一句 "Sweet as, cheers!"',
+      en: 'Try saying "Sweet as, cheers!" naturally at a cafe or dairy this week.',
+    },
+  },
+
+  {
+    id: 'l-33',
+    number: 33,
+    moduleId: 'mod-6',
+    title: {
+      zh: '社交与职场进阶表达：Keen as、Flat out、She’ll be right 与自嘲幽默',
+      en: 'Workplace & Social Fluency: Idioms, Banter & Kiwi Understatement',
+    },
+    summary: {
+      zh: '告别教科书僵硬英语，掌握职场邮件与会议里真正天天用的地道表达：Touch base, Flat out, Loop in, She’ll be right, Good yarns 与自我调侃艺术。',
+      en: 'Upgrade from textbook English to authentic NZ professional phrasing: flat out, touch base, keen as, good yarns, and self-deprecating Kiwi humour.',
+    },
+    targetLevel: 3,
+    durationMin: 7,
+    xpReward: 75,
+    isFlagship: true,
+    verifiedDate: '2026-11',
+    officialSource: 'NZ English Workplace Usage',
+    terms: [
+      { term: 'Flat out', phonetic: '/flæt aʊt/', zh: '忙得脚不沾地（比 "I am very busy" 地道十倍！）' },
+      { term: 'Keen as', phonetic: '/kiːn æz/', zh: '超乐意 / 很感兴趣（"Keen as to help!"）' },
+      { term: 'She’ll be right', phonetic: '/ʃiːl biː raɪt/', zh: '放心吧一切都会好起来的（新西兰标志性乐观淡定哲学的缩影）' },
+      { term: 'Good yarns / Have a yarn', phonetic: '/jɑːn/', zh: '聊得很投机 / 闲聊侃大山（"Thanks for the yarn!"）' },
+      { term: 'Flick through / Flick across', phonetic: '/flɪk θruː/', zh: '顺手把文件/邮件发过去（"I’ll flick you the PDF shortly!"）' },
+      { term: 'Knackered / Buggered', phonetic: '/ˈnækəd/', zh: '累瘫了（非正式口语，同事熟人之间很常见）' },
+    ],
+    cards: [
+      {
+        id: 'l33-c1',
+        type: 'comparison',
+        title: {
+          zh: '把“教科书英语”一键升级成“地道 Kiwi 职场英语”',
+          en: 'Upgrade Textbook English to Natural Kiwi Workplace Phrasing',
+        },
+        body: {
+          zh: '新西兰职场发邮件和 Slack/Teams 聊天追求简洁、温暖、去官僚化：',
+          en: 'Swap stiff formal phrases for warm, concise Kiwi equivalents:',
+        },
+        keyPoints: [
+          { zh: '❌ "Dear Sir/Madam, please find attached..." → ✅ "Kia ora [Name], I’ve flicked through the updated report below..."', en: 'Replace stiff "Dear Sir/Madam" with warm "Kia ora [Name]" and "flicked through".' },
+          { zh: '❌ "I am extremely occupied this week." → ✅ "I’m pretty flat out this week, could we catch up Tuesday?"', en: 'Use "flat out" instead of stiff "extremely occupied".' },
+          { zh: '❌ "Let’s discuss this issue." → ✅ "Keen to have a quick yarn / touch base on this?"', en: 'Use "quick yarn" or "touch base".' },
+          { zh: '❌ "Thank you very much for your assistance." → ✅ "Thanks heaps for your help—really appreciate it! Ngā mihi,"', en: 'Use "Thanks heaps" and "Ngā mihi".' },
+        ],
+      },
+      {
+        id: 'l33-c2',
+        type: 'concept',
+        title: {
+          zh: '听懂 Kiwi 招牌“反话表扬”与自嘲幽默（Banter）',
+          en: 'Understanding Kiwi Understatement & Friendly Banter',
+        },
+        body: {
+          zh: '新西兰人极少夸张吹捧（不像美式 "Oh my god that’s AMAZING!!"），他们习惯用低调轻描淡写（Understatement）表达极高赞美：',
+          en: 'Kiwis rarely use loud American superlatives—understatement is high praise:',
+        },
+        keyPoints: [
+          { zh: '🌟 老板说 "Not bad at all / Pretty tidy work!" → 其实是**干得极其漂亮**！', en: '"Not bad / pretty tidy work" = genuinely impressive job!' },
+          { zh: '🌟 天下瓢泼大雨，同事淡定说 "Bit damp out there today" → 典型英式/纽式冷幽默！', en: '"Bit damp" in a torrential storm = classic deadpan Kiwi humour.' },
+          { zh: '🌟 同事跟你开无伤大雅的小玩笑（Banter），千万别严肃反驳，顺着自嘲一句笑一笑，说明你已经彻底打进圈子了！', en: 'Light teasing (banter) is a badge of friendship—laugh along with gentle self-deprecation.' },
+        ],
+      },
+    ],
+    quiz: [
+      {
+        id: 'l33-q1',
+        prompt: {
+          zh: '你熬夜改完一份高质量演示稿发给新西兰总监，他看完笑着说：“Nice one—that’s a pretty tidy deck, not bad at all!” 他对你的工作满意吗？',
+          en: 'Your NZ director smiles and says: "Nice one—pretty tidy deck, not bad at all!" Is he pleased?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: '非常满意！在 Kiwi 低调表达文化里，"pretty tidy / not bad at all" 已经是极高肯定', en: 'Very pleased—understatement like "pretty tidy" and "not bad at all" is warm Kiwi high praise' },
+            isCorrect: true,
+            feedback: { zh: '完全读懂了新西兰人的内敛夸奖！', en: 'Spot on!' },
+          },
+          {
+            id: 'b',
+            text: { zh: '他觉得勉强及格，准备扣你绩效', en: 'He thinks it is barely acceptable' },
+            isCorrect: false,
+            feedback: { zh: '千万别按字面焦虑！新西兰人把“做得超好”说成 "pretty tidy" 再正常不过。', en: 'Don’t take it literally—Kiwis love understatement!' },
+          },
+        ],
+      },
+    ],
+    actionTip: {
+      zh: '下次发工作邮件时试着用 "Kia ora [Name]" 开头，用 "Ngā mihi" 或 "Cheers" 结尾，感受地道新西兰职场温度！',
+      en: 'Try opening your next NZ email with "Kia ora" and closing with "Ngā mihi" or "Cheers".',
+    },
+  },
+
+  {
+    id: 'l-34',
+    number: 34,
+    moduleId: 'mod-6',
+    title: {
+      zh: '毛利语（Te Reo Māori）发音入门与新西兰地名正音全规律',
+      en: 'Te Reo Māori Pronunciation Mastery & NZ Place Names',
+    },
+    summary: {
+      zh: '好消息：毛利语是全球拼读最规则的语言之一！5 分钟掌握 5 个纯元音、长音符（Macron）、wh 发 f 与 ng 鼻音，再也不把 Whangārei 读成“王加雷”！',
+      en: 'Te Reo Māori is wonderfully phonetic! Learn the 5 pure vowels, macrons, "wh" = "f", and "ng" in 5 minutes—and pronounce NZ towns with respect.',
+    },
+    targetLevel: 2,
+    durationMin: 7,
+    xpReward: 70,
+    isFlagship: true,
+    verifiedDate: '2026-11',
+    officialSource: 'Te Taura Whiri i te Reo Māori (Māori Language Commission)',
+    terms: [
+      { term: 'Te Reo Māori', phonetic: '/te re-aw mah-aw-ree/', zh: '毛利语（新西兰官方语言之一，拼读极度规整、所见即所读！）' },
+      { term: 'Tohutō (Macron: ā ē ī ō ū)', phonetic: '/taw-hoo-taw/', zh: '元音头上的长音横杠（发音拉长一倍，有没横杠意思可能完全不同！）' },
+      { term: 'Wh = F', phonetic: '/f/', zh: '毛利语中最重要规则：wh 绝大多数读成轻柔的 f（如 Whānau → Fah-now，Whangārei → Fah-ngah-ray）' },
+      { term: 'Ng (as in "singer")', phonetic: '/ŋ/', zh: '舌根鼻音（类似英文 sing 尾音，绝不发硬 g！如 Ngā mihi → Ngah mee-hee）' },
+      { term: 'Aotearoa', phonetic: '/Ow-teh-ah-raw-ah/', zh: '新西兰毛利国名：“长白云之乡”' },
+    ],
+    cards: [
+      {
+        id: 'l34-c1',
+        type: 'concept',
+        title: {
+          zh: '5 分钟彻底掌握毛利语全部发音规则（比英语简单 100 倍！）',
+          en: 'All Te Reo Māori Pronunciation Rules in 5 Minutes',
+        },
+        body: {
+          zh: '毛利语的拼写完全按音节规则组合，每一个音节永远以元音结尾，且每个字母发唯一固定的音！对中文母语者来说，毛利语的 5 个纯元音其实比英语好读得多：',
+          en: 'Every Māori syllable ends in a vowel and every letter has one consistent sound:',
+        },
+        keyPoints: [
+          { zh: '① 5 个纯元音（极似汉语拼音 a/e/i/o/u！）：A = “阿”(car)、E = “诶”(egg)、I = “衣”(see)、O = “奥”(or)、U = “乌”(too)！带长音横杠（ā ē ī ō ū）就拉长一倍。', en: '5 pure vowels: A (car), E (egg), I (see), O (or), U (too). Macrons double vowel length.' },
+          { zh: '② 最易错辅音 Wh = 轻柔的 F：Whānau（家庭）读 Fah-now；Whangārei 读 Fah-ngah-ray；Te Whanganui-a-Tara（惠灵顿）读 Teh Fah-ngah-noo-ee-ah-Tah-rah！', en: 'Wh sounds like a soft "f" (Whānau = Fah-now; Whangārei = Fah-ngah-ray).' },
+          { zh: '③ 辅音 Ng = 英文 singer 中的 ng（没有硬 g 音！）：Waitangi 读 Wye-tah-ngee（不是维坦吉！）；Ngā mihi 读 Ngah mee-hee。', en: 'Ng sounds like the "ng" in "singer"—never a hard "g"!' },
+          { zh: '④ 辅音 R = 轻弹舌尖（介于轻 d 与轻 l 之间，不卷舌！）：Kia ora 读 Kee-ah aw-rah（近似“ki-ya o-da”的轻快弹舌）。', en: 'R is a soft rolled/tapped r—never an American curled r.' },
+        ],
+      },
+      {
+        id: 'l34-c2',
+        type: 'checklist',
+        title: {
+          zh: '为什么要把新西兰地名读对？（这代表你对这片土地的尊重）',
+          en: 'Why Pronouncing Māori Place Names Properly Matters',
+        },
+        body: {
+          zh: '在新西兰，超过一半的城镇、街道、湖泊和山脉都是毛利语名字。用心尝试正确读出地名，会立刻赢得本地毛利人与 Pākehā 同事的由衷好感：',
+          en: 'Making a genuine effort to pronounce Māori place names accurately shows deep cultural respect in Aotearoa:',
+        },
+        keyPoints: [
+          { zh: 'Tāmaki Makaurau（奥克兰）：Tah-mah-kee Mah-kow-row', en: 'Tāmaki Makaurau (Auckland)' },
+          { zh: 'Ōtautahi（基督城）：Aw-tow-tah-hee', en: 'Ōtautahi (Christchurch)' },
+          { zh: 'Taupō（陶波湖）：Tow-paw（绝不读“讨婆”！）', en: 'Taupō (Tow-paw)' },
+          { zh: 'Whakatāne（法卡塔尼）：Fah-kah-tah-neh（绝不读成英语粗口！）', en: 'Whakatāne (Fah-kah-tah-neh)' },
+        ],
+      },
+    ],
+    quiz: [
+      {
+        id: 'l34-q1',
+        prompt: {
+          zh: '北岛北地大区首府 Whangārei 的正确毛利语读音最接近哪一个？',
+          en: 'Which pronunciation best matches the NZ city of Whangārei?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: 'Fah-ngah-ray（Wh 发 f 音，ng 发柔鼻音，ā 拉长）', en: 'Fah-ngah-ray (wh = f, soft ng, long ā)' },
+            isCorrect: true,
+            feedback: { zh: 'Tino pai!（太棒了！）记住 Wh = F 就瞬间超越 90% 的游客！', en: 'Tino pai!' },
+          },
+          {
+            id: 'b',
+            text: { zh: 'Wang-ga-ray（王加雷）', en: 'Wang-ga-ray' },
+            isCorrect: false,
+            feedback: { zh: '这是最常见的读错方式！牢记毛利语 wh 发 f，ng 不发硬 g 音。', en: 'Common mistake—remember wh = f and soft ng!' },
+          },
+        ],
+      },
+    ],
+    actionTip: {
+      zh: '去「语言实验室 → 12 毛利地名正音表」逐一听读一遍，并用免费在线字典 maoridictionary.co.nz 随时查任何毛利词真人录音！',
+      en: 'Practise all 12 place names in Language Lab → Place Names and bookmark maoridictionary.co.nz.',
+    },
+  },
+
+  {
+    id: 'l-35',
+    number: 35,
+    moduleId: 'mod-6',
+    title: {
+      zh: '职场与生活必用毛利语 40 词（邮件、开会、新闻高频全覆盖）',
+      en: 'Everyday Workplace & News Te Reo Māori Essentials',
+    },
+    summary: {
+      zh: '在新西兰新闻、政府邮件和公司会议里每天都会出现大量毛利词汇：Kia ora, Ngā mihi, Whānau, Mahi, Hui, Kai, Mana, Aroha, Kōrero, Ka pai——一课全部打通！',
+      en: 'Decode the Te Reo Māori words used daily in NZ emails, meetings, and RNZ news: Kia ora, Ngā mihi, Whānau, Mahi, Hui, Kai, Mana, and Kōrero.',
+    },
+    targetLevel: 2,
+    durationMin: 8,
+    xpReward: 75,
+    isFlagship: true,
+    verifiedDate: '2026-11',
+    officialSource: 'Te Taura Whiri / Public Service Te Reo Guide',
+    terms: [
+      { term: 'Kia ora', phonetic: '/kee-ah aw-rah/', zh: '你好 / 谢谢 / 祝安康（全纽国民问候语，职场邮件与日常万能开头！）' },
+      { term: 'Ngā mihi / Ngā mihi nui', phonetic: '/ngah mee-hee/', zh: '诚挚感谢 / Kind regards（新西兰职场英文邮件最常见落款！）' },
+      { term: 'Whānau', phonetic: '/fah-now/', zh: '大家庭 / 挚爱亲友圈（比核心小家庭更温暖广阔）' },
+      { term: 'Mahi', phonetic: '/mah-hee/', zh: '工作 / 付出努力（"Great mahi team!" = 大家干得漂亮！）' },
+      { term: 'Hui & Kōrero', phonetic: '/hoo-ee / kaw-reh-raw/', zh: '会议/聚会（Hui）与深入交谈讨论（Kōrero）' },
+      { term: 'Kai & Manaakitanga', phonetic: '/kye / mah-nah-kee-tah-ngah/', zh: '食物餐点（Kai）与盛情款待关怀之道（Manaakitanga）' },
+    ],
+    cards: [
+      {
+        id: 'l35-c1',
+        type: 'comparison',
+        title: {
+          zh: '新西兰职场会议与邮件高频毛利词速查（立刻看懂全公司群聊！）',
+          en: 'High-Frequency Te Reo Words in NZ Offices & Emails',
+        },
+        body: {
+          zh: '你在新西兰上班第一周，公司 Slack/Teams 和全员邮件里肯定会出现这些词：',
+          en: 'You will see these Te Reo terms every single day in NZ workplaces:',
+        },
+        keyPoints: [
+          { zh: '📧 问候与结尾：Kia ora（你好/谢谢）、Tēnā koe（向 1 位敬称你好）、Tēnā koutou（向 3 位及以上大家好）、Mōrena（早安！）、Ngā mihi（谨致谢意）。', en: 'Greetings: Kia ora, Mōrena (Good morning), Tēnā koutou (Hello everyone), Ngā mihi (Kind regards).' },
+          { zh: '💼 办公与协作：Hui（会议，如 "team hui at 10am"）、Mahi（工作/任务，"Awesome mahi!"）、Kōrero（对话/交流）、Wānanga（深度研讨会）、Kaupapa（主题/宗旨/项目）。', en: 'Work: Hui (meeting), Mahi (work), Kōrero (discussion), Kaupapa (purpose/initiative).' },
+          { zh: '🍱 吃喝与赞美：Kai（食物，"Bring some kai to share!"）、Ka pai / Tino pai（干得好 / 太棒了！）、Aroha（爱与同理心）、Mana（威望/尊严/内在力量）。', en: 'Food & praise: Kai (food), Ka pai / Tino pai (well done!), Aroha (love/empathy), Mana (prestige/dignity).' },
+        ],
+      },
+      {
+        id: 'l35-c2',
+        type: 'dialogue',
+        title: {
+          zh: '真实新西兰公司全员邮件示范（中英毛三语融合有多自然！）',
+          en: 'Authentic NZ Workplace Email Blending English & Te Reo',
+        },
+        body: {
+          zh: '读完这封完全真实的 Kiwi 办公室邮件，你会发现自己已经全懂了：',
+          en: 'Read this typical NZ office announcement—you now understand every word:',
+        },
+        dialogueLines: [
+          {
+            speaker: 'Team Lead (Email)',
+            en: 'Mōrena whānau! Just a reminder we have our weekly hui at 10am today to kōrero about next quarter’s kaupapa. There’ll be plenty of kai in the kitchen afterwards to celebrate everyone’s awesome mahi this sprint. Ka pai team! Ngā mihi nui, Aroha.',
+            zh: '大家早安！提醒一下今天上午 10 点开周会讨论下季度项目主题。会后茶水间准备了丰盛餐点，庆祝大家这轮冲刺的出色工作。团队太棒了！诚挚感谢，Aroha。',
+            subtextZh: '把这 8 个词记住，你在新西兰看政府公告、听广播、收公司邮件瞬间零障碍！',
+          },
+        ],
+      },
+    ],
+    quiz: [
+      {
+        id: 'l35-q1',
+        prompt: {
+          zh: '周三早上收到老板 Slack 消息："Mōrena! Quick hui at 11am to kōrero about your mahi, then grab some kai together!" 他在说什么？',
+          en: 'Your boss messages: "Mōrena! Quick hui at 11am to kōrero about your mahi, then grab some kai together!" What does it mean?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: '早安！上午 11 点开个短会聊一下你的工作进展，然后一起吃午饭！', en: 'Good morning! Quick meeting at 11am to chat about your work, then grab lunch together!' },
+            isCorrect: true,
+            feedback: { zh: 'Tino pai! 完美看懂地道新西兰双文化职场英语！', en: 'Tino pai!' },
+          },
+          {
+            id: 'b',
+            text: { zh: '让你 11 点去机场接一个叫 Kai 的客户', en: 'Pick up a client named Kai from the airport at 11am' },
+            isCorrect: false,
+            feedback: { zh: 'Kai 是食物/餐点的意思哦！不是客户名字！', en: 'Kai means food/meal!' },
+          },
+        ],
+      },
+    ],
+    actionTip: {
+      zh: '去「语言实验室」刷完「日常毛利语 Te Reo」全部 14 张闪卡，每天早安在群里试着发一句 "Mōrena!"',
+      en: 'Review all 14 Te Reo cards in Language Lab and try saying "Mōrena!" tomorrow morning.',
+    },
+  },
+
+  {
+    id: 'l-36',
+    number: 36,
+    moduleId: 'mod-6',
+    title: {
+      zh: 'Small Talk 破冰实战：聊天气、周末、咖啡与运动不冷场',
+      en: 'Mastering Kiwi Small Talk: Weather, Weekends, Coffee & Sport',
+    },
+    summary: {
+      zh: '化解电梯里和茶水间的尴尬沉默！学会新西兰人最爱的 4 大安全寒暄话题、避免踩中隐私雷区，以及把 1 分钟寒暄自然聊成真朋友的接话套路。',
+      en: 'Turn awkward elevator silences into warm Kiwi connections using the 4 safe small-talk topics while avoiding personal-boundary pitfalls.',
+    },
+    targetLevel: 2,
+    durationMin: 6,
+    xpReward: 70,
+    isFlagship: true,
+    verifiedDate: '2026-11',
+    officialSource: 'NZ Social Communication Practice',
+    terms: [
+      { term: 'How’s it going? / How are ya?', phonetic: '/haʊz ɪt ˈɡəʊɪŋ/', zh: '你好吗（只是打招呼！简短回 "Good thanks, yourself?" 即可，不用真汇报体检！）' },
+      { term: 'Flat White / Long Black', phonetic: '/flæt waɪt/', zh: '新西兰国民咖啡（澳白奶咖 / 浓缩加热水黑咖，点咖啡是最佳破冰！）' },
+      { term: 'Get up to much?', phonetic: '/ɡet ʌp tuː/', zh: '“周末打算干嘛 / 干了啥？”（周一和周五茶水间 100% 必问金句！）' },
+      { term: 'Four Seasons in One Day', phonetic: '/fɔː ˈsiːznz/', zh: '新西兰经典天气梗“一天四季”（奥克兰/惠灵顿永不过时的破冰神话题）' },
+    ],
+    cards: [
+      {
+        id: 'l36-c1',
+        type: 'comparison',
+        title: {
+          zh: '新西兰 Small Talk 安全话题 vs 社交隐私禁区',
+          en: 'Safe Kiwi Small Talk Topics vs Privacy Taboos',
+        },
+        body: {
+          zh: '在新西兰，哪怕跟素不相识的咖啡师、公交司机、邻居擦肩而过，微笑寒暄两句都是基本礼貌；但切忌像国内熟人那样一上来就打听隐私：',
+          en: 'Warm brief chats with strangers are standard in NZ—stick to safe topics and avoid personal probing:',
+        },
+        keyPoints: [
+          { zh: '✅ 4 大永不冷场安全话题：① 天气（"Lovely day out there!" / "Bit windy today eh?"）；② 周末计划（"Get up to much over the weekend?"）；③ 咖啡/美食/周边徒步步道；④ 宠物或体育赛事（橄榄球 All Blacks、帆船、板球）。', en: 'Safe topics: weather, weekend plans, local coffee/walks, pets, and NZ sports.' },
+          { zh: '❌ 绝对避免的初见隐私雷区：绝不问对方年龄、工资收入、房子多少钱买的、结没结婚/为什么不生孩子、政治党派投票或体重外貌评价！', en: 'Avoid asking about age, salary, house price, marriage/kids, politics, or commenting on weight/appearance.' },
+        ],
+      },
+      {
+        id: 'l36-c2',
+        type: 'dialogue',
+        title: {
+          zh: '周一茶水间 30 秒自然破冰模板（直接背下来用！）',
+          en: 'Monday Kitchen 30-Second Small Talk Template',
+        },
+        body: {
+          zh: '记住万能三步法：【简短回答 + 抛一个具体小细节 + 反问对方】！',
+          en: 'Formula: Short answer + 1 vivid detail + bounce the question back:',
+        },
+        dialogueLines: [
+          {
+            speaker: 'Colleague',
+            en: 'Mōrena! How was your weekend—get up to much?',
+            zh: '早安！周末过得怎么样——有什么安排吗？',
+          },
+          {
+            speaker: 'You',
+            en: 'Mōrena! Pretty good thanks—went for a walk out at Mission Bay and grabbed fish and chips before the rain hit. How about you, anything fun?',
+            zh: '早安！挺不错的谢谢——趁下雨前去 Mission Bay 散了步还吃了炸鱼薯条。你呢，周末玩得开心吗？',
+            subtextZh: '不要只回干巴巴的 "Good." 结束对话！加一个具体地名或小事 + 反问 "How about you?"，立刻聊起来！',
+          },
+        ],
+      },
+    ],
+    quiz: [
+      {
+        id: 'l36-q1',
+        prompt: {
+          zh: '你在公司电梯遇到一位刚认识的新西兰同事，对方笑着问 "Hey, how’s it going?" 哪个回应最自然地道？',
+          en: 'A new NZ colleague greets you in the lift: "Hey, how’s it going?" Which reply sounds most natural?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: '“Good thanks! Pretty chilly out there this morning, eh? How’s your week looking?”', en: '"Good thanks! Pretty chilly out there this morning, eh? How’s your week looking?"' },
+            isCorrect: true,
+            feedback: { zh: '满分 Kiwi 节奏！简短、热情、带天气破冰又反问对方。', en: 'Natural, warm, and effortlessly Kiwi!' },
+          },
+          {
+            id: 'b',
+            text: { zh: '“Hi, how much did you pay for your house in Auckland? Are you married?”', en: '"Hi, how much did you pay for your house? Are you married?"' },
+            isCorrect: false,
+            feedback: { zh: '瞬间社交死亡！房价和婚育在新西兰属于高度私密信息，切忌初次寒暄打听。', en: 'Major privacy taboo in NZ!' },
+          },
+        ],
+      },
+    ],
+    actionTip: {
+      zh: '记住 "Good thanks, yourself?" 和 "Get up to much this weekend?" 这两句，这周见邻居或咖啡师立刻实战用出来！',
+      en: 'Use "Good thanks, yourself?" and "Get up to much this weekend?" in real life this week.',
+    },
+  },
+];

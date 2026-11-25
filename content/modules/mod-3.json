@@ -1,0 +1,1127 @@
+[
+  {
+    "id": "l-13",
+    "number": 13,
+    "moduleId": "mod-3",
+    "title": {
+      "zh": "海外驾照转换全攻略 & 2026 年 11 月 12 个月新规",
+      "en": "Converting an Overseas Driver Licence & the Nov 2026 12-Month Rule"
+    },
+    "summary": {
+      "zh": "精准把握 2026 年 11 月 1 日回正的 12 个月海外驾照有效期、中国驾照免考 vs 必考流程、NZTA 认证翻译要求，以及从理论笔试到 Full 路考一站通关。",
+      "en": "Navigate the 1 Nov 2026 12-month overseas licence limit, NZTA-approved translations, theory tests, and practical conversion to a Full NZ Licence."
+    },
+    "targetLevel": 1,
+    "durationMin": 8,
+    "xpReward": 70,
+    "isFlagship": true,
+    "verifiedDate": "2026-11",
+    "officialSource": "NZTA Waka Kotahi (nzta.govt.nz)",
+    "terms": [
+      {
+        "term": "NZTA (Waka Kotahi)",
+        "phonetic": "/ˈwɑːkɑː kɔːˈtɑːhi/",
+        "zh": "新西兰交通局（主管驾照、交规、WOF、路税与 RUC）"
+      },
+      {
+        "term": "Approved Translation",
+        "phonetic": "/trænzˈleɪʃn/",
+        "zh": "NZTA 认可英文翻译件（中国驾照须找 NZTA 名单译员或 AA 翻译，普通国内公证件常被拒！）"
+      },
+      {
+        "term": "Exempt Country",
+        "phonetic": "/ɪɡˈzempt/",
+        "zh": "免路考国家/地区（如香港、澳洲、英美加日韩等；中国大陆需考理论+路考）"
+      },
+      {
+        "term": "Theory Test (35 Qs)",
+        "phonetic": "/ˈθɪəri test/",
+        "zh": "新西兰交规机考（35 题答对 ≥32 题通过，支持中文界面！）"
+      },
+      {
+        "term": "Full Licence",
+        "phonetic": "/fʊl ˈlaɪsns/",
+        "zh": "新西兰全驾照（也是全纽最通用的实体身份证明 Photo ID！）"
+      },
+      {
+        "term": "VTNZ / AA",
+        "phonetic": "/ˌviː tiː en ˈzed/",
+        "zh": "办理驾照转换、交规考试与 WOF 验车的两大官方授权网点"
+      }
+    ],
+    "cards": [
+      {
+        "id": "l13-c1",
+        "type": "warning",
+        "title": {
+          "zh": "【2026.11.01 生效】海外驾照有效期回正为 12 个月！",
+          "en": "1 November 2026 Change: Overseas Licence Limit Returns to 12 Months"
+        },
+        "body": {
+          "zh": "自 2026 年 11 月 1 日起，新西兰结束了此前的 18 个月临时延期政策，海外汽车驾照合法使用期限正式回正为 12 个月（从最后一次入境新西兰之日起算）！",
+          "en": "From 1 November 2026, overseas car, truck, and motorcycle licences are valid for a maximum of 12 months from your last date of arrival in NZ:"
+        },
+        "keyPoints": [
+          {
+            "zh": "2026 年 11 月 1 日及之后入境：海外驾照最多只能合法开 12 个月，逾期未换 NZ 驾照继续开车属于无证驾驶（不仅罚款扣车，出车祸保险公司直接拒赔！）。",
+            "en": "Arrived on/after 1 Nov 2026: strict 12-month cap. Driving past expiry voids car insurance!"
+          },
+          {
+            "zh": "过渡保护（2024.11.01 – 2026.10.31 之间入境）：小汽车驾照（Class 1）仍享有原 18 个月过渡期，但卡车与摩托车一律为 12 个月。",
+            "en": "Transitional rule: car licence holders who arrived between 1 Nov 2024 and 31 Oct 2026 keep an 18-month window."
+          },
+          {
+            "zh": "强烈建议落地第 3–6 个月就考掉 NZ 驾照！不仅免除过期风险，还能当全纽最方便的官方 Photo ID（进酒吧、办银行、买酒不用老揣护照）。",
+            "en": "Convert within Months 3–6 so you also have an official NZ Photo ID."
+          }
+        ]
+      },
+      {
+        "id": "l13-c2",
+        "type": "checklist",
+        "title": {
+          "zh": "中国大陆驾照换新西兰 Full 驾照：手把手 5 步通关",
+          "en": "5-Step Process: Converting a Non-Exempt Overseas Licence to NZ Full"
+        },
+        "body": {
+          "zh": "中国大陆不在免考国名单内（香港、台湾、澳洲、美加英日韩等满 2 年可免路考）。持中国驾照满 2 年转换新西兰 Full Licence 的真实流程非常清晰：",
+          "en": "Holders of non-exempt overseas licences held for 2+ years follow a straightforward 5-step path:"
+        },
+        "keyPoints": [
+          {
+            "zh": "① 准备合规翻译件：去 nzta.govt.nz 查 Approved Translators 找本地认可译员或直接通过 AA 翻译（约 NZ$40–$65，保留原件！）。",
+            "en": "Get an NZTA-approved translation (AA or listed translator)—keep the original stamped sheet."
+          },
+          {
+            "zh": "② 去 AA 或 VTNZ 柜台递交 DL5 表格：带护照原件、中国驾照原件、NZTA 翻译件、住址证明，现场测视力（可戴眼镜）、拍证件照、缴费并预约理论笔试。",
+            "en": "Visit AA or VTNZ with passport, licence, approved translation, and proof of address for eyesight check and theory booking."
+          },
+          {
+            "zh": "③ 考理论笔试（35 题对 ≥32 题通过）：可提前选择简体中文考试界面！用本应用「工具 → 交规刷题」把 2026 新规刷熟几乎必过。",
+            "en": "Pass the 35-question theory test (need 32/35; Simplified Chinese interface available!)."
+          },
+          {
+            "zh": "④ 关键提醒：理论通过后你拿到的临时纸质许可附带“监督驾驶条件（Supervisor Condition）”，在通过路考前不能独自开车上路（除非由持有 NZ Full 驾照满 2 年的人坐副驾）！",
+            "en": "Critical rule: once you pass the theory test, a supervisor condition applies until you pass the practical test—you can no longer drive solo on your overseas licence!"
+          },
+          {
+            "zh": "⑤ 约考 Full 路考（约 30 分钟）：建议花钱请本地华语或 Kiwi 教练带练 2–4 小时熟悉考点路线和“口述危险源（Hazard Identification）”，一把过拿 10 年期正式 Full 驾照！",
+            "en": "Book the 30-min Full practical test—taking 2–4 hours with a local instructor on hazard identification dramatically raises first-pass rates."
+          }
+        ]
+      },
+      {
+        "id": "l13-c3",
+        "type": "warning",
+        "title": {
+          "zh": "国内老司机考新西兰路考最容易挂科的 5 个细节",
+          "en": "5 Habits That Fail Experienced Overseas Drivers on the NZ Practical Test"
+        },
+        "body": {
+          "zh": "很多在国内开了 10 年车零事故的老司机，在新西兰路考却第一把挂掉，全是因为“考官看重的安全动作”和国内完全不同：",
+          "en": "Veteran drivers often fail their first NZ test on observation habits rather than car control:"
+        },
+        "keyPoints": [
+          {
+            "zh": "① 变道/靠边/进出环岛忘了回头看盲区（Head Check / Shoulder Check）——只看后视镜必扣分甚至直接挂！",
+            "en": "Forgetting clear shoulder/head checks before changing lanes or pulling over."
+          },
+          {
+            "zh": "② 停牌（STOP Sign）没有车轮 100% 完全停死满 3 秒（滚动滑行直接挂！）。",
+            "en": "Rolling stops at STOP signs—wheels must stop completely."
+          },
+          {
+            "zh": "③ 学校 30km/h 或 40km/h 限速区、施工 30km/h 临时牌没提前降速（超速超 5km/h 持续几秒即挂！）。",
+            "en": "Exceeding temporary 30km/h roadworks or school zone limits."
+          },
+          {
+            "zh": "④ 环岛出口忘了打左灯（Exit Signal）或直行进环岛乱打灯。",
+            "en": "Forgetting to indicate left when exiting a roundabout."
+          },
+          {
+            "zh": "⑤ 没掌握 Full 路考专属环节：考官会要求你边开边用英文说出看到的潜在危险（Hazard Identification，如 \"Parked car on the left, cyclist ahead, oncoming traffic\"）及应对动作。",
+            "en": "Practise short English hazard-identification phrases aloud before your Full test."
+          }
+        ]
+      },
+      {
+        "id": "l13-c4",
+        "type": "dialogue",
+        "title": {
+          "zh": "Full 路考口述危险源（Hazard Identification）万能句型",
+          "en": "Full Practical Test: Simple Hazard Identification Phrases"
+        },
+        "body": {
+          "zh": "考官不考英语语法，只看你有没有提前扫视路况并说出“危险在哪 + 怎么应对”：",
+          "en": "Testing officers want short, clear observations—never fancy grammar:"
+        },
+        "dialogueLines": [
+          {
+            "speaker": "Testing Officer",
+            "en": "Please tell me the hazards you see ahead and what you are doing about them.",
+            "zh": "请告诉我你前方看到的潜在危险，以及你正在采取什么应对措施。"
+          },
+          {
+            "speaker": "You",
+            "en": "Parked cars on the left—keeping 1.5 metres clearance. Cyclist ahead—checking mirror, slowing down. Intersection coming up—scanning left and right, foot ready over brake.",
+            "zh": "左侧有停靠车辆——保持安全横向距离。前方有骑行者——看镜减速留 1.5 米。前方路口——左右扫视备刹。",
+            "subtextZh": "短词短句最清晰！平时开车多自言自语练 3 天就能脱口而出。"
+          }
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "l13-q1",
+        "prompt": {
+          "zh": "你于 2026 年 11 月 15 日持工签首次登陆新西兰，准备用中国驾照 + NZTA 认证翻译件开车。你最多可以合法使用海外驾照多久？",
+          "en": "You arrive in NZ on 15 Nov 2026 on a work visa. How long can you legally drive on your overseas car licence with an approved translation?"
+        },
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "zh": "最多 12 个月（从入境之日起算），到期前必须换成新西兰驾照",
+              "en": "Up to 12 months from arrival; must convert to an NZ licence before expiry"
+            },
+            "isCorrect": true,
+            "feedback": {
+              "zh": "完全正确！2026 年 11 月 1 日起新入境旅客/移民已正式回正为 12 个月上限。",
+              "en": "Spot on!"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "zh": "只要签证有效，可以一直用中国驾照开到入籍",
+              "en": "As long as your visa is valid"
+            },
+            "isCorrect": false,
+            "feedback": {
+              "zh": "大错！逾期驾车属无证驾驶且保险拒赔。",
+              "en": "Incorrect—driving past 12 months is unlicensed driving and voids insurance."
+            }
+          }
+        ]
+      },
+      {
+        "id": "l13-q2",
+        "prompt": {
+          "zh": "持中国驾照换新西兰 Full 驾照时，你刚刚考过了理论笔试、还没考路考。今天下午你能独自开车去超市吗？",
+          "en": "You just passed the NZ theory test while converting your overseas licence, before taking the practical test. Can you drive solo today?"
+        },
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "zh": "不能！一旦通过理论笔试进入转换状态，即生效监督驾驶条件（Supervisor Condition），路考通过前必须由持 NZ Full 驾照满 2 年的人坐副驾",
+              "en": "No—passing the theory test activates a supervisor condition until you pass the practical test"
+            },
+            "isCorrect": true,
+            "feedback": {
+              "zh": "极关键的避坑知识！很多新移民不知道这条，通过理论后还独自开车结果被开罚单！",
+              "en": "Crucial rule that trips up many newcomers!"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "zh": "可以，继续拿中国驾照和翻译件独自开就行",
+              "en": "Yes, just keep driving solo on your overseas licence"
+            },
+            "isCorrect": false,
+            "feedback": {
+              "zh": "错啦！一旦递交转换并通过理论考试，海外驾照豁免立刻终止，必须有 Supervisor 陪同才能开，直到通过路考！",
+              "en": "Once the theory test is passed, the supervisor condition overrides your overseas licence."
+            }
+          }
+        ]
+      }
+    ],
+    "actionTip": {
+      "zh": "如果计划长期在新西兰生活，落地后尽快找 NZTA 认可译员翻译驾照，并用本应用「工具 → 交规刷题」提前把 35 题机考练到 95%+！",
+      "en": "Get an NZTA-approved translation early and practise Road Code questions in Tools → Road Code until scoring 95%+."
+    }
+  },
+  {
+    "id": "l-14",
+    "number": 14,
+    "moduleId": "mod-3",
+    "title": {
+      "zh": "NZ Road Code 高频易错点精讲：左行、让路铁律、环岛与 Flush Median",
+      "en": "NZ Road Code Mastery: Give Way, Roundabouts & Flush Medians"
+    },
+    "summary": {
+      "zh": "一次性吃透国内司机在新西兰最容易懵的 5 大核心规则：右转/左转 Give Way 让路大原则、单/双车道环岛打灯口诀、中央白色斜线缓冲区（Flush Median）与单车道桥。",
+      "en": "Conquer the 5 Road Code rules that confuse overseas drivers most: Give Way priorities, roundabout signalling, Flush Medians, and One-Lane Bridges."
+    },
+    "targetLevel": 1,
+    "durationMin": 9,
+    "xpReward": 75,
+    "isFlagship": true,
+    "verifiedDate": "2026-11",
+    "officialSource": "NZTA Official Road Code (nzta.govt.nz)",
+    "terms": [
+      {
+        "term": "Give Way",
+        "phonetic": "/ɡɪv weɪ/",
+        "zh": "让路标志（倒三角红框白底，减速准备随时停车让行有路权车辆）"
+      },
+      {
+        "term": "Roundabout",
+        "phonetic": "/ˈraʊndəbaʊt/",
+        "zh": "环岛（顺时针行驶！礼让右侧所有即将进入或已在环岛内的车辆）"
+      },
+      {
+        "term": "Flush Median",
+        "phonetic": "/flʌʃ ˈmiːdiən/",
+        "zh": "道路中央白色斜线缓冲带（用于安全等待右转或汇入主路，绝不能当超车道开！）"
+      },
+      {
+        "term": "One-Lane Bridge",
+        "phonetic": "/wʌn leɪn brɪdʒ/",
+        "zh": "单车道桥（小红色箭头一方让路，大白色箭头一方先行！）"
+      },
+      {
+        "term": "Passing Lane",
+        "phonetic": "/ˈpɑːsɪŋ leɪn/",
+        "zh": "高速/国道超车道（Keep Left 靠左行，右侧车道专供超车）"
+      },
+      {
+        "term": "Merge Like a Zip",
+        "phonetic": "/mɜːdʒ/",
+        "zh": "拉链式交替汇流（两道变一道时车头稍靠前者优先，一左一右礼貌交替）"
+      }
+    ],
+    "cards": [
+      {
+        "id": "l14-c1",
+        "type": "concept",
+        "title": {
+          "zh": "核心铁律 1：新西兰 Give Way（让路）四大黄金法则",
+          "en": "The 4 Golden Give Way Rules of New Zealand"
+        },
+        "body": {
+          "zh": "新西兰路口红绿灯远少于国内，大量依靠 Give Way / STOP 标志和路权原则运转——背熟这 4 条，95% 的路口瞬间秒懂：",
+          "en": "NZ intersections rely heavily on Give Way rules rather than traffic lights—memorise these 4 core rules:"
+        },
+        "keyPoints": [
+          {
+            "zh": "① 转弯让直行：无论你左转还是右转，都必须让直行车辆；右转（需横穿对向车道）必须让对向直行和对向左转车辆！",
+            "en": "Turning vehicles give way to straight-through traffic; right-turning vehicles give way to oncoming straight AND oncoming left-turning vehicles!"
+          },
+          {
+            "zh": "② T 字路口（T-Intersection）：支路（底端那条路）上的所有车辆，必须让主路（顶部贯通那条路）上所有方向的来车！",
+            "en": "At a T-intersection, traffic on the terminating (bottom) road gives way to ALL traffic on the top road."
+          },
+          {
+            "zh": "③ 标志等级：STOP 牌必须让 Give Way 牌和无标志主路；红灯亮时绝不允许“红灯左转”（除非有专门的绿色左转箭头或 Slip Lane 辅道让行口）！",
+            "en": "No left-turn-on-red in NZ! STOP gives way to Give Way/uncontrolled."
+          },
+          {
+            "zh": "④ 礼让行人（Pedestrians）：斑马线（Zebra Crossing）看到行人准备踏上就必须停车让行；任何无灯路口转弯时，都必须让正在过马路的行人！",
+            "en": "Always stop for pedestrians at zebra crossings and give way to pedestrians crossing the road you are turning into."
+          }
+        ]
+      },
+      {
+        "id": "l14-c2",
+        "type": "checklist",
+        "title": {
+          "zh": "核心铁律 2：新西兰环岛（Roundabout）顺时针通行 + 打灯口诀",
+          "en": "Roundabouts Made Simple: Clockwise Flow & Exact Indicator Rules"
+        },
+        "body": {
+          "zh": "新西兰几乎每个街区都有环岛！记住第一原则：进入环岛前永远向右看，礼让所有从右侧驶来（已在环岛内或即将从右侧切入）的车辆！打灯记住这个 3 秒口诀：",
+          "en": "Always drive clockwise and give way to ALL traffic coming from your right. Use this exact signalling rule:"
+        },
+        "keyPoints": [
+          {
+            "zh": "⬅️ 左转（第 1 个出口出）：进环岛前打左灯，一直保持左灯直到驶出。",
+            "en": "Turning left (1st exit): indicate LEFT before entering and keep it on until exiting."
+          },
+          {
+            "zh": "⬆️ 直行（通常第 2 个出口出）：进环岛前不打灯！驶过前一个出口后、准备驶出你自己的出口前立刻打左灯提示！",
+            "en": "Going straight: NO indicator on entry; indicate LEFT as you pass the exit before yours!"
+          },
+          {
+            "zh": "➡️ 右转或掉头（走超过半圈）：进环岛前打右灯，快到目标出口（驶过前一个出口）时切换打左灯驶出！",
+            "en": "Turning right / U-turn: indicate RIGHT on entry, then switch to LEFT as you pass the exit before yours!"
+          }
+        ]
+      },
+      {
+        "id": "l14-c3",
+        "type": "comparison",
+        "title": {
+          "zh": "高频特色标志：Flush Median 中央缓冲带 & 单车道桥（One-Lane Bridge）",
+          "en": "Unique NZ Road Features: Flush Medians & One-Lane Bridges"
+        },
+        "body": {
+          "zh": "这两样在国内几乎见不到，但在新西兰城市主路和南岛自驾天天遇到：",
+          "en": "Two iconic NZ road features every driver encounters weekly:"
+        },
+        "keyPoints": [
+          {
+            "zh": "🚧 Flush Median（路中央白色斜线带）：右转进岔路或小巷时，先打右灯把车停进斜线缓冲带里等对向车流过去（不堵后面直行车！）；从小路右转上繁忙主路时，也可先并入斜线带停稳再择机并入左侧行车道。严禁拿它当超车道狂飙！",
+            "en": "Flush Median: wait safely inside the diagonal white painted zone when turning right or merging—never use it to overtake!"
+          },
+          {
+            "zh": "🌉 One-Lane Bridge（单车道桥）：看桥头标志的两个箭头——你是粗大的白色箭头就先行（但仍须减速确认桥上没车）；你是细小的红色箭头+红圈就必须在桥头停车让行！",
+            "en": "One-Lane Bridge: big white arrow = priority; small red arrow = give way!"
+          },
+          {
+            "zh": "🚗 Keep Left & Passing Lane：在 100km/h 国道上看到左侧慢车或 Passing Lane 时靠左行驶，右侧只用于超车；如果后面排了长队，善用 Slow Vehicle Bay 靠边让快车先走，这是新西兰最高美德！",
+            "en": "Keep left unless passing; use Slow Vehicle Bays if traffic builds behind you."
+          }
+        ]
+      },
+      {
+        "id": "l14-c4",
+        "type": "warning",
+        "title": {
+          "zh": "左行驾驶防跑偏 3 招（尤其刚落地第 1 个月！）",
+          "en": "3 Practical Tricks to Prevent Drifting to the Right Side of the Road"
+        },
+        "body": {
+          "zh": "左行右舵（方向盘在右侧）在城市里跟着前车很容易，最危险的是清晨/郊区空旷路口转弯或刚加完油出加油站！",
+          "en": "Empty rural intersections and pulling out of petrol stations are when overseas drivers accidentally drift right:"
+        },
+        "keyPoints": [
+          {
+            "zh": "① 口诀“驾驶员永远贴着道路中线走”：你在右侧驾驶座，只要保证自己的身体靠近路中间黄/白分界线、副驾靠路边草坪，绝对不会逆行！",
+            "en": "Rule of thumb: the driver’s body always stays closest to the centre line."
+          },
+          {
+            "zh": "② 转向灯和雨刷左右相反：多数日系车转向灯在方向盘右侧（右手拨），前两周转弯一不小心打开雨刷别笑自己，所有新移民都干过！",
+            "en": "Most Japanese imports have the indicator stalk on the right—don’t panic if you trigger the wipers!"
+          },
+          {
+            "zh": "③ 严查安全带与手机：全车所有乘客（含后排）必须系安全带，开车摸手机哪怕等红灯也是重罚 NZ$150 + 扣 20 分（两年累计扣满 100 分直接吊销驾照 3 个月）！",
+            "en": "Everyone must wear seatbelts; touching your phone even at red lights = $150 fine + 20 demerit points (100 points in 2 years = 3-month suspension)."
+          }
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "l14-q1",
+        "prompt": {
+          "zh": "你开到一座单车道桥（One-Lane Bridge）前，桥头标志显示指向你前进方向的箭头是“细小的红色箭头”，对面是“粗大白色箭头”。你应该？",
+          "en": "Approaching a one-lane bridge, the sign shows a small red arrow in your direction and a large white arrow for oncoming traffic. What must you do?"
+        },
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "zh": "在桥头减速停车让行，等对向来车全部通过后再上桥",
+              "en": "Give way and let oncoming vehicles cross first"
+            },
+            "isCorrect": true,
+            "feedback": {
+              "zh": "记住口诀“红让白先”，南岛自驾保命必备！",
+              "en": "Spot on—red arrow gives way!"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "zh": "加速抢先冲上桥，先上桥的就有路权",
+              "en": "Speed up to get onto the bridge first"
+            },
+            "isCorrect": false,
+            "feedback": {
+              "zh": "极度危险！红色小箭头代表必须让行。",
+              "en": "Dangerous—the small red arrow always means give way."
+            }
+          }
+        ]
+      },
+      {
+        "id": "l14-q2",
+        "prompt": {
+          "zh": "开车走环岛（Roundabout）准备直行（从第 2 个出口驶出），新西兰标准打灯规范是？",
+          "en": "When going straight through a standard roundabout in NZ, how should you indicate?"
+        },
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "zh": "进环岛前不打灯；驶过第 1 个出口后、出第 2 个出口前打左灯提示",
+              "en": "No indicator on entry; indicate LEFT after passing the 1st exit before leaving"
+            },
+            "isCorrect": true,
+            "feedback": {
+              "zh": "满分！不仅符合 Road Code，路考考官也紧盯这个出环岛左灯！",
+              "en": "Exactly right!"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "zh": "全程不打任何转向灯",
+              "en": "Never use indicators when going straight"
+            },
+            "isCorrect": false,
+            "feedback": {
+              "zh": "错误！只要空间允许，驶出环岛时必须打左灯告知等待进入的车辆。",
+              "en": "You must indicate left when exiting a roundabout if practicable."
+            }
+          }
+        ]
+      }
+    ],
+    "actionTip": {
+      "zh": "立刻打开本应用「工具与新政 → 交规刷题」，把让路原则和环岛题目全部实战刷一遍！",
+      "en": "Head to Tools → Road Code Quiz and test your Give Way and Roundabout reflexes right now."
+    }
+  },
+  {
+    "id": "l-15",
+    "number": 15,
+    "moduleId": "mod-3",
+    "title": {
+      "zh": "2026 年 10 月最新交规专题：1.5米超车、让行公交车与学区限速",
+      "en": "October 2026 New Road Rules: 1.5m Passing, Giving Way to Buses & School Zones"
+    },
+    "summary": {
+      "zh": "逐条精讲 2026 年 10 月 1 日正式实施的新西兰重大交规改革：超车骑行者/行人强制 1.5 米间距、60km/h 以下必让出站公交车、儿童人行道骑车与电动滑板车路权。",
+      "en": "Master every detail of NZ’s 1 Oct 2026 road rule changes: 1.5m minimum passing gaps, giving way to exiting buses, footpath cycling for under-12s, and e-scooters."
+    },
+    "targetLevel": 1,
+    "durationMin": 7,
+    "xpReward": 75,
+    "isFlagship": true,
+    "verifiedDate": "2026-11",
+    "officialSource": "NZTA Waka Kotahi (Oct 2026 Lane Use & Road Rules)",
+    "terms": [
+      {
+        "term": "1.5m Passing Gap",
+        "phonetic": "/ˈpɑːsɪŋ ɡæp/",
+        "zh": "2026.10 新规：超车同向骑行者/行人/骑马者必须留足至少 1.5 米横向间距"
+      },
+      {
+        "term": "Give Way to Buses",
+        "phonetic": "/ɡɪv weɪ/",
+        "zh": "2026.10 新规：限速 ≤60km/h 道路必让打右灯≥3秒准备出站的公交车"
+      },
+      {
+        "term": "Variable Speed Limit",
+        "phonetic": "/ˈveəriəbl/",
+        "zh": "学区动态限速牌（上下学闪烁时强制降速至 30km/h 或 40km/h）"
+      },
+      {
+        "term": "E-scooter",
+        "phonetic": "/ˈiː skuːtə/",
+        "zh": "电动滑板车（2026.10 新规正式允许驶入自行车道 Cycle Lane）"
+      },
+      {
+        "term": "Vulnerable Road Users",
+        "phonetic": "/ˈvʌlnərəbl/",
+        "zh": "弱势道路使用者（骑行者、行人、儿童、马匹等，享最高安全优先）"
+      }
+    ],
+    "cards": [
+      {
+        "id": "l15-c1",
+        "type": "warning",
+        "title": {
+          "zh": "2026.10.01 新规核心 #1：超车骑行者/行人强制留足 1.5 米！",
+          "en": "Oct 2026 Rule #1: Mandatory 1.5-Metre Passing Buffer"
+        },
+        "body": {
+          "zh": "自 2026 年 10 月 1 日起，NZTA 正式把“安全超车间距”写入强制交规：当你在同一车道超越同向行驶的骑行者（Cyclists）、行人（Pedestrians）或骑马者（Horse riders）时，车身与对方之间必须保持至少 1.5 米的横向安全距离！",
+          "en": "Since 1 October 2026, drivers overtaking vulnerable road users (cyclists, pedestrians, horse riders) in the same lane must leave at least 1.5 metres of clearance."
+        },
+        "keyPoints": [
+          {
+            "zh": "如果道路太窄或对向有来车、无法留出 1.5 米怎么办？必须减速跟在骑行者后方耐心等待，直到前方视线通畅且留足 1.5 米才能超越！",
+            "en": "If the road is too narrow to leave 1.5m safely, you MUST slow down and wait behind until it is safe."
+          },
+          {
+            "zh": "在确保安全且虚线允许的情况下，允许借用部分对向车道留出 1.5 米间距；绝不能贴身“蹭着”自行车强行超车！",
+            "en": "Wait for clear visibility and never squeeze past a cyclist."
+          }
+        ]
+      },
+      {
+        "id": "l15-c2",
+        "type": "warning",
+        "title": {
+          "zh": "2026.10.01 新规核心 #2：60km/h 及以下道路必须让行出站公交车！",
+          "en": "Oct 2026 Rule #2: Mandatory Give Way to Exiting Buses (≤60 km/h)"
+        },
+        "body": {
+          "zh": "过去很多司机看到公交车打灯出站还会一脚油门抢过去，现在这已正式违法！2026 年 10 月新规明确规定：在限速 60km/h 或以下的道路上，只要前方公交车（Bus）打右转向灯至少 3 秒准备从公交站台、路边或公交专用道汇入行车道，后方车辆必须减速让行！",
+          "en": "On roads with a speed limit of 60 km/h or less, drivers must give way to a bus indicating right for at least 3 seconds to pull out from a bus stop, roadside, or bus lane."
+        },
+        "keyPoints": [
+          {
+            "zh": "覆盖绝大部分城区主干道（50km/h 与 60km/h 限速区），看到公交车亮右灯立刻松油门备刹让行。",
+            "en": "Applies across standard 50 and 60 km/h urban roads."
+          },
+          {
+            "zh": "同时牢记经典校车铁律（School Bus）：路过正在停靠上下学生的校车时，双向来车都必须强制降速至 20km/h（哪怕在对向车道也要降到 20km/h！）。",
+            "en": "Passing a stationary school bus picking up/dropping off children: BOTH directions must slow to 20 km/h!"
+          }
+        ]
+      },
+      {
+        "id": "l15-c3",
+        "type": "concept",
+        "title": {
+          "zh": "2026.10.01 新规核心 #3：儿童人行道骑车 & 电动滑板车进自行车道",
+          "en": "Oct 2026 Rule #3: Under-12s on Footpaths & E-Scooters in Cycle Lanes"
+        },
+        "body": {
+          "zh": "为了保护家庭出行和微出行安全，2026 年 10 月同步放宽了两项高频民生规则：",
+          "en": "Two family-friendly micromobility updates took effect alongside the passing and bus rules:"
+        },
+        "keyPoints": [
+          {
+            "zh": "🚲 12 岁及以下儿童（以及陪同看护的家长/监护人）现已合法获准在人行道（Footpath）上骑自行车！开车进出自家车道（Driveway）时务必多看两侧人行道防小孩骑车冲出。",
+            "en": "Children aged 12 and under (plus supervising caregivers) may now legally cycle on footpaths—always check both ways backing out of driveways!"
+          },
+          {
+            "zh": "🛴 电动滑板车（E-scooters）正式获准使用自行车道（Cycle Lanes），开车左转跨过自行车道时务必做 Shoulder Check 防高速滑板车和电助力车！",
+            "en": "E-scooters are now formally permitted in cycle lanes—always check mirrors and blind spots before turning left across cycle lanes!"
+          }
+        ]
+      },
+      {
+        "id": "l15-c4",
+        "type": "checklist",
+        "title": {
+          "zh": "学区 30km/h 限速与新西兰零容忍超速/酒驾底线",
+          "en": "School Zone 30km/h Speeds, Zero-Tolerance Cameras & Alcohol Limits"
+        },
+        "body": {
+          "zh": "新西兰测速抓拍（含隐蔽流动测速车）和节假日执法非常严格，切忌心存侥幸：",
+          "en": "NZ speed enforcement (including unmarked camera vans) and alcohol checks are strict year-round:"
+        },
+        "keyPoints": [
+          {
+            "zh": "🏫 学校门前上下学时段（通常 8:25–9:00 与 2:55–3:15）闪灯限速 30km/h（部分为全天 30km/h），严禁超速！",
+            "en": "Watch for flashing 30km/h variable school speed zones during drop-off and pick-up times."
+          },
+          {
+            "zh": "🍺 酒驾红线：20 岁以下严格零酒精（0 mcg）；20 岁及以上呼气限值仅 250 mcg/L（大约 1–2 杯啤酒就可能超标！超过 400 mcg 直接刑事起诉留案底影响签证与入籍！）。",
+            "en": "Under 20 = zero alcohol; 20+ = 250 mcg/L breath limit (400+ mcg is a criminal conviction that can threaten visas/citizenship!)."
+          }
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "l15-q1",
+        "prompt": {
+          "zh": "2026 年 10 月新交规实施后，你在一条 50km/h 窄路上遇到前方一名骑行者，右侧对向刚好有车开来，目前只有 0.8 米空间可以挤过去。你应该？",
+          "en": "Under Oct 2026 rules, a cyclist is ahead on a narrow 50km/h road with oncoming traffic leaving only 0.8m gap. What must you do?"
+        },
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "zh": "减速耐心跟在骑行者后面，等对向清空且能留出至少 1.5 米横向距离时再安全超越",
+              "en": "Slow down and wait behind until you can leave at least a 1.5m passing gap safely"
+            },
+            "isCorrect": true,
+            "feedback": {
+              "zh": "满分！2026.10 新规强制要求 1.5 米超车安全距离，绝不能贴身硬挤。",
+              "en": "Spot on!"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "zh": "轻按喇叭让自行车骑到马路牙子上，然后保持 0.8 米快速超车",
+              "en": "Honk so they move onto the kerb and squeeze past with 0.8m"
+            },
+            "isCorrect": false,
+            "feedback": {
+              "zh": "违反 2026 新交规且极其危险！必须等留足 1.5 米再超。",
+              "en": "Unlawful under Oct 2026 rules and dangerous."
+            }
+          }
+        ]
+      },
+      {
+        "id": "l15-q2",
+        "prompt": {
+          "zh": "你在双向两车道乡村公路行驶，对向车道有一辆校车（School Bus）正亮双闪停靠让孩子下车。你的车速最高不得超过多少？",
+          "en": "A school bus is stopped on the OPPOSITE side of a two-lane road dropping off children. What is your maximum legal speed?"
+        },
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "zh": "20 km/h（无论同向还是对向，路过停靠上下学生的校车一律限速 20 km/h！）",
+              "en": "20 km/h in BOTH directions!"
+            },
+            "isCorrect": true,
+            "feedback": {
+              "zh": "超经典必考点！孩子下车常会突然横穿马路，双向 20km/h 能救命！",
+              "en": "Correct—20 km/h in either direction!"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "zh": "50 km/h，因为校车在对向车道",
+              "en": "50 km/h since it is on the opposite side"
+            },
+            "isCorrect": false,
+            "feedback": {
+              "zh": "错啦！新西兰交规硬性规定双向一律 20 km/h！",
+              "en": "Incorrect—both directions must drop to 20 km/h!"
+            }
+          }
+        ]
+      }
+    ],
+    "actionTip": {
+      "zh": "打开「工具与新政 → 交规刷题」，点击「2026.10 新交规专项」把全部新规题刷到 100% 满分！",
+      "en": "Filter Tools → Road Code Quiz by \"2026.10 新交规专项\" and score 100%."
+    }
+  },
+  {
+    "id": "l-16",
+    "number": 16,
+    "moduleId": "mod-3",
+    "title": {
+      "zh": "新西兰买车、养车、WOF、Rego、电车 RUC 与车险避坑指南",
+      "en": "Buying & Owning a Car in NZ: CarJam, WOF, Rego, EV RUC & Insurance"
+    },
+    "summary": {
+      "zh": "彻底看懂车商买车（CGA 保护）vs 私人买车（买者自负）的区别，学会用 CarJam 查抵押/调表、算清纯电/插混 RUC 公里税，以及为什么千万不能裸奔不开车险！",
+      "en": "Compare dealer vs private car buying, run CarJam & pre-purchase inspections, calculate EV/PHEV RUC costs, and never drive uninsured in NZ."
+    },
+    "targetLevel": 2,
+    "durationMin": 9,
+    "xpReward": 75,
+    "isFlagship": true,
+    "verifiedDate": "2026-11",
+    "officialSource": "NZTA / Consumer Protection NZ / CarJam",
+    "terms": [
+      {
+        "term": "WOF (Warrant of Fitness)",
+        "phonetic": "/wɒf/",
+        "zh": "车辆安全年检（2000 年后产车通常每 12 个月检一次，贴在挡风玻璃右上角）"
+      },
+      {
+        "term": "Rego (Vehicle Licence)",
+        "phonetic": "/ˈredʒəʊ/",
+        "zh": "路税牌照（可按 3/6/12 个月在线续费，含 ACC 道路意外险成分，过期停路边也会被贴罚单！）"
+      },
+      {
+        "term": "RUC (Road User Charges)",
+        "phonetic": "/ɑː juː ˈsiː/",
+        "zh": "按里程预购的道路使用税（柴油车、纯电 EV $76/1000km、插混 PHEV $38/1000km）"
+      },
+      {
+        "term": "CarJam / PPSR",
+        "phonetic": "/kɑː dʒæm/",
+        "zh": "新西兰查车神网（查有无欠贷款抵押 Money Owing、调表、事故报废史）"
+      },
+      {
+        "term": "Third Party Insurance",
+        "phonetic": "/θɜːd ˈpɑːti/",
+        "zh": "第三方责任险（赔别人车损，哪怕买最便宜的代步车也绝不能少！）"
+      },
+      {
+        "term": "Excess",
+        "phonetic": "/ɪkˈses/",
+        "zh": "车险免赔额（出险时自己先掏的门槛费，如 $500，选太低保费贵、选太高出险肉疼）"
+      }
+    ],
+    "cards": [
+      {
+        "id": "l16-c1",
+        "type": "comparison",
+        "title": {
+          "zh": "车商买车（Registered Dealer）vs 私人买车（Private Sale）天壤之别",
+          "en": "Buying from a Registered Dealer vs Private Seller"
+        },
+        "body": {
+          "zh": "新西兰二手车 80%+ 来自日本进口右舵车（车况普遍不错但水也不浅），买之前先分清渠道的法律保障差异：",
+          "en": "Your legal protection depends completely on who sells you the car:"
+        },
+        "keyPoints": [
+          {
+            "zh": "🏢 正规注册车商（如 Turners、2 Cheap Cars 或品牌 4S 店）：受《消费者保障法》（CGA）保护！如果买完没多久变速箱/发动机出现非正常重大故障，你有权要求车商免费维修或退车退款！且车商必须贴出 CIN（Consumer Information Notice）披露车况与抵押状态。",
+            "en": "Registered Dealers: fully covered by the Consumer Guarantees Act (CGA) and must display a CIN."
+          },
+          {
+            "zh": "👤 私人卖家（Trade Me / FB Marketplace）：不受 CGA 保护（Buyer Beware 买者自负）！价格通常便宜 NZ$1,500–$3,000，但一旦钱货两清，开出门半小时发动机爆缸卖家也不必负责！",
+            "en": "Private sellers: NOT covered by CGA (buyer beware)—cheaper, so independent inspections are mandatory!"
+          }
+        ]
+      },
+      {
+        "id": "l16-c2",
+        "type": "checklist",
+        "title": {
+          "zh": "买二手车必做 4 步防坑体检（花 $250 省下 $10,000！）",
+          "en": "4 Mandatory Pre-Purchase Checks Before Paying a Cent"
+        },
+        "body": {
+          "zh": "不管卖家多像老实人，付款前这 4 步一步都不能省：",
+          "en": "Run all 4 checks before handing over money:"
+        },
+        "keyPoints": [
+          {
+            "zh": "① 查 CarJam（约 NZ$18）或政府 PPSR（NZ$2.30）：核心查三件事——有没有未结清抵押贷款（Money Owing / Security Interest，买了带抵押的车金融公司有权直接拖走你的车！）、里程表曲线是否被调表（Odometer rollback）、是不是水泡/事故报废车（Written off）。",
+            "en": "Run CarJam/PPSR to confirm zero Money Owing (finance debt), clean odometer history, and no write-offs."
+          },
+          {
+            "zh": "② 花约 NZ$200–$240 预约独立验车（AA / VTNZ Pre-Purchase Inspection）：技师会升起底盘查漏油、锈蚀、电池健康度（买混动/电车必看 SOH！）并试驾出报告。",
+            "en": "Book an independent AA or VTNZ Pre-Purchase Inspection (check hybrid/EV battery SOH!)."
+          },
+          {
+            "zh": "③ 核查 WOF 有效期：私人或车商卖车通常应带较新 WOF（车商法定须带 1 个月内新 WOF，除非买家书面放弃）。",
+            "en": "Check WOF freshness (dealers must provide a WOF under 1 month old unless you waive it in writing)."
+          },
+          {
+            "zh": "④ 当场在线过户（Change of Ownership）：交钱当天立刻上 nzta.govt.nz 用驾照/护照在线办过户（仅约 NZ$9–$10），防止原车主违章罚单寄到你头上或车辆产权扯皮！",
+            "en": "Complete Change of Ownership online immediately at nzta.govt.nz (~$9–$10)."
+          }
+        ]
+      },
+      {
+        "id": "l16-c3",
+        "type": "comparison",
+        "title": {
+          "zh": "养车固定支出：WOF + Rego + 2026 电车/插混/柴油 RUC 公里税",
+          "en": "Ongoing Ownership Costs: WOF, Rego & 2026 EV / PHEV / Diesel RUC"
+        },
+        "body": {
+          "zh": "新西兰汽油价里已经含了燃油道路税，所以纯汽油车和普通油电混动（HEV，如 Prius/Aqua/Corolla Hybrid，不插电！）不需要单独买 RUC；但以下车型必须提前按每 1,000 公里购买 RUC 公里税标签贴在挡风玻璃上：",
+          "en": "Petrol and standard non-plug-in hybrids pay road tax at the pump; EVs, PHEVs, and diesels must pre-purchase distance-based RUC:"
+        },
+        "keyPoints": [
+          {
+            "zh": "⚡ 纯电车（BEV，如 Tesla / BYD Atto 3 / MG4 / Nissan Leaf）：RUC 为 NZ$76.00 / 1,000 km（另加少量行政费）。",
+            "en": "Full EVs (BEVs): NZ$76 per 1,000 km."
+          },
+          {
+            "zh": "🔌 插电式混动（PHEV，如 Outlander PHEV）：因同时烧油交燃油税，享受半价 RUC 为 NZ$38.00 / 1,000 km！",
+            "en": "Plug-in Petrol Hybrids (PHEVs): discounted NZ$38 per 1,000 km."
+          },
+          {
+            "zh": "⛽ 柴油车（Diesel，如皮卡 Hilux / Ranger）：同样为 NZ$76.00 / 1,000 km。",
+            "en": "Light Diesel vehicles: NZ$76 per 1,000 km."
+          },
+          {
+            "zh": "💡 省钱提示：WOF 约 $65–$85/年；Rego 汽油车约 $107/年（电车/柴油略高）；过期的 WOF/Rego 哪怕停在公共路边被停车管理员看到也会开出 NZ$200 罚单！",
+            "en": "WOF (~$65–$85/yr) and Rego (~$107+/yr) must stay current—expired tags parked on public streets draw $200 tickets!"
+          }
+        ]
+      },
+      {
+        "id": "l16-c4",
+        "type": "warning",
+        "title": {
+          "zh": "血泪警告：新西兰车险虽非强制，但绝不能“裸奔上路”！",
+          "en": "Critical Warning: Car Insurance Isn’t Compulsory—Never Drive Uninsured!"
+        },
+        "body": {
+          "zh": "与国内强制交强险不同，新西兰法律不强制买商业车险（ACC 只赔人身伤亡，完全不赔任何车辆与财物损失！）。如果你没买车险却不小心追尾了一台保时捷或撞坏路边电线杆，你要自掏腰包赔几十万纽币甚至面临破产！",
+          "en": "ACC covers personal injuries ONLY—zero property or vehicle damage! Driving uninsured means one mistake could leave you owing $100,000+."
+        },
+        "keyPoints": [
+          {
+            "zh": "🛡️ 全险（Comprehensive）：赔自己车 + 赔别人车 + 盗抢自然灾害（车价高于 $6,000 强烈推荐，常见保司：AA Insurance、AMI、State、Tower、MAS、Trade Me Insurance）。",
+            "en": "Comprehensive: covers your car, others’ property, theft & weather (recommended for cars worth $6k+)."
+          },
+          {
+            "zh": "🛡️ 第三方险（Third Party / Third Party Fire & Theft）：车价很便宜（如 $3,000 代步车）时最低底线，每年仅约 $250–$450，保赔别人豪车高达 $2,000 万纽币！",
+            "en": "Third Party (~$250–$450/yr): absolute bare minimum—covers up to $20M damage to others."
+          },
+          {
+            "zh": "🚨 必买加分项：顺手加购 AA Roadservice 道路救援（约 $99/年），半路电瓶亏电、爆胎、锁车里全纽免费拖车救援！",
+            "en": "Consider AA Roadservice (~$99/yr) for flat batteries, tyres, and roadside towing nationwide."
+          }
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "l16-q1",
+        "prompt": {
+          "zh": "2026 年你在新西兰买了一台不插电的 Toyota Aqua 普通油电混动车（HEV），需要另外向 NZTA 购买 RUC 公里税吗？",
+          "en": "In 2026 you buy a standard non-plug-in Toyota Aqua hybrid (HEV). Do you need to buy RUC distance licences?"
+        },
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "zh": "不需要！普通不插电油电混动车（HEV）纯靠加油行驶，燃油税已包含在油价里；只有纯电 BEV（$76）、插混 PHEV（$38）和柴油车需要买 RUC",
+              "en": "No—standard non-plug-in hybrids pay road tax via petrol; only BEVs ($76), PHEVs ($38), and diesels pay RUC"
+            },
+            "isCorrect": true,
+            "feedback": {
+              "zh": "太清楚了！很多新手会把普通混动 HEV 和插电混动 PHEV 搞混，记住插电孔决定要不要交 RUC！",
+              "en": "Spot on!"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "zh": "需要，所有带电池的车都要按 $76/1000km 交 RUC",
+              "en": "Yes, all hybrids pay $76 per 1,000 km"
+            },
+            "isCorrect": false,
+            "feedback": {
+              "zh": "错啦！只有能插电充电的 EV/PHEV 和柴油车才交 RUC，普通丰田混动加油就行。",
+              "en": "Only plug-in EVs/PHEVs and diesel vehicles pay RUC."
+            }
+          }
+        ]
+      },
+      {
+        "id": "l16-q2",
+        "prompt": {
+          "zh": "你买了台车后觉得自己技术好，没买商业车险就上路，结果倒车蹭坏了邻居的奔驰车门（维修费 $12,000）。ACC 会帮你赔修车费吗？",
+          "en": "You drive uninsured and scratch a neighbour’s Mercedes ($12,000 repair). Does ACC pay for the car damage?"
+        },
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "zh": "不会！ACC 只保人身受伤，1 分钱车损都不赔；你必须自己掏出 $12,000，所以上路前至少必须买第三方车险",
+              "en": "No! ACC covers injuries ONLY—zero property damage. Never drive without at least Third Party insurance!"
+            },
+            "isCorrect": true,
+            "feedback": {
+              "zh": "记住这条铁律：提车当天、车轮还没开出停车场前，就在手机上把车险生效！",
+              "en": "Activate car insurance BEFORE driving the car away!"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "zh": "会，因为交了 Rego 路税里面含了 ACC",
+              "en": "Yes, Rego includes ACC which pays for bumper repairs"
+            },
+            "isCorrect": false,
+            "feedback": {
+              "zh": "千万别误解！ACC 从不赔修车费！",
+              "en": "ACC never pays for vehicle repairs."
+            }
+          }
+        ]
+      }
+    ],
+    "actionTip": {
+      "zh": "买车前把目标车牌号输入 carjam.co.nz 查一次历史，并用 Gaspy App 对比家附近油价（常差每升 15–30 分！）。",
+      "en": "Always run the plate on carjam.co.nz before buying, and download Gaspy to save 15–30c/L on fuel."
+    }
+  },
+  {
+    "id": "l-17",
+    "number": 17,
+    "moduleId": "mod-3",
+    "title": {
+      "zh": "公共交通、城际出行与新西兰公路自驾保命指南",
+      "en": "Public Transport, Intercity Travel & NZ Highway Safety"
+    },
+    "summary": {
+      "zh": "各城市公交卡与刷卡优惠、南北岛轮渡/国内航司攻略，以及新西兰窄路、砂石路（Gravel Road）、冬季黑冰与长途疲劳驾驶安全法则。",
+      "en": "Navigate city transit cards, Cook Strait ferries, domestic flights, and NZ’s unique rural driving hazards (gravel roads, black ice, narrow winding highways)."
+    },
+    "targetLevel": 2,
+    "durationMin": 7,
+    "xpReward": 70,
+    "isFlagship": true,
+    "verifiedDate": "2026-11",
+    "officialSource": "NZTA / Auckland Transport / Metlink / Metro / Interislander",
+    "terms": [
+      {
+        "term": "Tag On / Tag Off",
+        "phonetic": "/tæɡ ɒn/",
+        "zh": "上下公交/火车各刷一次卡（忘了下车刷卡会被按全程最高票价扣费！）"
+      },
+      {
+        "term": "Weekly Fare Cap",
+        "phonetic": "/feə kæp/",
+        "zh": "周票封顶（如奥克兰 AT HOP 成人每周公交火车消费满封顶线后当周剩余趟次免费）"
+      },
+      {
+        "term": "Gravel Road",
+        "phonetic": "/ˈɡrævl rəʊd/",
+        "zh": "非铺装碎石土路（极易侧滑打飘，严禁猛打方向盘或急刹车！）"
+      },
+      {
+        "term": "Black Ice",
+        "phonetic": "/blæk aɪs/",
+        "zh": "冬季透明暗冰（南岛清晨背阴弯道与桥面隐形杀手，轻柔控速防打滑）"
+      },
+      {
+        "term": "Interislander / Bluebridge",
+        "phonetic": "/ˌɪntərˈaɪləndə/",
+        "zh": "连接北岛惠灵顿与南岛皮克顿的库克海峡两大汽车客运轮渡"
+      },
+      {
+        "term": "Snow Chains",
+        "phonetic": "/snəʊ tʃeɪnz/",
+        "zh": "冬季防滑链（去南岛滑雪场或翻越高山垭口依法须随车携带并会安装）"
+      }
+    ],
+    "cards": [
+      {
+        "id": "l17-c1",
+        "type": "comparison",
+        "title": {
+          "zh": "新西兰主要城市公交卡与出行省钱技巧",
+          "en": "City Public Transport Cards & Smart Commuting Tips"
+        },
+        "body": {
+          "zh": "新西兰除奥克兰、惠灵顿外大部分城市高度依赖私家车，但通勤族用对公交卡能省不少钱（且记住：新西兰坐公交上下车都要刷卡，且下车习惯向司机喊一声 \"Cheers, driver!\"）：",
+          "en": "Always tag ON and tag OFF, and say a friendly \"Thanks / Cheers driver!\" when stepping off the bus:"
+        },
+        "keyPoints": [
+          {
+            "zh": "🚌 奥克兰（Auckland）：使用 AT HOP 卡（也已支持 Visa/Mastercard 非接触直接刷卡，但办卡绑定社区服务卡或学生优惠更划算，且享每周票价封顶！）。",
+            "en": "Auckland: AT HOP card (weekly fare caps & concessions) or contactless card tap."
+          },
+          {
+            "zh": "🚆 惠灵顿（Wellington）：使用 Snapper 卡，火车与公交网络全纽最密集，CBD 停车极贵，强烈建议坐公交/火车通勤。",
+            "en": "Wellington: Snapper card—best public transit density in NZ."
+          },
+          {
+            "zh": "🚌 基督城（Christchurch）：使用 Metrocard，平价统一票价且带每日/每周封顶；汉密尔顿/陶朗加/但尼丁等使用 Bee Card（逐步并入全国统一 Motu Move 系统）。",
+            "en": "Christchurch: Metrocard; Hamilton/Tauranga/Dunedin: Bee Card (transitioning to national Motu Move)."
+          }
+        ]
+      },
+      {
+        "id": "l17-c2",
+        "type": "concept",
+        "title": {
+          "zh": "城际出行：国内航班、库克海峡轮渡与长途大巴",
+          "en": "Domestic Flights, Cook Strait Ferries & InterCity Coaches"
+        },
+        "body": {
+          "zh": "新西兰南北跨度大、地形多山，跨城出行按距离选交通工具最省心：",
+          "en": "Pick the right mode for NZ’s mountainous geography:"
+        },
+        "keyPoints": [
+          {
+            "zh": "✈️ 国内航班：Air New Zealand（航线最全、准点稳、常有 Grab-a-Seat 特价票）与 Jetstar（廉航便宜但行李查得极严、偶有取消）。",
+            "en": "Air New Zealand (reliable, widest network) & Jetstar (budget, strict baggage limits)."
+          },
+          {
+            "zh": "⛴️ 跨南北岛轮渡：Interislander 与 Bluebridge 往返惠灵顿与皮克顿（约 3.5 小时），可连人带车开上船，旺季须提前 1–2 个月订票！",
+            "en": "Interislander & Bluebridge ferries cross Cook Strait (~3.5 hrs, vehicles welcome—book early in summer)."
+          },
+          {
+            "zh": "🚌 长途大巴与观光火车：InterCity 大巴覆盖全纽小镇；TranzAlpine（基督城↔格雷茅斯）是世界级高山观景火车。",
+            "en": "InterCity coaches connect towns nationwide; TranzAlpine is an iconic scenic rail journey."
+          }
+        ]
+      },
+      {
+        "id": "l17-c3",
+        "type": "warning",
+        "title": {
+          "zh": "新西兰公路自驾保命法则（为什么地图 200 公里要开 3 小时？）",
+          "en": "NZ Highway Survival: Why 200 km Takes 3 Hours"
+        },
+        "body": {
+          "zh": "千万不要用国内“双向六车道全封闭高速”的经验估算新西兰开车时间！新西兰绝大多数 1 号国道（SH1）是双向各一车道的盘山双线公路，无中央隔离护栏、弯急路窄且多单车道桥！",
+          "en": "Most NZ state highways are undivided two-lane winding rural roads with tight bends and no median barrier:"
+        },
+        "keyPoints": [
+          {
+            "zh": "⏱️ 预留多出 20%–30% 的时间，每开 2 小时必须进小镇买杯咖啡休息，绝不落地当天倒着时差就一口气开 4 小时去景区（极高致死事故率！）。",
+            "en": "Never drive long distances jet-lagged after an international flight—rest every 2 hours."
+          },
+          {
+            "zh": "🪨 砂石路（Gravel Road）：去偏远海滩或湖泊常遇碎石路，车速务必降到 50–70km/h 以下、柔和打方向、不急刹，否则极易失控翻沟。",
+            "en": "Slow right down on gravel roads—gentle steering, no sudden braking."
+          },
+          {
+            "zh": "❄️ 冬季暗冰（Black Ice，6–9 月南岛/中北岛高地）：气温低于 2°C 时的阴坡弯道和桥面常结透明薄冰，清晨尽量等太阳出来再上路；去滑雪场务必带防滑链并提前在平地练会怎么装！",
+            "en": "Watch for invisible black ice on shaded bends/bridges in winter; practise fitting snow chains before heading up ski fields."
+          },
+          {
+            "zh": "⚠️ 黄色弯道建议速度牌（Advisory Speed Sign，如 45km/h）：不是摆设！看到数字就老老实实在入弯前降到该速度以下。",
+            "en": "Respect yellow curve advisory speeds—slow down BEFORE entering the bend."
+          }
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "l17-q1",
+        "prompt": {
+          "zh": "在奥克兰坐公交车，上车刷了 AT HOP 卡，下车时因为人多忘了刷卡（Tag Off）。会发生什么？",
+          "en": "You tagged ON an Auckland bus with your AT HOP card but forgot to tag OFF when getting off. What happens?"
+        },
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "zh": "系统无法计算下车站，会自动按该线路的默认惩罚最高票价扣费",
+              "en": "You get charged the default maximum penalty fare for the trip"
+            },
+            "isCorrect": true,
+            "feedback": {
+              "zh": "答对了！养成上车刷、下车刷的好习惯，省钱又不吃亏。",
+              "en": "Correct—always tag on AND tag off!"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "zh": "系统默认你只坐了 1 站，扣最低票价",
+              "en": "Charged the minimum 1-zone fare"
+            },
+            "isCorrect": false,
+            "feedback": {
+              "zh": "正好相反，会被扣默认惩罚高票价哦！",
+              "en": "The opposite—you are charged a default penalty fare."
+            }
+          }
+        ]
+      },
+      {
+        "id": "l17-q2",
+        "prompt": {
+          "zh": "刚坐了 12 小时红眼航班落地基督城机场，计划立刻租车一口气开 4.5 小时去皇后镇。专家最核心的安全忠告是？",
+          "en": "After a 12-hour overnight flight into Christchurch, you plan to immediately drive 4.5 hours to Queenstown. What is the safest advice?"
+        },
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "zh": "强烈反对！在基督城先睡一晚倒时差休整，隔天精神饱满再走多弯的南岛高山双线公路",
+              "en": "Rest overnight in Christchurch first—driving jet-lagged on narrow winding NZ highways is a top cause of fatal crashes"
+            },
+            "isCorrect": true,
+            "feedback": {
+              "zh": "生命第一！旅游和生活都不差这一晚，睡饱再上路享受绝美风景。",
+              "en": "Safety first—always sleep before long rural NZ drives!"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "zh": "喝两罐功能饮料顶着开，路况很好不难开",
+              "en": "Drink energy drinks and push straight through"
+            },
+            "isCorrect": false,
+            "feedback": {
+              "zh": "极其危险！疲劳驾驶叠加陌生左行窄路是新西兰海外游客事故头号杀手。",
+              "en": "Fatigue plus unfamiliar left-hand winding roads is extremely hazardous."
+            }
+          }
+        ]
+      }
+    ],
+    "actionTip": {
+      "zh": "长途自驾前务必查看 NZTA 实时路况网 journeys.nzta.govt.nz（查封路、施工、冰雪预警）和 MetService 天气预警！",
+      "en": "Always check journeys.nzta.govt.nz for road closures/ice warnings before any NZ highway trip."
+    }
+  }
+]

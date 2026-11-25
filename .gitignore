@@ -1,0 +1,62 @@
+# ==============================================================================
+# KiwiPath — Security-First .gitignore (Playbook Stage 0)
+# ==============================================================================
+
+# Secrets & Environment Variables (NEVER commit real keys/tokens)
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+secrets/
+credentials/
+
+# Local Databases, User Backups & Runtime Data (anchored to repo root so src/data/ is tracked!)
+/data/
+/backups/
+*.db
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.backup.json
+kiwipath-backup-*.json
+
+# Dependencies & Virtual Environments
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Build, Cache & Test Artifacts
+dist/
+dist-ssr/
+dist-single/
+dist-single-tmp/
+dev-dist/
+.vite/
+coverage/
+.nyc_output/
+*.tsbuildinfo
+KiwiPath-新西兰离线百科.html
+
+# Logs
+/logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS & Editor Junk
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.swo

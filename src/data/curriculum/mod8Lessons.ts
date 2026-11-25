@@ -1,0 +1,601 @@
+import type { Lesson } from '../../types';
+
+/**
+ * Module 8: 历史、双文化、公民政治与自然户外安全 (Lessons #43 – #48)
+ * Verified against Te Ara, Electoral Commission NZ (MMP 2026), DOC, Get Ready (NEMA), and DIA (Citizenship / PRV).
+ */
+export const MOD8_LESSONS: Lesson[] = [
+  {
+    id: 'l-43',
+    number: 43,
+    moduleId: 'mod-8',
+    title: {
+      zh: '双文化立国基石：《怀唐伊条约》与毛利礼仪禁忌（Tikanga）',
+      en: 'Bicultural Foundations: Te Tiriti o Waitangi & Everyday Tikanga',
+    },
+    summary: {
+      zh: '理解新西兰最核心的社会基因——1840 年《怀唐伊条约》（Te Tiriti o Waitangi）双文化伙伴关系，以及进 Marae 聚会堂与日常相处的必懂毛利礼仪（绝不坐餐桌！）。',
+      en: 'Understand NZ’s founding document (Te Tiriti o Waitangi, 1840) and everyday Māori protocols (Tikanga)—like never sitting on dining tables or pillows.',
+    },
+    targetLevel: 3,
+    durationMin: 8,
+    xpReward: 80,
+    isFlagship: true,
+    verifiedDate: '2026-11',
+    officialSource: 'Te Ara Encyclopedia of NZ / Archives NZ / Waitangi Tribunal',
+    terms: [
+      { term: 'Te Tiriti o Waitangi', phonetic: '/te tee-ree-tee/', zh: '《怀唐伊条约》（1840 年 2 月 6 日英国王室与毛利酋长签署的新西兰建国文件）' },
+      { term: 'Tikanga', phonetic: '/tee-kah-ngah/', zh: '毛利传统礼仪、习俗与正确行事之道' },
+      { term: 'Marae & Pōwhiri', phonetic: '/mah-rye / paw-fee-ree/', zh: '毛利传统聚会堂（Marae）与庄重神圣的迎宾仪式（Pōwhiri）' },
+      { term: 'Tapu & Noa', phonetic: '/tah-poo / naw-ah/', zh: '神圣禁忌（Tapu，如头部与逝者）vs 日常解禁（Noa，如食物 Kai），两者绝不可混！' },
+      { term: 'Hongi', phonetic: '/haw-ngee/', zh: '毛利传统碰鼻礼（额头与鼻尖轻触，象征交换生命气息 Ha）' },
+      { term: 'Pepeha', phonetic: '/peh-peh-hah/', zh: '毛利式自我介绍（按山川、河流、故乡、家族、自己名字的顺序介绍与自然及先祖的联结）' },
+    ],
+    cards: [
+      {
+        id: 'l43-c1',
+        type: 'concept',
+        title: {
+          zh: '读懂新西兰灵魂：1840 年《怀唐伊条约》（Te Tiriti o Waitangi）',
+          en: 'Why 1840 Still Shapes Modern NZ: Te Tiriti o Waitangi',
+        },
+        body: {
+          zh: '1840 年 2 月 6 日，英国王室代表与北岛及全国 500 多位毛利酋长（Rangatira）在岛屿湾怀唐伊签署了《怀唐伊条约》。由于英文版与毛利语版（Te Tiriti）在“主权（Sovereignty）”与“治理权（Kāwanatanga）/ 自主权（Tino Rangatiratanga）”翻译存在历史分歧，新西兰在当代建立了怀唐伊法庭（Waitangi Tribunal）持续推进历史和解与双文化（Biculturalism）伙伴关系。',
+          en: 'Signed on 6 Feb 1840 between the British Crown and over 500 Māori chiefs, Te Tiriti o Waitangi underpins modern NZ’s bicultural partnership, public institutions, and environmental stewardship.',
+        },
+        keyPoints: [
+          { zh: '理解“双文化 + 多元文化”：毛利人是这片土地的原住民（Tangata Whenua），条约承认英王室与毛利人的伙伴关系；而其他所有后来移居新西兰的华裔、欧裔、印裔、太平洋岛裔都是共同在此安居的 Tangata Tiriti（条约之民）！', en: 'Māori are Tangata Whenua (people of the land); migrants and settlers belong as Tangata Tiriti.' },
+          { zh: '在学校、医院、政府机构、企业迎新时，经常会见到 Karakia（开会祈福/收心短诵）与 Waiata（集体合唱毛利歌），保持微笑尊重即可，非常温暖！', en: 'Many workplaces and schools open meetings with a short Karakia (blessing/grounding) and Waiata (song).' },
+        ],
+      },
+      {
+        id: 'l43-c2',
+        type: 'warning',
+        title: {
+          zh: '全纽通用毛利礼仪禁忌（Tikanga）：这 5 件事千万别做！',
+          en: '5 Essential Everyday Tikanga Rules (Especially Food vs Body)',
+        },
+        body: {
+          zh: '毛利文化中最核心的原则是区分神圣（Tapu，如人体尤其是头部）与食物/日常（Noa），两者严禁混杂——这已经深深融入整个新西兰社会习惯：',
+          en: 'In Māori culture, keeping Tapu (body/head) strictly separate from Noa (food) is a deep everyday respect rule across NZ:',
+        },
+        keyPoints: [
+          { zh: '❌ 绝对不要坐在餐桌、厨房台面或放食物的桌子上！（坐桌子放屁股的地方触碰放食物的桌面是极重冒犯！）', en: 'NEVER sit on a dining table, kitchen bench, or any surface used for food!' },
+          { zh: '❌ 不要把帽子、梳子、鞋子或手机随手放在餐桌或食物旁，也不要拿枕头垫屁股坐（头部是最神圣 Tapu 的部位！）。', en: 'Never place hats, combs, or shoes on tables, and never sit on pillows.' },
+          { zh: '❌ 不要随意摸别人（尤其是小朋友）的头顶！', en: 'Avoid casually patting someone’s head—the head is sacred (Tapu).' },
+          { zh: '✅ 进毛利聚会堂主屋（Wharenui）前务必脱鞋；在 Pōwhiri 迎宾仪式未完成前不要拍照或走动，仪式末尾一起分享食物（Kai）即代表彼此正式成为一家人！', en: 'Remove shoes before entering a Wharenui, avoid photos during formal Pōwhiri, and share Kai afterwards.' },
+        ],
+      },
+    ],
+    quiz: [
+      {
+        id: 'l43-q1',
+        prompt: {
+          zh: '在公司茶水间或朋友家厨房聊天时，旁边没有空椅子了，你顺势一屁股坐到了放食物和咖啡杯的厨房台面/餐桌上。在新西兰文化中这样妥当吗？',
+          en: 'There are no spare chairs in the kitchen, so you hop up and sit on the dining table/kitchen bench. Is this okay in NZ?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: '非常不妥！这触犯了新西兰深入人心的毛利 Tikanga 禁忌（不可将身体坐部与放食物的台面混在一起），无论毛利还是欧裔 Kiwi 都会很介意', en: 'Strongly frowned upon—violates core Māori Tikanga separating body/bottom from food surfaces across NZ' },
+            isCorrect: true,
+            feedback: { zh: '记住这条就能避开新西兰最经典的跨文化冒犯！', en: 'Spot on—never sit on tables or kitchen benches in NZ!' },
+          },
+          {
+            id: 'b',
+            text: { zh: '完全没事，新西兰人很随性不在乎', en: 'Totally fine, Kiwis are super casual about tables' },
+            isCorrect: false,
+            feedback: { zh: '新西兰人平时很随性，但唯独“绝不坐餐桌/不拿枕头坐”是全纽共识禁忌！', en: 'Kiwis are casual about many things, but sitting on food surfaces is a major taboo!' },
+          },
+        ],
+      },
+    ],
+    actionTip: {
+      zh: '试着学一句简短的毛利式自我介绍（Pepeha）：“Ko [家乡] tōku kāinga, ko [你的名字] tōku ingoa, kia ora tātou!” 在公司迎新或社区活动说出来全场都会为你鼓掌！',
+      en: 'Learn a simple 2-line Pepeha introducing where you come from and your name—Kiwis deeply appreciate it!',
+    },
+  },
+
+  {
+    id: 'l-44',
+    number: 44,
+    moduleId: 'mod-8',
+    title: {
+      zh: '国家记忆、重要节日（Waitangi / ANZAC / Matariki）与百年华人史',
+      en: 'National Identity, Public Holidays & 180+ Years of NZ Chinese History',
+    },
+    summary: {
+      zh: '读懂让新西兰人引以为傲的国民记忆：Waitangi Day、ANZAC Day 黎明悼念、Matariki 毛利新年、全球首个女性投票权、无核立场，以及新西兰华人的百年贡献。',
+      en: 'Connect with NZ’s defining moments: Waitangi Day, ANZAC Day, Matariki, women’s suffrage (1893), nuclear-free pride, and NZ’s rich Chinese heritage.',
+    },
+    targetLevel: 3,
+    durationMin: 7,
+    xpReward: 75,
+    isFlagship: true,
+    verifiedDate: '2026-11',
+    officialSource: 'NZ History (nzhistory.govt.nz) / Te Papa',
+    terms: [
+      { term: 'Waitangi Day (6 Feb)', phonetic: '/wye-tah-ngee/', zh: '怀唐伊日（2 月 6 日国庆公假，纪念 1840 年条约签署）' },
+      { term: 'ANZAC Day (25 Apr)', phonetic: '/ˈænzæk/', zh: '澳新军团日（4 月 25 日，黎明仪式悼念战争阵亡将士，上午商业受限营业）' },
+      { term: 'Matariki', phonetic: '/mah-tah-ree-kee/', zh: '毛利新年（每年 6–7 月昂宿星团重现清晨天空时的法定公假：缅怀逝者、感恩当下、展望未来）' },
+      { term: 'Women’s Suffrage (1893)', phonetic: '/ˈsʌfrɪdʒ/', zh: '1893 年新西兰成为全球第一个赋予所有女性选举权的自治国家（10 元纸币人物 Kate Sheppard！）' },
+      { term: 'Poll Tax Apology (2002)', phonetic: '/pəʊl tæks/', zh: '新西兰华裔淘金百年史与 2002 年政府就历史人头税向华社正式道歉' },
+    ],
+    cards: [
+      {
+        id: 'l44-c1',
+        type: 'concept',
+        title: {
+          zh: '新西兰最具精神意义的三大国家级公假（绝不只是放假逛街！）',
+          en: '3 Defining National Holidays in Aotearoa',
+        },
+        body: {
+          zh: '理解这三个日子背后的情感分量，你就真正懂了新西兰人的民族性格：',
+          en: 'These three public holidays anchor modern New Zealand identity:',
+        },
+        keyPoints: [
+          { zh: '🇳🇿 2 月 6 日 Waitangi Day：纪念 1840 年《怀唐伊条约》签署，全国各地举行文化庆典与公民反思讨论。', en: 'Waitangi Day (6 Feb): marks the 1840 signing of Te Tiriti.' },
+          { zh: '🌺 4 月 25 日 ANZAC Day（澳新军团日）：极其庄严肃穆！各地清晨 6 点举行 Dawn Service 黎明悼念，佩戴红罂粟花（Poppy），上午 1 点前大部分商场关门（千万别说 "Happy ANZAC Day"！应表达敬意 "Lest we forget"！）。', en: 'ANZAC Day (25 Apr): solemn remembrance of fallen soldiers (never say "Happy ANZAC Day"—say "Lest we forget"; shops restricted until 1pm).' },
+          { zh: '✨ 6–7 月 Matariki（毛利新年）：2022 年设立为全纽法定公假，标志着冬季新年伊始，家人朋友聚餐观星、缅怀逝去亲人、规划来年（与我们中国春节的精神内核高度共鸣！）。', en: 'Matariki (June/July): Māori New Year public holiday celebrating remembrance, present gratitude, and future hope.' },
+        ],
+      },
+      {
+        id: 'l44-c2',
+        type: 'concept',
+        title: {
+          zh: '让 Kiwi 骄傲的三大历史坐标 & 新西兰华人 180+ 年扎根史',
+          en: 'Kiwi Pride Milestones & New Zealand’s Deep Chinese Heritage',
+        },
+        body: {
+          zh: '知道这些故事，你不仅能看懂纽币纸钞上的人物，更会感受到华人群体早已是新西兰历史不可或缺的一部分：',
+          en: 'Look closely at NZ banknotes and South Island towns—history is everywhere:',
+        },
+        keyPoints: [
+          { zh: '👑 1893 年全球首个女性投票权：由 Kate Sheppard（头像印在 NZ$10 蓝色纸币上！）领导的请愿让新西兰成为世界平权先锋。', en: '1893: World’s first self-governing country granting women the vote (Kate Sheppard on the $10 note).' },
+          { zh: '🏔️ 1953 年首登珠峰 & 1987 年无核法案：养蜂人 Sir Edmund Hillary（头像印在 NZ$5 纸币上！）首登珠峰却谦逊低调；1987 年新西兰立法成为无核国家（Nuclear-Free NZ），拒绝核动力/核武舰艇入港。', en: 'Sir Edmund Hillary ($5 note) conquered Everest in 1953; NZ enacted its landmark Nuclear-Free Zone law in 1987.' },
+          { zh: '🏮 新西兰华人百年足迹：早在 1860 年代奥塔哥淘金潮就有大批广东华人先侨来到南岛箭镇（Arrowtown 至今保留华人村遗址）与但尼丁种菜开荒。尽管历史上曾遭遇不公人头税（Poll Tax），2002 年新西兰政府已向华社郑重正式道歉，如今华裔已成为新西兰最具活力的核心族群之一！', en: 'Chinese pioneers arrived in the 1860s Otago gold rush (visit the historic Chinese Settlement in Arrowtown); NZ formally apologised for the historic Poll Tax in 2002.' },
+        ],
+      },
+    ],
+    quiz: [
+      {
+        id: 'l44-q1',
+        prompt: {
+          zh: '4 月 25 日 ANZAC Day（澳新军团日）当天，以下哪种言行最恰当、尊重本地文化？',
+          en: 'On ANZAC Day (25 April), which greeting or action is most culturally respectful in NZ?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: '保持庄重敬意（不说 "Happy ANZAC Day"），可佩戴义卖红罂粟花或参加黎明悼念仪式，并提前买菜因多数商场下午 1 点后才开门', en: 'Show solemn respect (avoid "Happy ANZAC Day"), wear a poppy or attend a Dawn Service, and note most shops open after 1pm' },
+            isCorrect: true,
+            feedback: { zh: '超赞的文化敏锐度！ANZAC Day 是哀悼与感恩的日子，不是狂欢节日。', en: 'Spot on!' },
+          },
+          {
+            id: 'b',
+            text: { zh: '一大早在公司群发烟花表情包祝大家 "Happy ANZAC Day!"', en: 'Send fireworks emojis saying "Happy ANZAC Day!"' },
+            isCorrect: false,
+            feedback: { zh: '大忌！ANZAC Day 纪念的是战争中牺牲的将士，说 "Happy" 会非常失礼。', en: 'Avoid saying "Happy ANZAC Day"—it is a solemn remembrance day.' },
+          },
+        ],
+      },
+    ],
+    actionTip: {
+      zh: '下次去南岛皇后镇旅游，一定顺路逛逛箭镇（Arrowtown）的百年华人淘金村遗址，或在奥克兰/惠灵顿免费参观 Te Papa 国家博物馆！',
+      en: 'Visit Te Papa Museum in Wellington (free!) or the historic Chinese Settlement in Arrowtown.',
+    },
+  },
+
+  {
+    id: 'l-45',
+    number: 45,
+    moduleId: 'mod-8',
+    title: {
+      zh: '新西兰政治制度与公民投票实战：MMP 两票制与地方议会参与',
+      en: 'NZ Democracy & Voting: MMP Two-Vote System & Local Councils',
+    },
+    summary: {
+      zh: '为什么只要拿到居民签住满 1 年（不用入籍！）在新西兰就有大选投票权？一课看懂 MMP（党票 + 选区票）、联合执政（Coalition）以及如何向国会/市议会提公共意见。',
+      en: 'Discover why NZ permanent/resident visa holders can vote after 1 year (no citizenship required!), how MMP Party & Electorate votes work, and local council engagement.',
+    },
+    targetLevel: 4,
+    durationMin: 8,
+    xpReward: 80,
+    isFlagship: true,
+    verifiedDate: '2026-11',
+    officialSource: 'Electoral Commission NZ (vote.nz) / NZ Parliament',
+    terms: [
+      { term: 'MMP (Mixed Member Proportional)', phonetic: '/ˌem em ˈpiː/', zh: '混合成员比例代表制（新西兰国会大选制度：每人手握「党票 + 选区票」两张票！）' },
+      { term: 'Party Vote（党票）', phonetic: '/ˈpɑːti vəʊt/', zh: '决定整个国会 120 席中各政党总席位比例的最关键一票（门槛 5% 或赢 1 个选区）！' },
+      { term: 'Electorate Vote（选区票）', phonetic: '/ɪˈlektərət/', zh: '选出代表你居住片区的当地国会议员（Local MP）' },
+      { term: 'Electoral Roll (vote.nz)', phonetic: '/ɪˈlektərəl rəʊl/', zh: '选民登记册（居民住满 1 年依法必须登记，但投票本身自愿不强制！）' },
+      { term: 'Public Submission', phonetic: '/səbˈmɪʃn/', zh: '公民公开建言（新西兰任何法案或市议会涨地税/修路方案都开放普通市民在线提意见！）' },
+    ],
+    cards: [
+      {
+        id: 'l45-c1',
+        type: 'concept',
+        title: {
+          zh: '新西兰全球罕见的民主福利：拿居民签住满 1 年就能投国会大选！',
+          en: 'Unique in the World: NZ Residents Can Vote After Just 1 Year!',
+        },
+        body: {
+          zh: '和美加澳必须入籍才能投票不同，在新西兰只要你年满 18 岁、持有居民签（RV/PRV）或公民身份，且曾在新西兰连续居住满 12 个月，就享有完整的国会大选与地方市议会选举投票权！',
+          en: 'Unlike Australia, Canada, or the US, NZ grants full voting rights to Resident Visa holders once they have lived in NZ continuously for 12 months:',
+        },
+        keyPoints: [
+          { zh: '📋 依法必须登记（Enrol），投票本身自愿：满足条件后须上 vote.nz 免费登记选民名册（登记是法定义务，投票当天去不去由你决定，不会像澳洲那样不投票罚款）。', en: 'Enrolling on vote.nz is legally required once eligible, though actually casting a ballot is voluntary.' },
+          { zh: '🏛️ 三年一次国会大选（如刚刚举行的 2026 年 11 月大选）：新西兰采用一院制国会（120 席），通常由两大传统政党（偏右的 National 国家党 vs 偏左的 Labour 工党）联合小党（ACT、NZ First、Green、Te Pāti Māori）组成联合政府（Coalition）执政！', en: 'General elections run every 3 years (including Nov 2026) under a 120-seat unicameral Parliament, typically forming multi-party Coalitions.' },
+        ],
+      },
+      {
+        id: 'l45-c2',
+        type: 'comparison',
+        title: {
+          zh: 'MMP 选票怎么填？记住“党票定江山，选区票选邻居代表”！',
+          en: 'How MMP Works: Party Vote vs Electorate Vote',
+        },
+        body: {
+          zh: '走进投票站你会拿到一张有两个勾选框的选票，两票完全可以投给不同政党（Split Vote）：',
+          en: 'Every voter gets TWO votes—and you can split them across different parties:',
+        },
+        keyPoints: [
+          { zh: '① 党票（Party Vote — 最重要！）：直接决定全国各政党在 120 席国会中拿到多少比例的席位，从而决定谁能组阁当总理！（政党须拿满 5% 党票或赢下至少 1 个地方选区才能进国会）。', en: 'Party Vote: determines each party’s overall share of the 120 parliamentary seats and who forms Government.' },
+          { zh: '② 选区票（Electorate Vote）：选出你住的那个片区的直选国会议员（Local MP）——以后你在社区遇到移民局卡壳、道路隐患、治安问题，都可以直接免费写信/预约找你的 Local MP 办公室帮忙向政府部门催办！', en: 'Electorate Vote: picks your Local MP, whose constituency office can actually help residents with govt department escalations!' },
+          { zh: '📮 地方议会（Local Council）选举每 3 年一次（邮寄选票），直接决定你家地税（Rates）、公交、公园、垃圾清运与建筑规划，关乎日常生活，别随手把邮寄选票扔进垃圾桶！', en: 'Local Council postal elections every 3 years directly control your Rates, buses, parks, and rubbish—make your voice heard!' },
+        ],
+      },
+    ],
+    quiz: [
+      {
+        id: 'l45-q1',
+        prompt: {
+          zh: '在新西兰 MMP 大选制度下，你手里的哪一票直接决定各政党在国会 120 个总席位中所占比例以及谁来组阁执政？',
+          en: 'Under NZ’s MMP voting system, which of your two votes determines each party’s total share of seats in Parliament?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: '党票（Party Vote）', en: 'The Party Vote' },
+            isCorrect: true,
+            feedback: { zh: '完全正确！党票决定国会整体格局，选区票选出你的地方议员（Local MP）。', en: 'Spot on!' },
+          },
+          {
+            id: 'b',
+            text: { zh: '选区票（Electorate Vote）', en: 'The Electorate Vote' },
+            isCorrect: false,
+            feedback: { zh: '选区票决定谁代表你的本地选区，但决定国会总体席位比例的是党票（Party Vote）！', en: 'The Electorate Vote picks your local MP; the Party Vote sets overall parliamentary seat proportions.' },
+          },
+        ],
+      },
+    ],
+    actionTip: {
+      zh: '拿到居民签住满 1 年后，花 2 分钟上 vote.nz 完成选民登记；大选前可用免费工具 Policy.nz 逐条客观对比各党政策！',
+      en: 'Enrol at vote.nz once eligible and compare party policies neutrally on Policy.nz before elections.',
+    },
+  },
+
+  {
+    id: 'l-46',
+    number: 46,
+    moduleId: 'mod-8',
+    title: {
+      zh: '新西兰户外生活方式：Tramping 徒步、DOC 山屋、赶海法规与橄榄球',
+      en: 'The Kiwi Outdoor Lifestyle: Tramping, DOC Huts, Fishing Rules & Rugby',
+    },
+    summary: {
+      zh: '像真正 Kiwi 一样玩转自然：用 Plan My Walk 徒步预订 DOC 山屋与 Great Walks、赶海抓青口/钓鱼绝不碰尺寸配额红线（违者可罚没收车船！）、精品咖啡与 All Blacks 文化。',
+      en: 'Embrace Aotearoa outdoors safely: DOC huts & Great Walks, strict fishing/shellfish bag limits (illegal poaching can forfeit cars!), flat whites, and All Blacks rugby.',
+    },
+    targetLevel: 3,
+    durationMin: 8,
+    xpReward: 75,
+    isFlagship: true,
+    verifiedDate: '2026-11',
+    officialSource: 'Department of Conservation (doc.govt.nz) / MPI NZ Fishing Rules',
+    terms: [
+      { term: 'Tramping / Bushwalk', phonetic: '/ˈtræmpɪŋ/', zh: '新西兰特色徒步/多日重装穿越（全国有超 1,400 条步道与 950+ 座 DOC 山屋！）' },
+      { term: 'DOC (Dept of Conservation)', phonetic: '/dɒk/', zh: '新西兰环保部（管理全部国家公园、Great Walks 与平价山屋 doc.govt.nz）' },
+      { term: 'NZ Fishing Rules App', phonetic: '/ˈfɪʃɪŋ ruːlz/', zh: 'MPI 官方免费赶海钓鱼规则 App（查每种鱼贝的最小尺寸、每日限额与禁捕区！）' },
+      { term: 'Kauri Dieback', phonetic: '/ˈkaʊri/', zh: '贝壳杉枯萎病（进出森林步道务必在刷鞋喷淋站彻底清洁鞋底，保护千年古树！）' },
+      { term: 'All Blacks & Haka', phonetic: '/ˈhɑːkɑː/', zh: '新西兰国家橄榄球队与赛前震撼人心的毛利战舞 Haka（Ka Mate / Kapa o Pango）' },
+    ],
+    cards: [
+      {
+        id: 'l46-c1',
+        type: 'checklist',
+        title: {
+          zh: '徒步天堂玩法：DOC 山屋、11 条 Great Walks 与 Plan My Walk',
+          en: 'Tramping in Aotearoa: DOC Huts, Great Walks & Plan My Walk',
+        },
+        body: {
+          zh: '新西兰拥有世界上最友好完善的徒步网络，从 30 分钟海边木栈道到世界级多日徒步 Great Walks（米尔福德、路特本、汤加里罗等）应有尽有：',
+          en: 'From 30-minute coastal loops to world-famous multi-day Great Walks, DOC maintains 950+ huts nationwide:',
+        },
+        keyPoints: [
+          { zh: '📱 出发前必装官方免费 App：Plan My Walk（新西兰山地安全委员会出品，查每条步道难度、实时塌方预警、天气与装备清单！）。', en: 'Always check Plan My Walk before hiking for track alerts, weather, and gear lists.' },
+          { zh: '🏔️ 预订 DOC 山屋：普通 Backcountry 山屋每晚仅约 NZ$10–$25（也可买年度 Backcountry Hut Pass）；11 条顶级 Great Walks（每年 5–6 月在 doc.govt.nz 开放次年夏季抢票，极其抢手！）。', en: 'Great Walks bookings open each May–June on doc.govt.nz and sell out rapidly!' },
+          { zh: '🌲 环保铁律：走完步道把所有垃圾（含果皮纸巾！）全部背出山（Leave No Trace）；在北岛森林入口看到洗鞋刷与消毒喷雾站，务必彻底刷洗鞋底防 Kauri Dieback 病菌！', en: 'Pack out ALL rubbish including fruit peels, and scrub/spray boots at every Kauri Dieback station!' },
+        ],
+      },
+      {
+        id: 'l46-c2',
+        type: 'warning',
+        title: {
+          zh: '赶海抓贝、抓螃蟹、海钓绝对红线：违规超捕会被当场没收汽车！',
+          en: 'Strict Fishing & Shellfish Rules: Poaching Can Forfeit Your Car!',
+        },
+        body: {
+          zh: '在新西兰海边捡青口（Mussels）、挖蛤蜊（Cockles/Pipi）、海钓鲷鱼（Snapper）完全免费不需要办证，但渔业官（MPI Fishery Officers）巡查极严，**绝不触碰尺寸、数量与禁捕区红线**：',
+          en: 'Recreational sea fishing requires no licence in NZ, but MPI Fishery Officers enforce strict legal limits:',
+        },
+        keyPoints: [
+          { zh: '📱 下水前必须打开 MPI 官方免费 **NZ Fishing Rules App**（支持离线查！）：核对当前海域是否属于禁捕保护区（Marine Reserve / Rāhui 传统禁渔期，一根海带都不能捡！）以及每种鱼贝的最小尺寸（如奥克兰东岸 Snapper 通常须 ≥30cm！）和每人每日上限！', en: 'Check the free offline NZ Fishing Rules app for Marine Reserves, Rāhui closures, minimum legal sizes, and daily bag limits!' },
+          { zh: '🚨 严惩红线：故意偷捕超额或抓保护区鲍鱼（Pāua）/龙虾，不仅面临数千至数万纽币巨额罚款，渔业法授权执法官**当场合法没收你的鱼竿、渔船甚至开来海边的私家车**！且严重违法留案底会影响签证与入籍！', en: 'Serious poaching penalties include heavy fines AND legal forfeiture of fishing gear, boats, and vehicles!' },
+          { zh: '⚠️ 淡水垂钓（湖泊/河流钓鳟鱼 Trout）：必须提前在 Fish & Game（fishandgame.org.nz）买淡水钓鱼证！', en: 'Freshwater trout/salmon fishing DOES require a Fish & Game licence!' },
+        ],
+      },
+    ],
+    quiz: [
+      {
+        id: 'l46-q1',
+        prompt: {
+          zh: '周末你去奥克兰附近海滩退潮时想挖点蛤蜊（Cockles）和捡青口回家煮汤。下海前最关键要做什么？',
+          en: 'You want to gather cockles and mussels at an Auckland beach at low tide. What must you check BEFORE harvesting?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: '打开 MPI 官方免费 NZ Fishing Rules App，确认该海滩不在禁捕区/Rāhui 范围内，并严格遵守每人每日限量与最小尺寸', en: 'Check the free MPI NZ Fishing Rules app to confirm no closure/Rāhui applies and strictly obey daily bag & size limits' },
+            isCorrect: true,
+            feedback: { zh: '满分！记住还要同时检查有无“贝类毒素警报（Shellfish Biotoxin Alert）”，安全合法两不误！', en: 'Spot on—and also check for biotoxin health warnings!' },
+          },
+          {
+            id: 'b',
+            text: { zh: '海里天然长的随便捡，装满两大桶带回家送朋友', en: 'Fill two large buckets since they grow naturally in the ocean' },
+            isCorrect: false,
+            feedback: { zh: '极高风险！奥克兰多处海滩有严格禁采或极低限额，超额采挖会面临重罚甚至没收车辆！', en: 'Illegal—over-harvesting carries steep fines and even vehicle seizure!' },
+          },
+        ],
+      },
+    ],
+    actionTip: {
+      zh: '在手机装上 Plan My Walk（徒步规划）和 NZ Fishing Rules（赶海钓鱼离线查规）两款免费官方神器！',
+      en: 'Download the free official Plan My Walk and NZ Fishing Rules apps before your next outdoor trip.',
+    },
+  },
+
+  {
+    id: 'l-47',
+    number: 47,
+    moduleId: 'mod-8',
+    title: {
+      zh: '自然灾害与致命环境安全（必修）：强紫外线、离岸流、地震与海啸',
+      en: 'Survival Essentials: Extreme UV, Rip Currents, Earthquakes & Tsunamis',
+    },
+    summary: {
+      zh: '新西兰风景绝美却暗藏 4 大真实杀手：高皮肤癌率的极端紫外线、吞噬无数泳者的离岸流（Rip Current）、地震“伏地掩护抓牢”与海啸“Long or Strong, Get Gone”保命法则！',
+      en: 'Stay alive in NZ’s wild environment: Slip-Slop-Slap UV protection, spotting & escaping Rip Currents, Drop-Cover-Hold earthquakes, and Long or Strong Get Gone tsunamis.',
+    },
+    targetLevel: 1,
+    durationMin: 9,
+    xpReward: 85,
+    isFlagship: true,
+    verifiedDate: '2026-11',
+    officialSource: 'Get Ready (NEMA getready.govt.nz) / Surf Life Saving NZ / SunSmart',
+    terms: [
+      { term: 'Rip Current（离岸流）', phonetic: '/rɪp ˈkʌrənt/', zh: '海滩头号隐形杀手！看似平静的深色无浪水道实则高速把人拉向深海，切忌逆流硬游！' },
+      { term: 'Swim Between the Flags', phonetic: '/flæɡz/', zh: '只在海滩红黄救生旗（Red & Yellow Flags）之间有救生员巡逻的区域下水！' },
+      { term: 'Drop, Cover, Hold', phonetic: '/drɒp ˈkʌvə həʊld/', zh: '地震保命三动作：立刻伏地 → 躲在坚固桌下掩护头颈 → 抓紧桌腿直到震动停止！' },
+      { term: 'Long or Strong, Get Gone', phonetic: '/lɒŋ ɔː strɒŋ/', zh: '海啸保命口诀：在海边感到震动超 1 分钟或站立不稳，绝不等官方警报，立刻往高处或内陆撤离！' },
+      { term: 'Slip, Slop, Slap, Wrap', phonetic: '/slɪp slɒp/', zh: '新西兰全民防晒口诀（紫外线极强，哪怕阴天 15 分钟也能晒伤脱皮，SPF50+ 必备！）' },
+      { term: 'Tiaki Promise', phonetic: '/tee-ah-kee/', zh: '守护新西兰承诺：爱护自然、文明驾驶、尊重文化与安全出行' },
+    ],
+    cards: [
+      {
+        id: 'l47-c1',
+        type: 'warning',
+        title: {
+          zh: '致命杀手 #1：海滩离岸流（Rip Current）与岩石垂钓安全',
+          en: 'Deadly Hazard #1: Rip Currents & Rock Fishing Safety',
+        },
+        body: {
+          zh: '新西兰西海岸黑沙滩（如奥克兰 Piha / Muriwai）浪急流猛，每年都有不熟悉海况的游客与新移民溺亡。记住：**海面上看起来最平静、没有白色碎浪、颜色发深的窄通道，恰恰是最致命的离岸流！**',
+          en: 'Calm-looking darker channels between breaking white waves are often fast-moving Rip Currents pulling swimmers straight out to sea:',
+        },
+        keyPoints: [
+          { zh: '🚩 预防铁律：只在竖起**红黄双色救生旗（Red & Yellow Flags）**的区域下水游泳；没旗子或自己水性一般就只在膝盖浅水踩水！', en: 'Always swim between the red and yellow lifeguard flags.' },
+          { zh: '🆘 万一被离岸流卷走怎么保命（3R 法则）？① **Relax（冷静仰浮保存体力）**——绝对不要拼命逆流往回游，奥运冠军也游不过离岸流！② **Raise your hand（举手挥舞大声呼救）**；③ **Ride（顺流漂出离岸流后，平行于海岸线向两侧有白浪的地方斜游回岸）**！', en: 'Caught in a rip? Remember 3Rs: Relax & float (NEVER fight it), Raise a hand for help, Ride until clear then swim parallel to shore.' },
+          { zh: '🪨 西海岸矶钓（Rock Fishing）极度危险：突发疯狂巨浪（Rogue Wave）能瞬间卷走礁石上的人，矶钓必须穿救生衣（Lifejacket）且永远不要背对大海！', en: 'Never turn your back on the ocean on west-coast rocks—always wear a lifejacket when rock fishing.' },
+        ],
+      },
+      {
+        id: 'l47-c2',
+        type: 'warning',
+        title: {
+          zh: '致命杀手 #2：地震（Drop, Cover, Hold）与海啸（Long or Strong, Get Gone）',
+          en: 'Deadly Hazard #2: Earthquakes & Tsunamis (NEMA Official Protocol)',
+        },
+        body: {
+          zh: '新西兰位于环太平洋地震火山带，小震常见、大震必须有肌肉记忆（官网 getready.govt.nz）：',
+          en: 'New Zealand sits on the Pacific Ring of Fire—memorise NEMA’s exact survival drills:',
+        },
+        keyPoints: [
+          { zh: '🏚️ 地震瞬间（Drop, Cover, Hold）：**千万别在剧烈摇晃时狂奔冲出室外！** 绝大多数伤亡是被坠落玻璃/砖瓦砸伤或摔倒！正确动作是立刻就地蹲伏、钻到结实桌下护住头颈、抓紧桌腿；在床上就翻身用枕头护头！', en: 'Do NOT run outside during shaking—Drop, Cover under a sturdy table, and Hold until shaking stops.' },
+          { zh: '🌊 海啸保命铁律（Long or Strong, Get Gone）：如果你身处沿海低洼区，只要地震持续超过 **1 分钟（Long）**，或剧烈到**难以站稳（Strong）**，**不要等手机警报！不要开车堵在路上！** 震停立刻徒步/骑车往高地或内陆撤离（先查清你家是否在海啸疏散区 Tsunami Zone）！', en: 'At the coast, if a quake lasts >1 minute OR makes it hard to stand: evacuate immediately on foot inland/uphill—do NOT wait for sirens!' },
+          { zh: '🎒 家庭应急包（Grab Bag & Home Supplies）：按 Get Ready 标准备好每人每天 3 升饮用水（至少备 3 天 = 每人 9L）、耐储罐头干粮、手电筒+备用电池、充电宝、常用处方药、重要证件防水袋与少量现金。', en: 'Stock 3 days of water (3L/person/day), food, torch, power bank, medications, and cash.' },
+        ],
+      },
+      {
+        id: 'l47-c3',
+        type: 'warning',
+        title: {
+          zh: '隐形杀手 #3 & #4：全球最强紫外线（UV）& 山区瞬间变天失温',
+          en: 'Hidden Hazards #3 & #4: Extreme UV Radiation & Sudden Alpine Weather',
+        },
+        body: {
+          zh: '很多刚来新西兰的人纳闷：“今天才 21°C 凉风习习，怎么逛街 1 小时脸就晒红脱皮了？”',
+          en: 'Cool breezes and clouds hide NZ’s intense Southern Hemisphere UV and rapidly shifting alpine weather:',
+        },
+        keyPoints: [
+          { zh: '☀️ 新西兰紫外线指数（UV Index）夏季常高达 11–13+（因空气洁净 + 地球公转南半球夏至更近太阳！），皮肤癌发病率全球顶尖！9 月至次年 4 月每天 10am–4pm 出门必须涂 **SPF50+ 广谱防晒霜**（每 2 小时补涂）、戴宽檐帽与防 UV 墨镜！', en: 'Apply SPF50+ sunscreen every 2 hours between Sept and April (10am–4pm), even on cool overcast days!' },
+          { zh: '🌧️ 山区“一天四季”防失温（Hypothermia）：进山徒步哪怕山下艳阳高照，背包里也必须永远塞一件防风防水冲锋衣（Raincoat）、保暖抓绒/美丽诺羊毛衣（Merino — 千万别只穿纯棉卫衣进山，湿了不干极易致命失温！）、足够水粮和头灯！', en: 'Never hike NZ mountains in cotton alone—always carry a waterproof shell, merino/fleece warmth, food, water, and a headlamp.' },
+        ],
+      },
+    ],
+    quiz: [
+      {
+        id: 'l47-q1',
+        prompt: {
+          zh: '你在海边度假时遭遇一场剧烈地震，持续晃动了足足 80 秒才停下，此时手机还没收到海啸警报。你的第一反应应该是？',
+          en: 'At the beach you feel a strong earthquake lasting 80 seconds. Your phone has not received a tsunami alert yet. What must you do?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: '严格执行 "Long or Strong, Get Gone"！震动一停立刻弃车徒步向高地或内陆高处撤离，绝不回海边看海水退潮', en: 'Follow "Long or Strong, Get Gone"—immediately evacuate on foot inland or uphill without waiting for official alerts' },
+            isCorrect: true,
+            feedback: { zh: '保命满分！自然震感本身就是最快的海啸警报！', en: 'Life-saving answer!' },
+          },
+          {
+            id: 'b',
+            text: { zh: '先站在沙滩上拍视频看海水有没有退潮，等政府发短信警报再走', en: 'Stay on the beach filming and wait for a text alert' },
+            isCorrect: false,
+            feedback: { zh: '极其致命！本地近海大地震引发的海啸可能在几分钟内抵达，等警报就来不及了！', en: 'Deadly mistake—local-source tsunamis can arrive within minutes!' },
+          },
+        ],
+      },
+      {
+        id: 'l47-q2',
+        prompt: {
+          zh: '夏天在海边游泳时不慎被离岸流（Rip Current）快速拉向深海，最正确的自救动作是？',
+          en: 'You get caught in a strong Rip Current pulling you out to sea. What is the correct survival response?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: '保持冷静仰浮保存体力、举手呼救；绝不逆流往回硬游，待水流减弱后平行海岸线游出离岸流再借白浪回岸', en: 'Stay calm and float, raise a hand for help, never swim straight against the rip—swim parallel to shore once clear' },
+            isCorrect: true,
+            feedback: { zh: '牢记 3R 自救法，关键时刻能救自己也能救家人！', en: 'Spot on—remember Relax, Raise, Ride!' },
+          },
+          {
+            id: 'b',
+            text: { zh: '拼尽全力直线逆着水流往沙滩方向猛游', en: 'Swim as hard as possible straight back toward the beach against the current' },
+            isCorrect: false,
+            feedback: { zh: '这是最致命的本能错误！逆流硬游会在 2 分钟内耗尽体力溺水。', en: 'Fighting a rip exhausts even Olympic swimmers within minutes!' },
+          },
+        ],
+      },
+    ],
+    actionTip: {
+      zh: '今天花 3 分钟上 getready.govt.nz 查一下你家是不是海啸疏散区，并去「工具与新政 → 全周期清单」核对「地震应急包」清单！',
+      en: 'Check your home’s tsunami zone on getready.govt.nz and tick off your Emergency Grab Bag in Tools → Checklists.',
+    },
+  },
+
+  {
+    id: 'l-48',
+    number: 48,
+    moduleId: 'mod-8',
+    title: {
+      zh: '从新移民到 True Kiwi：居民签 → PRV 永久回头签 → 入籍与赴澳权益',
+      en: 'From New Arrival to True Kiwi: RV → PRV, Citizenship & Trans-Tasman Rights',
+    },
+    summary: {
+      zh: '打通移民终极闭环：搞懂新西兰举世无双的 PRV（永久回头签，永不过期无移民监！）、入籍 5 年 1,350 天居住算法、保留 PRV vs 入籍取舍，以及持 NZ 护照赴澳工作生活的真实权益边界。',
+      en: 'Complete your NZ journey: how to lock in NZ’s unique no-expiry PRV, the 5-year / 1,350-day citizenship formula, PRV vs Citizenship trade-offs, and NZ passport rights in Australia.',
+    },
+    targetLevel: 4,
+    durationMin: 9,
+    xpReward: 100,
+    isFlagship: true,
+    verifiedDate: '2026-11',
+    officialSource: 'Immigration NZ / Department of Internal Affairs (govt.nz/citizenship)',
+    terms: [
+      { term: 'RV (Resident Visa)', phonetic: '/ˈrezɪdənt/', zh: '居民签证（拿身份第 1 步：可在纽无限期生活工作，但离境再入境的旅行条件通常限 2 年）' },
+      { term: 'PRV (Permanent Resident Visa)', phonetic: '/piː ɑː viː/', zh: '新西兰全球独有“永久回头签”（持 RV 满 2 年达标即换，旅行条件永不过期、终身无移民监！）' },
+      { term: 'Citizenship by Grant', phonetic: '/ˈsɪtɪzənʃɪp/', zh: '归化入籍（居民满 5 年 + 累计住满 1,350 天 + 每年≥240 天，宣誓获新西兰护照！）' },
+      { term: 'SCV 444 (Australia)', phonetic: '/es siː viː/', zh: '澳大利亚特殊类别签证（持 NZ 护照可免签赴澳无限期工作生活，且享澳洲入籍直通通道）' },
+      { term: 'Citizenship Ceremony', phonetic: '/ˈserəməni/', zh: '公民宣誓仪式（市长主持宣誓、领公民证书与一株新西兰原生树苗，极具仪式感！）' },
+    ],
+    cards: [
+      {
+        id: 'l48-c1',
+        type: 'comparison',
+        title: {
+          zh: '新西兰移民终极王牌：RV 居民签 vs 全球独一无二的 PRV 永久回头签',
+          en: 'NZ’s Crown Jewel: Resident Visa (RV) vs Permanent Resident Visa (PRV)',
+        },
+        body: {
+          zh: '很多国家（如澳洲 PR 每 5 年要续 RRV、加拿大枫叶卡每 5 年要住满 2 年）都有终身移民监，但新西兰的 PRV（永久回头签）是全球发达国家中极其罕见的“一劳永逸”终极绿卡！',
+          en: 'Unlike Australia or Canada’s renewable PR visas, New Zealand’s PRV grants indefinite travel rights forever with zero future residency obligation:',
+        },
+        keyPoints: [
+          { zh: '① 第 1 步（RV 居民签）：通过 SMC（含 2026.08 新增两条技能/技工通道）、绿名单或配偶团聚获批后，你已享受居民全部医疗、教育、KiwiSaver 与投票（住满 1 年）权益，但出入境旅行条件（Travel Conditions）通常有效期为 2 年。', en: 'Step 1 (RV): full resident rights inside NZ, usually with 2-year travel conditions.' },
+          { zh: '② 第 2 步（PRV 永久回头签）：持有 RV 满 2 年后，只要满足 5 种对新西兰承诺证明之一（最常用：过去 2 年中每一年在新西兰住满 184 天！其他还有：税务居民 + 住满 41 天/年、大额投资、建公司、或买房定居建立生活基地），即可在线换发 PRV！', en: 'Step 2 (PRV): after holding RV for 2 years and meeting commitment (most commonly 184 days/yr in NZ for 2 years), upgrade to PRV.' },
+          { zh: '🌟 拿到 PRV 后：即使你离开新西兰回中国或去全球旅居 10 年、20 年，你的 PRV 依然终身有效、随时买机票就能回新西兰长居，且**完全保留原中国国籍护照**！', en: 'Once granted PRV, you can leave NZ for years and still return anytime for life—while keeping your original passport!' },
+        ],
+      },
+      {
+        id: 'l48-c2',
+        type: 'checklist',
+        title: {
+          zh: '申请新西兰公民入籍（Citizenship）条件 & 保留 PRV vs 入籍深度权衡',
+          en: 'NZ Citizenship Requirements & Deciding Between PRV vs Citizenship',
+        },
+        body: {
+          zh: '新西兰允许双重国籍，但中国《国籍法》不承认双重国籍。因此在 PRV 与入籍之间做决定，是每位华人移民最重要的人生战略选择之一：',
+          en: 'NZ allows dual citizenship, but China does not—weigh your personal lifestyle carefully:',
+        },
+        keyPoints: [
+          { zh: '📅 入籍居住硬门槛（内政部 DIA 审核，无需先拿 PRV，直接从获批 RV 算起）：① 持有居民身份满 5 年；② 5 年内实际身在新西兰累计满 **1,350 天**；③ 且这 5 年中**每一年（每 12 个月）至少住满 240 天**；④ 良好品行、基础英语与继续居住意向。', en: 'Citizenship residency test: 5 years as a resident, at least 1,350 days total in NZ, AND at least 240 days in EACH of the 5 years.' },
+          { zh: '⚖️ 保留 PRV 的优势：同时享受新西兰几乎全部福利（医疗/教育/投票/养老金/无移民监）+ 保留中国护照（回国探亲/养老/处理国内房产资产零签证障碍！）。', en: 'Keeping PRV: virtually all NZ domestic rights + frictionless travel/property management in China.' },
+          { zh: '⚖️ 选择入籍拿 NZ 护照的优势：① 全球顶尖免签通行力（美英欧日澳等 180+ 国家地区）；② **免签自由赴澳大利亚长期工作生活（SCV 444）**且在澳住满 4 年可直接申请澳洲公民；③ 不受海外长期离境后可能遇到的公民领事保护限制，且可应聘需公民身份的政府安全岗。', en: 'NZ Citizenship: top global passport, automatic right to live/work in Australia (SCV 444 + direct Aussie citizenship pathway after 4 years), and full consular protection.' },
+        ],
+      },
+      {
+        id: 'l48-c3',
+        type: 'concept',
+        title: {
+          zh: '结语：拥抱多元身份，成为自在从容的 True Kiwi！',
+          en: 'Embracing Your Journey: Becoming a Confident True Kiwi',
+        },
+        body: {
+          zh: '恭喜你读完《KiwiPath 新西兰人成长学院》全部 8 大模块 48 节深度百科！成为一名真正的 Kiwi，从来不需要抹去你的中华文化根脉——而是带着你的勤奋、温暖与视野，拥抱这片长白云之乡的平等、真诚、环保与松弛感。',
+          en: 'Congratulations on completing all 8 modules and 48 lessons of KiwiPath! Being a True Kiwi never means erasing your roots—it means bringing your heritage proudly into Aotearoa’s spirit of fairness, warmth, and kaitiakitanga (guardianship).',
+        },
+        keyPoints: [
+          { zh: '🌿 常用心态：遇到挫折深呼吸一句 "She’ll be right!"，遇到美好大声回应一句 "Sweet as / Ka pai!"', en: 'Meet setbacks calmly ("She’ll be right!") and celebrate wins warmly ("Ka pai!").' },
+          { zh: '📚 本离线信息书会随你的 GitHub 数据库持续更新——随时回来查阅新政、刷刷交规或练练直聘英语！Kia kaha（加油坚持）！', en: 'Sync anytime with your GitHub database for future NZ policy updates. Kia kaha!' },
+        ],
+      },
+    ],
+    quiz: [
+      {
+        id: 'l48-q1',
+        prompt: {
+          zh: '关于新西兰的 PRV（永久回头签）与公民入籍（Citizenship），以下哪项陈述完全准确？',
+          en: 'Which statement accurately compares New Zealand’s PRV and Citizenship?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: 'PRV 持 RV 满 2 年达标即可换取，终身无移民监且可保留中国护照；入籍需居民身份满 5 年（累计住满 1,350 天且每年≥240 天），拿 NZ 护照可自由赴澳工作生活', en: 'PRV (after 2 yrs on RV) never expires with zero future stay requirements while keeping your original passport; Citizenship requires 5 yrs (1,350 days total, 240/yr) and unlocks Australia work rights' },
+            isCorrect: true,
+            feedback: { zh: '满分通关！你现在对新西兰移民制度的理解已经超越绝大多数新移民！', en: 'Mastery achieved—Ka pai!' },
+          },
+          {
+            id: 'b',
+            text: { zh: 'PRV 每 5 年必须在新西兰住满 2 年才能续签，否则作废', en: 'PRV expires every 5 years unless you live in NZ for 2 years' },
+            isCorrect: false,
+            feedback: { zh: '那是澳洲或加拿大绿卡的规矩！新西兰 PRV 全球独有，获批后终身有效、永不过期！', en: 'That’s Australia/Canada—NZ’s PRV has indefinite travel rights forever!' },
+          },
+        ],
+      },
+    ],
+    actionTip: {
+      zh: '去「档案与备份」看看你解锁的成就徽章，并记得导出一次个人学习进度备份！未来随时可以从 GitHub 一键同步你新增的新西兰专题内容！',
+      en: 'Check your badges in Profile & Backup and export a snapshot of your KiwiPath progress!',
+    },
+  },
+];

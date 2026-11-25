@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-fern-950: #082B21;
+  --color-fern-900: #0F4C3A;
+  --color-fern-800: #145F49;
+  --color-fern-700: #157A5E;
+  --color-fern-600: #1D9674;
+  --color-fern-100: #E6F4EE;
+  --color-fern-50: #F2F9F6;
+  --color-tasman-700: #155E8E;
+  --color-tasman-600: #1D6FA5;
+  --color-tasman-100: #E6F2FA;
+  --color-kowhai-600: #C96A04;
+  --color-kowhai-500: #D97706;
+  --color-kowhai-100: #FEF3C7;
+  --color-alps-50: #F5F8F6;
+  --color-ink-900: #13221C;
+  --color-ink-700: #334B41;
+  --color-ink-500: #5D746A;
+}
+
+@layer base {
+  html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(15, 76, 58, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(15, 76, 58, 0.35);
+}
+
+/* Clean Print CSS for NZ CV export */
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+  #nz-cv-print-area,
+  #nz-cv-print-area * {
+    visibility: visible !important;
+  }
+  #nz-cv-print-area {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 24px !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: white !important;
+  }
+}

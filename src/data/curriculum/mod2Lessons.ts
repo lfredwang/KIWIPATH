@@ -1,0 +1,920 @@
+import type { Lesson } from '../../types';
+
+/**
+ * Module 2: 安家居住：租房新政、买房与居家文化 (Lessons #7 – #12)
+ * Verified against tenancy.govt.nz, Consumer Protection, and 2025-2026 NZ law updates.
+ */
+export const MOD2_LESSONS: Lesson[] = [
+  {
+    id: 'l-07',
+    number: 7,
+    moduleId: 'mod-2',
+    title: {
+      zh: '新西兰找房与租房全流程：整租 vs 合租（Flatting）实战',
+      en: 'Finding a Home in NZ: Whole-House Tenancy vs Flatting',
+    },
+    summary: {
+      zh: '彻底分清 Tenant（受租赁法保护）与 Flatmate（合租室友）的法律天壤之别，掌握 Trade Me 找房、看房礼仪与拿下高分租房推荐信技巧。',
+      en: 'Understand the huge legal gap between Tenant and Flatmate, navigate Trade Me Property viewings, and build a winning rental application.',
+    },
+    targetLevel: 1,
+    durationMin: 8,
+    xpReward: 70,
+    isFlagship: true,
+    verifiedDate: '2026-11',
+    officialSource: 'Tenancy Services (tenancy.govt.nz)',
+    terms: [
+      { term: 'Tenancy Agreement', phonetic: '/ˈtenənsi/', zh: '正式整租合同（受《住宅租赁法》RTA 全面保护）' },
+      { term: 'Flatting / Flatmate', phonetic: '/ˈflætmeɪt/', zh: '合租室友（跟二房东或同住屋主签协议，不受 RTA 租赁仲裁庭保护！）' },
+      { term: 'Boarder', phonetic: '/ˈbɔːdə/', zh: '寄宿客（与房东同住且通常包餐/包水电，不受 RTA 保护）' },
+      { term: 'Viewing', phonetic: '/ˈvjuːɪŋ/', zh: '预约看房（新西兰绝大部分整租须在 Trade Me/Barfoot/Ray White 线上预约统一时段看房）' },
+      { term: 'Rental Reference', phonetic: '/ˈrefrəns/', zh: '租房推荐人（过往房东或雇主/本地朋友出具的信用背书）' },
+      { term: 'Property Inspection Report', phonetic: '/ɪnˈspekʃn/', zh: '入住验房单（入住时逐屋拍照记录所有划痕污渍，退租拿回全额押金的命根子！）' },
+    ],
+    cards: [
+      {
+        id: 'l07-c1',
+        type: 'comparison',
+        title: {
+          zh: '核心法律区分：整租（Tenant）vs 合租（Flatmate / Boarder）',
+          en: 'Crucial Legal Divide: Tenant vs Flatmate vs Boarder',
+        },
+        body: {
+          zh: '新移民落地常在微信或 Trade Me 租单间，但很多人不知道：**是否签在房东主合同上，决定了你有没有法律保护！**',
+          en: 'Whether your name is on the main Tenancy Agreement determines whether the Residential Tenancies Act (RTA) protects you:',
+        },
+        keyPoints: [
+          { zh: '✅ **整租租客（Tenant）**：与屋主/正规物业中介（Barfoot & Thompson / Ray White / Harcourts 等）签正式 Tenancy Agreement，受 RTA 全面保护，押金交政府监管，纠纷走 **Tenancy Tribunal**。', en: 'Tenants have full RTA rights, government-held bonds, and Tenancy Tribunal protection.' },
+          { zh: '⚠️ **合租室友（Flatmate）**：跟已经整租下来的“头房客（Head Tenant）”或同住屋主租一个房间，**不受《住宅租赁法》保护**！押金也不进政府监管，遇纠纷只能走 **Disputes Tribunal（小额仲裁庭）**。', en: 'Flatmates living with a head tenant or resident landlord are NOT covered by the RTA—disputes go to the Disputes Tribunal.' },
+          { zh: '合租必做保护动作：哪怕是熟人合租，也一定要上 `tenancy.govt.nz` 下载一份官方 **Flat-sharing Agreement** 书面写明：周租、是否包水电网、提前几周通知搬走、押金金额与退还条件！', en: 'Always sign Tenancy Services’ free Flat-sharing Agreement template stating rent, bills, notice period, and bond refund rules.' },
+        ],
+      },
+      {
+        id: 'l07-c2',
+        type: 'checklist',
+        title: {
+          zh: '新西兰找房主流平台与高成功率看房（Viewing）策略',
+          en: 'Where to Search & How to Stand Out at NZ Property Viewings',
+        },
+        body: {
+          zh: '新西兰找整租最核心的平台是 **Trade Me Property**（国民级）与 **Realestate.co.nz**；找合租单间用 **Trade Me Flatmates Wanted**、Facebook 城市合租群或华人 Skykiwi（务必防骗）。',
+          en: 'Trade Me Property dominates NZ rentals, supplemented by Realestate.co.nz and major agency sites.',
+        },
+        keyPoints: [
+          { zh: '提前准备「租房个人简介包」：没有本地租房历史时，准备好 **工作 Offer/雇主证明信 + 银行存款余额截图（遮掉账号敏感位）+ 2 位推荐人联系方式 + 一段礼貌的家庭/工作介绍**，看房当天立刻提交申请！', en: 'No NZ rental history yet? Attach your job offer/income proof, savings snapshot, referees, and a warm short bio.' },
+          { zh: '看房 5 个必查硬指标：① **朝向与采光（南半球朝北 North-facing 才有阳光！）**；② 窗框与衣柜角落有无**黑霉斑（Mould）和冷凝水**；③ 是否装了 **Heat Pump（冷暖空调）** 和双层玻璃（Double Glazing）；④ 手机信号与光纤（Fibre）盒位置；⑤ 街边停车与早晚通勤路况。', en: 'Inspect: North-facing sun (Southern Hemisphere!), mould/condensation, Heat Pump & double glazing, Fibre ONT box, and parking.' },
+          { zh: '严禁向租客收中介费：**Letting Fee（租客中介费）在新西兰已全面违法**，正规中介绝不会向租客收任何申请费或看房费！', en: 'Charging tenants letting fees or viewing fees is strictly illegal in NZ.' },
+        ],
+      },
+      {
+        id: 'l07-c3',
+        type: 'warning',
+        title: {
+          zh: '入住第一天必做救命动作：入住验房单 + 100 张高清照片！',
+          en: 'Move-In Day Lifesaver: Property Inspection Report + Timestamped Photos',
+        },
+        body: {
+          zh: '退租时被房东/物业扣掉几百上千刀押金，90% 都是因为入住时没留证据，说不清“地毯污渍/墙面磕碰/灶台划痕”是本来就有的还是你弄坏的。',
+          en: 'Most bond disputes happen because tenants didn’t document pre-existing scuffs, carpet stains, or chipped paint on Day 1.',
+        },
+        keyPoints: [
+          { zh: '搬进家具**之前**，用手机拍下每个房间的墙面、地毯、门框、烤箱内部、抽油烟机油网、窗台、卫浴硅胶缝与花园杂草状态，并把明显瑕疵全部写进 **Property Inspection Report** 发邮件给房东留档！', en: 'Photograph every room, oven, carpet, and garden BEFORE unpacking, list every flaw on the inspection report, and email copies to the landlord.' },
+          { zh: '记下入住当天的 **电表、燃气表与水表读数（拍照片）**，防止替上一任租客背账单。', en: 'Photograph electricity, gas, and water meter readings on move-in day.' },
+        ],
+      },
+      {
+        id: 'l07-c4',
+        type: 'dialogue',
+        title: {
+          zh: '看房现场 & 申请租房加分英文模板',
+          en: 'Viewing Conversation & Winning Tenant Cover Note',
+        },
+        body: {
+          zh: 'Kiwi 房东和物业经理最看重“爱干净、按时交租、稳定好沟通”的租客：',
+          en: 'NZ landlords prize tidy, reliable, communicative tenants:',
+        },
+        dialogueLines: [
+          {
+            speaker: 'You (At Viewing)',
+            en: 'Kia ora [Name], lovely place! Quick question—is the property fully compliant with the Healthy Homes standards, and is Fibre internet already installed to the house?',
+            zh: '你好 [姓名]，房子真不错！顺便问一下——这套房已经完全符合 Healthy Homes 保暖防潮标准了吗？光纤入户盒装好了吗？',
+            subtextZh: '一句专业提问既帮你排雷，又让中介知道你是个懂规矩的靠谱租客！',
+          },
+          {
+            speaker: 'You (Application Bio)',
+            en: 'Kia ora! We are a tidy, non-smoking couple working full-time in [Industry]. Although we recently relocated to NZ, we have strong savings, stable employment offers, and glowing references from our employer. We take great pride in caring for a home as if it were our own.',
+            zh: '你好！我们是一对爱干净、不抽烟的全职上班族伴侣。虽然刚来新西兰，但有充足存款、稳定工作 Offer 和雇主推荐。我们会像爱护自己的家一样精心维护房屋。',
+          },
+        ],
+      },
+    ],
+    quiz: [
+      {
+        id: 'l07-q1',
+        prompt: {
+          zh: '在新西兰看房，如果你特别在意客厅和主卧冬天暖和、日照充足，应该优先挑什么朝向的窗户？',
+          en: 'In New Zealand, which window orientation gets the most winter sunlight and warmth?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: '朝北（North-facing），因为新西兰在南半球！', en: 'North-facing, because New Zealand is in the Southern Hemisphere!' },
+            isCorrect: true,
+            feedback: { zh: '记住南半球规律：朝北采光最好最暖和，朝南（South-facing）冬季阴冷最容易发霉！', en: 'Spot on! North-facing is prized; south-facing rooms are colder and damper in winter.' },
+          },
+          {
+            id: 'b',
+            text: { zh: '朝南（South-facing），跟国内一样坐北朝南', en: 'South-facing, just like the Northern Hemisphere' },
+            isCorrect: false,
+            feedback: { zh: '相反啦！在南半球太阳在北边天空运行，朝南房间终年难见直射阳光，冬天又冷又潮。', en: 'Opposite! In the Southern Hemisphere the sun sits to the north.' },
+          },
+        ],
+      },
+      {
+        id: 'l07-q2',
+        prompt: {
+          zh: '你从一位已经整租下三房的华人朋友手里分租了一间次卧（未上房东主合同），属于 Flatmate。若发生押金纠纷，应找哪个机构？',
+          en: 'You rent a room as a flatmate from a head tenant (not on the main landlord contract). Where do bond disputes go?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: 'Disputes Tribunal（小额仲裁庭），因为 Flatmate 不受《住宅租赁法》RTA 管辖', en: 'Disputes Tribunal, as flatmates are not covered by the RTA' },
+            isCorrect: true,
+            feedback: { zh: '精准避坑！所以合租也一定要签书面 Flat-sharing Agreement 留好转账记录。', en: 'Correct—always sign a written flat-sharing agreement!' },
+          },
+          {
+            id: 'b',
+            text: { zh: 'Tenancy Tribunal（租赁仲裁庭）免费处理', en: 'Tenancy Tribunal under the RTA' },
+            isCorrect: false,
+            feedback: { zh: 'Tenancy Tribunal 只管正式 Tenant 与房东之间的纠纷，不管 Flatmate 合租纠纷。', en: 'Tenancy Tribunal only covers formal RTA tenancies.' },
+          },
+        ],
+      },
+    ],
+    actionTip: {
+      zh: '看房前上 tenancy.govt.nz 收藏官方《Property Inspection Report》与《Flat-sharing Agreement》模板，入住当天务必先拍 100 张全屋细节照！',
+      en: 'Save Tenancy Services’ Property Inspection Report and photograph every corner before moving furniture in.',
+    },
+  },
+
+  {
+    id: 'l-08',
+    number: 8,
+    moduleId: 'mod-2',
+    title: {
+      zh: '租房法规与 2025–2026 新政深度避坑（含宠物押金与解约红线）',
+      en: 'NZ Tenancy Law & 2025–2026 Rules (Pet Bonds, Notices & Healthy Homes)',
+    },
+    summary: {
+      zh: '逐条拆解 2025–2026 最新租赁法：90 天无理由/42 天/21 天解约规则、2025.12 宠物押金新政、2025.07 Healthy Homes 全面强制达标与 Bond 押金退还维权。',
+      en: 'Master the 2025–2026 RTA reforms: 90/42/21-day notice periods, the Dec 2025 Pet Bond regime, mandatory Healthy Homes compliance, and bond protection.',
+    },
+    targetLevel: 2,
+    durationMin: 9,
+    xpReward: 75,
+    isFlagship: true,
+    verifiedDate: '2026-11',
+    officialSource: 'Tenancy Services (tenancy.govt.nz) / Residential Tenancies Amendment Act 2024',
+    terms: [
+      { term: 'Bond (max 4 weeks)', phonetic: '/bɒnd/', zh: '常规押金（法定上限 4 周租金，须在 23 个工作日内上交政府监管）' },
+      { term: 'Pet Bond (max 2 weeks)', phonetic: '/pet bɒnd/', zh: '宠物押金（2025.12.1 生效，最高额外收 2 周租金，同样交政府监管）' },
+      { term: 'Periodic Tenancy', phonetic: '/ˌpɪəriˈɒdɪk/', zh: '无限期租约（灵活可按法定通知期解约，到期固定约会自动转为此类）' },
+      { term: 'Fixed-term Tenancy', phonetic: '/fɪkst tɜːm/', zh: '固定期限租约（如 1 年，期内双方一般不得单方提前解约）' },
+      { term: 'Healthy Homes Standards', phonetic: '/ˈhelθi həʊmz/', zh: '健康住宅强制标准（2025.7.1 起全纽私房必须全部达标，违者最高罚 $7,200）' },
+      { term: '14-Day Notice to Remedy', phonetic: '/ˈremədi/', zh: '14 天限期整改通知书（房东拖延修漏水/修暖气时最锋利的法定武器！）' },
+    ],
+    cards: [
+      {
+        id: 'l08-c1',
+        type: 'comparison',
+        title: {
+          zh: '【2025.01.30 生效】周期性租约解约通知期最新规则（90 / 42 / 21 天）',
+          en: 'Periodic Tenancy Notice Periods (In Force Since 30 Jan 2025)',
+        },
+        body: {
+          zh: '2025 年 1 月 30 日起新西兰大幅修改了解约通知期，签约和规划搬家务必按最新天数计算：',
+          en: 'Major notice-period reforms took effect on 30 January 2025:',
+        },
+        keyPoints: [
+          { zh: '🏠 **房东无理由解约（No-Cause）**：已恢复！房东提前 **90 天**书面通知即可终止周期性租约，无需说明理由。', en: 'Landlord no-cause termination: 90 days’ written notice.' },
+          { zh: '🔑 **房东特定理由解约**：缩短至 **42 天**（适用情形：房东本人或直系亲属需搬入自住至少 90 天；房子已签无条件买卖合同且买家要求空房交割；合同已写明需供雇员居住）。', en: 'Landlord specific grounds (owner moving in 90+ days, unconditional sale vacant possession): 42 days.' },
+          { zh: '🎒 **租客主动退租**：缩短至 **21 天**（以前要 28 天），对租客换房更灵活！', en: 'Tenant ending a periodic tenancy: just 21 days’ written notice.' },
+          { zh: '📌 **固定期限租约（Fixed-term）到期**：会自动转为周期性租约，除非任意一方在到期前 **90 天至 21 天之间**书面通知不续约。', en: 'Fixed-term tenancies roll into periodic unless either party gives notice between 90 and 21 days before expiry.' },
+        ],
+      },
+      {
+        id: 'l08-c2',
+        type: 'concept',
+        title: {
+          zh: '【2025.12.01 生效】养宠租房与宠物押金（Pet Bond）新政全解',
+          en: 'Pet Rules & Pet Bonds (In Force Since 1 Dec 2025)',
+        },
+        body: {
+          zh: '过去很多房东在广告里直接一刀切写“绝对禁宠”，2025 年 12 月 1 日起实施的新规平衡了双方权益：',
+          en: 'Since 1 December 2025, blanket "no pets" refusals without reasonable grounds are no longer permitted:',
+        },
+        keyPoints: [
+          { zh: '书面申请与 21 天答复红线：租客可正式书面申请养宠，房东必须在 **21 个自然日内**书面回复，只能基于**合理理由**拒绝（如房屋无围栏不适合大型犬、物业 Body Corp 禁宠、市议会限养等）。', en: 'Landlords must reply within 21 calendar days and may only refuse on reasonable grounds.' },
+          { zh: '宠物押金封顶：同意养宠时，房东可合法要求额外支付最高 **2 周租金的 Pet Bond**（叠加常规最高 4 周 Bond），且同样必须上交政府 Tenancy Services 监管！同一份批准协议不管批 1 只还是 2 只宠物，只收一次封顶 2 周 Pet Bond。', en: 'Landlords may charge up to 2 weeks’ rent as a separate Pet Bond (lodged with Tenancy Services).' },
+          { zh: '赔偿责任加重：租客需对宠物造成的**超出正常磨损（Fair wear and tear）的全部损坏**负全责（不再受旧法 4 周租金上限保护），建议给宠物做好训练与防护。', en: 'Tenants are fully liable for all pet damage beyond fair wear and tear.' },
+        ],
+      },
+      {
+        id: 'l08-c3',
+        type: 'checklist',
+        title: {
+          zh: '【2025.07.01 全面强制】Healthy Homes 五大健康住宅硬指标',
+          en: 'Healthy Homes Standards: 5 Mandatory Requirements (Full Compliance July 2025)',
+        },
+        body: {
+          zh: '自 **2025 年 7 月 1 日**起，新西兰所有私人出租房**已过最后宽限期，必须 100% 达标**！每份新租约或续约都必须附带房东签字的合规声明书，违者最高可被判罚 **NZ$7,200**！',
+          en: 'As of 1 July 2025, all private rentals must fully comply with all 5 Healthy Homes standards (penalties up to $7,200):',
+        },
+        keyPoints: [
+          { zh: '① **取暖（Heating）**：主客厅必须装有足够功率的固定取暖设备（通常为 Heat Pump），能将客厅加热至 **18°C**。', en: 'Heating: fixed heater (e.g. Heat Pump) able to heat the main living room to 18°C.' },
+          { zh: '② **保温棉（Insulation）**：天花板与地板下（只要可施工）必须铺设达标厚度保温棉。', en: 'Insulation: compliant ceiling and underfloor insulation.' },
+          { zh: '③ **通风（Ventilation）**：每个卧室/客厅须有可开启窗户；**厨房与浴室必须装有直排室外的抽风机/抽油烟机**（不能只往天花板夹层排！）。', en: 'Ventilation: openable windows plus externally vented extractor fans in kitchens and bathrooms.' },
+          { zh: '④ **防潮排水（Moisture & Drainage）**：屋顶排水沟正常、封闭式架空地板下须铺防潮地膜（Ground Moisture Barrier）。', en: 'Moisture ingress & drainage: working gutters and ground moisture barrier where applicable.' },
+          { zh: '⑤ **防漏风（Draught Stopping）**：门窗缝隙不得有明显漏风，废弃壁炉须封堵。', en: 'Draught stopping: block unreasonable gaps around doors/windows and unused fireplaces.' },
+        ],
+      },
+      {
+        id: 'l08-c4',
+        type: 'warning',
+        title: {
+          zh: '押金（Bond）监管、涨租频次、查房与维权武器',
+          en: 'Bond Protection, Rent Increase Caps, Inspections & 14-Day Notices',
+        },
+        body: {
+          zh: '把这 5 条租客法定红线刻在脑子里，谁也欺负不了你：',
+          en: 'Know these 5 non-negotiable tenant rights under NZ law:',
+        },
+        keyPoints: [
+          { zh: '① **押金必须进政府账**：房东收到押金后 **23 个工作日内**必须递交 Tenancy Services；你一定会收到政府发的 **Bond Number 确认邮件/信**——如果 1 个月没收到，立刻打 `0800 737 666` 核查！', en: 'Bond must be lodged within 23 working days—watch for your official Bond Number confirmation.' },
+          { zh: '② **涨租频率红线**：每 **12 个月最多只能涨一次租**，且必须提前 **60 天**书面通知（固定租约期内一般不能涨，除非合同明确约定）。', en: 'Rent can only increase once every 12 months with at least 60 days’ written notice.' },
+          { zh: '③ **房东查房（Inspection）**：最多每 **4 周**查一次，且必须提前 **48 小时**书面通知，只能在早 8 点至晚 7 点之间来！未经通知擅自拿钥匙开门属严重违法。', en: 'Inspections max once every 4 weeks with 48 hours’ written notice (8am–7pm only).' },
+          { zh: '④ **报修拖延怎么办？** 书面催修不管用时，直接上 `tenancy.govt.nz` 下载发出 **14-Day Notice to Remedy（14 天限期整改通知）**，到期不修可直接申请 Tenancy Tribunal 判赔减租！', en: 'If urgent repairs are ignored, serve a formal 14-Day Notice to Remedy before applying to the Tenancy Tribunal.' },
+          { zh: '⑤ **退租只赔“人为损坏”**：正常使用老化（Fair wear and tear，如地毯轻微压痕、墙面自然微旧）房东无权扣押金！', en: 'Landlords cannot deduct bond for fair wear and tear.' },
+        ],
+      },
+      {
+        id: 'l08-c5',
+        type: 'dialogue',
+        title: {
+          zh: '实用邮件模板：申请养宠 / 催促房东维修 / 正常提前 21 天退租',
+          en: 'Ready-to-Use Tenant Email Templates (Pet Request / Repairs / 21-Day Notice)',
+        },
+        body: {
+          zh: '新西兰租房维权一切以**礼貌但清晰的书面邮件**为最高准则：',
+          en: 'Always keep landlord communication polite, concise, and in writing:',
+        },
+        dialogueLines: [
+          {
+            speaker: 'You (21-Day Periodic Notice)',
+            en: 'Kia ora [Landlord/Manager], please accept this email as our formal 21 days’ written notice to end our periodic tenancy at [Address]. Our final day of tenancy will be [Date]. Could we arrange a mutually convenient time for the final inspection and Bond Refund form? Ngā mihi, [Name]',
+            zh: '你好 [房东/经理]，特此邮件提交正式 21 天书面退租通知（地址：[地址]），最终退租日为 [日期]。请问方便预约哪天做退租验房并签署 Bond Refund 退押金表？诚挚感谢，[姓名]',
+            subtextZh: '记住提前多留 1–2 天缓冲计算“送达日”，退租验房当场一起签好 Bond Refund 表最省心！',
+          },
+        ],
+      },
+    ],
+    quiz: [
+      {
+        id: 'l08-q1',
+        prompt: {
+          zh: '你在 2026 年处于周期性租约（Periodic Tenancy），想向房东申请养一只中型宠物狗。根据 2025.12 生效的新政，以下哪项正确？',
+          en: 'Under the Dec 2025 pet rules, you request permission to keep a dog in your rental. Which is true?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: '房东须在 21 个自然日内书面回复，仅可基于合理理由拒绝；若同意，可额外收最高 2 周租金的 Pet Bond', en: 'Landlord must reply within 21 days, can only refuse on reasonable grounds, and may charge up to 2 weeks Pet Bond' },
+            isCorrect: true,
+            feedback: { zh: '完全准确！记住 Pet Bond 同样要上交 Tenancy Services 监管，但宠物造成的人为损坏需由租客全额赔偿。', en: 'Spot on!' },
+          },
+          {
+            id: 'b',
+            text: { zh: '房东可以直接写“我就是不喜欢动物”无理由拒绝，或收 6 周宠物押金', en: 'Landlords can refuse without reason or demand 6 weeks pet bond' },
+            isCorrect: false,
+            feedback: { zh: '违反 2025.12 新政！禁止无合理理由一刀切禁宠，且 Pet Bond 严格封顶 2 周租金。', en: 'Breaches the Dec 2025 rules—reasonable grounds are required and Pet Bond caps at 2 weeks.' },
+          },
+        ],
+      },
+      {
+        id: 'l08-q2',
+        prompt: {
+          zh: '2026 年你签下新租约，住进去发现浴室根本没有直排室外的抽风机，房东却说“老房子都这样，不给装”。合法吗？',
+          en: 'In 2026 your rental bathroom has no externally vented extractor fan and the landlord refuses to install one. Is this legal?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: '违法！2025 年 7 月 1 日起所有私房已强制全面达到 Healthy Homes 标准，可发 14 天限期整改通知并向 Tenancy Tribunal 申诉', en: 'Unlawful! All private rentals had to comply with Healthy Homes by 1 July 2025; issue a 14-Day Notice to Remedy' },
+            isCorrect: true,
+            feedback: { zh: '太懂法了！未达标房东最高可被判罚 NZ$7,200 赔偿给租客。', en: 'Correct—non-compliance carries exemplary damages up to $7,200.' },
+          },
+          {
+            id: 'b',
+            text: { zh: '老房子可以永久豁免抽风机要求', en: 'Older houses are permanently exempt from bathroom ventilation' },
+            isCorrect: false,
+            feedback: { zh: '只有极少数物理结构确实无法安装的特殊情况才符合狭义豁免，绝大多数老房都必须合规改造！', en: 'Only narrow physical-impossibility exemptions exist.' },
+          },
+        ],
+      },
+    ],
+    actionTip: {
+      zh: '核查你的租房押金邮件确认单（Bond Number）以及 Healthy Homes 合规声明书；遇到纠纷可免费致电 Tenancy Services：0800 836 262。',
+      en: 'Confirm you received your official Bond Number email and Healthy Homes statement; free help: 0800 836 262.',
+    },
+  },
+
+  {
+    id: 'l-09',
+    number: 9,
+    moduleId: 'mod-2',
+    title: {
+      zh: '水电网比价、冬季除湿防霉与新西兰各城市水费潜规则',
+      en: 'Utilities, Winter Dampness Control & NZ City Water Billing Differences',
+    },
+    summary: {
+      zh: '用 Powerswitch 省下上千刀电费、搞懂“先除湿再制热”的南半球越冬秘诀，以及奥克兰水费分摊 vs 惠灵顿/基督城房东包水费的巨大城市差异。',
+      en: 'Save hundreds with Powerswitch, master NZ winter condensation control, and learn why Auckland tenants pay metered water while Wellington/Christchurch differ.',
+    },
+    targetLevel: 2,
+    durationMin: 7,
+    xpReward: 70,
+    isFlagship: true,
+    verifiedDate: '2026-11',
+    officialSource: 'Powerswitch (Consumer NZ) / Watercare / Tenancy Services',
+    terms: [
+      { term: 'Powerswitch', phonetic: '/ˈpaʊəswɪtʃ/', zh: 'Consumer NZ 运营的官方免费电力/燃气比价网 powerswitch.org.nz' },
+      { term: 'Hour of Power', phonetic: '/ˈaʊər əv ˈpaʊə/', zh: '免费用电时段（如 Electric Kiwi 每天自选 1 小时免费、Contact 晚 9 点后免费）' },
+      { term: 'Fibre (UFB)', phonetic: '/ˈfaɪbə/', zh: '新西兰全国光纤宽带（Chorus 铺设，常见 300Mbps/900Mbps 不限量）' },
+      { term: 'Dehumidifier', phonetic: '/ˌdiːhjuːˈmɪdɪfaɪə/', zh: '除湿机（新西兰木结构房冬季防发霉、快速晾衣的续命神器！）' },
+      { term: 'Watercare', phonetic: '/ˈwɔːtəkeə/', zh: '奥克兰水务局（奥克兰整租租客须支付水费中的「按表用量费」，固定接驳费归房东）' },
+      { term: 'Condensation', phonetic: '/ˌkɒndenˈseɪʃn/', zh: '冬季窗面冷凝水（早上不擦不通风极易长黑霉菌）' },
+    ],
+    cards: [
+      {
+        id: 'l09-c1',
+        type: 'checklist',
+        title: {
+          zh: '电力、燃气与宽带省钱实操：绝不傻傻沿用上任租客的套餐！',
+          en: 'Electricity, Gas & Fibre: How to Compare and Save Hundreds',
+        },
+        body: {
+          zh: '新西兰电力市场完全竞争，有超过 30 家售电公司（Contact、Mercury、Genesis、Meridian、Powershop、Electric Kiwi、Frank Energy、Flick 等），不同套餐一年差价可达 **NZ$400–$900**！',
+          en: 'NZ has 30+ competing power retailers—choosing the right plan easily saves NZ$400–$900 per year:',
+        },
+        keyPoints: [
+          { zh: '① **比价第一步**：上 Consumer NZ 公益免费的 **powerswitch.org.nz**，输入地址与大致人口，立刻算出你家最划算的电力/燃气组合！', en: 'Always check powerswitch.org.nz (by Consumer NZ) first.' },
+          { zh: '② **错峰免费电神器**：家里有烘干机、洗碗机、电车充电的，优先选 **Contact Good Nights（每晚 9pm–12am 免费 3 小时）** 或 **Electric Kiwi（每天自选 1 小时免费）**，把大功率电器全定时到免费时段跑！', en: 'Shift dishwashers, dryers, and EV charging into off-peak/free-power plans like Contact Good Nights or Electric Kiwi.' },
+          { zh: '③ **宽带光纤（Fibre）**：先查地址是否已装墙面 **ONT 光纤盒**（没装可免费申请 Chorus 上门安装，但租客须先征得房东同意）；常见靠谱运营商：2degrees、Skinny Broadband、Voyager、One NZ、Spark、Now。', en: 'Check for an installed ONT Fibre box—landlord permission is needed for a brand-new Chorus installation.' },
+        ],
+      },
+      {
+        id: 'l09-c2',
+        type: 'comparison',
+        title: {
+          zh: '新西兰各城市「水费谁来付」巨大差异（防被房东乱收费！）',
+          en: 'Who Pays the Water Bill? Huge Differences Across NZ Cities',
+        },
+        body: {
+          zh: '很多刚从奥克兰搬去惠灵顿、或刚落地的新移民搞不清租房水费谁掏钱，记住法律规则：**只有装了独立水表且账单按实际用量计费时，租客才需付“用水量费（Volumetric Usage）”**！',
+          en: 'Under NZ tenancy law, tenants only pay for water when the property has a separate meter and bills are based strictly on usage:',
+        },
+        keyPoints: [
+          { zh: '🌊 **奥克兰（Auckland / Watercare）**与 **陶朗加（Tauranga）**：普遍装有独立水表。**租客付**：实际用水费 + 排污按量费（Volumetric）；**房东付**：年度固定接驳费（Fixed Charge）！如果房东把固定费也摊给你，礼貌拒绝！', en: 'Auckland & Tauranga (metered): tenants pay volumetric usage + wastewater; landlords MUST pay fixed charges.' },
+          { zh: '🌊 **惠灵顿（Wellington）与基督城（Christchurch）**：住宅水费通常包含在房东每年交给市议会的地税（Rates）里，**绝大多数普通整租租客不需要单独付水费**（基督城仅超额用水才收附加费）！', en: 'Wellington & Christchurch: normal residential water is generally included in council rates paid by the landlord.' },
+          { zh: '🌊 **农村/生活方式大块地（Lifestyle Block）**：很多靠屋顶收集雨水进 **Water Tank（蓄水罐）**，干季没水了需要叫水车（Water Delivery）买水，签约前务必问清谁出钱！', en: 'Rural/lifestyle properties often use rainwater tanks—clarify tank refill costs before signing.' },
+        ],
+      },
+      {
+        id: 'l09-c3',
+        type: 'concept',
+        title: {
+          zh: '南半球木结构房越冬秘籍：除湿、通风与防黑霉菌',
+          en: 'Surviving NZ Winter Indoors: Dehumidifying & Mould Prevention',
+        },
+        body: {
+          zh: '新西兰绝大多数独栋房屋是木结构且没有国内那种“全屋集中暖气”。冬季多雨潮湿（6–8 月），如果紧闭门窗并在室内晾衣服，窗玻璃每天流下大片冷凝水，几周就能长出危害呼吸道的黑霉斑！',
+          en: 'NZ’s timber-framed homes rely on individual heating rather than central radiators. Managing winter moisture is essential for health and avoiding mould:',
+        },
+        keyPoints: [
+          { zh: '① **每天通风 15 分钟**：即使冬天，早上出太阳时也把南北/前后窗对流打开 10–15 分钟换干空气，并用刮水器（Window Vac）或干毛巾擦掉窗玻璃冷凝水。', en: 'Air the house for 10–15 minutes daily and wipe morning window condensation.' },
+          { zh: '② **干燥的空气更好加热！** 买一台靠谱的 **除湿机（Dehumidifier，如三菱/松下/Goldair）**，雨季室内晾衣开除湿机，不仅一夜干透，还能大幅降低 Heat Pump 制热电费！', en: 'Dry air heats far faster and cheaper—a good dehumidifier is one of the best NZ investments you can make.' },
+          { zh: '③ **做饭/洗澡必开抽风机**，并把家具离外墙留出 5–10 厘米空隙透气，否则衣柜背后极易发霉（租客因不通风导致的霉菌可能被扣押金）。', en: 'Always run kitchen/bathroom extractor fans and leave a small airflow gap behind beds/wardrobes against exterior walls.' },
+        ],
+      },
+      {
+        id: 'l09-c4',
+        type: 'warning',
+        title: {
+          zh: '水电网避坑：搬走前必须主动停户 & 警惕捆绑合约违约金',
+          en: 'Utility Traps: Final Meter Readings & Bundled Break Fees',
+        },
+        body: {
+          zh: '退租搬家时千万别只交钥匙就拍屁股走人：',
+          en: 'Two common bill traps when moving house:',
+        },
+        keyPoints: [
+          { zh: '搬走前 **提前 5–7 天**通知电力、燃气、宽带公司办理 **Move House（移机）或 Disconnect（停户）**，并拍下离开当天电表照片，否则下一任租客用的电全记在你账上！', en: 'Give power/broadband providers 5–7 days’ notice before moving out and photograph final meter readings.' },
+          { zh: '签“送电视/送家电/送 $300 抵扣券”的 12–24 个月电力宽带捆绑约前，先看清提前解约费（Early Termination Fee，往往高达 $200–$400）及单位电价是否暗藏溢价！', en: 'Check break fees ($200–$400) and per-kWh unit rates before signing 12–24 month “free gift” bundles.' },
+        ],
+      },
+    ],
+    quiz: [
+      {
+        id: 'l09-q1',
+        prompt: {
+          zh: '你在奥克兰整租了一套独立水表住宅，收到房东转发的 Watercare 水费单，里面包含“实际用水/排污费”和“年度固定接驳费（Fixed Charge）”。法律规定你应该付哪部分？',
+          en: 'In an individually metered Auckland rental, the Watercare bill lists volumetric usage/wastewater and a fixed annual charge. What must the tenant pay?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: '只付按表计量的实际用水与排污费；固定接驳费（Fixed Charge）必须由房东承担', en: 'Only the volumetric usage & wastewater charges; the landlord must pay fixed charges' },
+            isCorrect: true,
+            feedback: { zh: '精准维护自身权益！这是 Tenancy Services 明确规定的硬界线。', en: 'Spot on!' },
+          },
+          {
+            id: 'b',
+            text: { zh: '水费单上写多少钱租客就全额付多少钱', en: 'The tenant must pay the entire invoice including fixed charges' },
+            isCorrect: false,
+            feedback: { zh: '错啦！固定接驳费属于房屋持有成本，依法归房东支付。', en: 'Fixed supply charges are a landlord ownership cost under NZ law.' },
+          },
+        ],
+      },
+      {
+        id: 'l09-q2',
+        prompt: {
+          zh: '想对比新西兰几十家电力和燃气公司的真实年费，最权威中立的免费比价网站是？',
+          en: 'Which free, independent website (run by Consumer NZ) compares NZ electricity and gas plans?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: 'powerswitch.org.nz', en: 'powerswitch.org.nz' },
+            isCorrect: true,
+            feedback: { zh: '完全正确！搬家换电或每年冬前查一次 Powerswitch，常能省下几百纽币。', en: 'Correct!' },
+          },
+          {
+            id: 'b',
+            text: { zh: 'trademe.co.nz/power', en: 'trademe.co.nz/power' },
+            isCorrect: false,
+            feedback: { zh: '比价电力和燃气认准 Consumer NZ 的 powerswitch.org.nz 哦！', en: 'Use Consumer NZ’s powerswitch.org.nz.' },
+          },
+        ],
+      },
+    ],
+    actionTip: {
+      zh: '打开 powerswitch.org.nz 核对一次当前电费套餐，并在雨季来临前备好一台靠谱的除湿机！',
+      en: 'Run your address through powerswitch.org.nz to check if you are overpaying for electricity.',
+    },
+  },
+
+  {
+    id: 'l-10',
+    number: 10,
+    moduleId: 'mod-2',
+    title: {
+      zh: '垃圾分类、二手淘货（Op Shop / Trade Me）与 Kiwi DIY 五金文化',
+      en: 'Rubbish & Recycling, Op Shops, Trade Me & Kiwi DIY Culture',
+    },
+    summary: {
+      zh: '融入新西兰日常居家节奏：2024 起全国统一回收标准、用 Op Shop 与 Trade Me 低成本置办全套家具防诈骗，以及逛 Bunnings / Mitre 10 的周末香肠文化。',
+      en: 'Master NZ’s standardised kerbside recycling, furnish your home affordably via Op Shops & Trade Me without scams, and embrace Bunnings DIY culture.',
+    },
+    targetLevel: 2,
+    durationMin: 6,
+    xpReward: 65,
+    isFlagship: true,
+    verifiedDate: '2026-11',
+    officialSource: 'Ministry for the Environment / Local Councils / Trade Me',
+    terms: [
+      { term: 'Kerbside Collection', phonetic: '/ˈkɜːbsaɪd/', zh: '路边垃圾清运（清运日前一晚把带轮垃圾桶推到路边，轮子朝向自家）' },
+      { term: 'Op Shop', phonetic: '/ɒp ʃɒp/', zh: '慈善二手商店（Salvation Army / Hospice / Red Cross / Vinnies，家具厨具超便宜！）' },
+      { term: 'Inorganic Collection', phonetic: '/ˌɪnɔːˈɡænɪk/', zh: '大件垃圾清运（如奥克兰每年可免费预约 1 次上门收旧家具/坏电器）' },
+      { term: 'Bunnings / Mitre 10', phonetic: '/ˈbʌnɪŋz/', zh: '新西兰两大国民五金园艺巨头（买工具、灯泡、除草、DIY 必逛）' },
+      { term: 'Sausage Sizzle', phonetic: '/ˈsɒsɪdʒ ˈsɪzl/', zh: '五金店门口周末公益烤香肠吐司（约 $3.50，极具代表性的 Kiwi 社区文化！）' },
+      { term: 'No. 8 Wire', phonetic: '/ˈnʌmbə eɪt/', zh: '8 号铁丝精神（新西兰人崇尚自力更生、巧手修补 DIY 的民族性格）' },
+    ],
+    cards: [
+      {
+        id: 'l10-c1',
+        type: 'checklist',
+        title: {
+          zh: '新西兰全国统一垃圾分类规则（红/黄/绿桶绝不放错！）',
+          en: 'NZ Standardised Kerbside Recycling Rules (Red / Yellow / Green Bins)',
+        },
+        body: {
+          zh: '新西兰近年来统一了全国路边回收（Yellow Bin）标准，**千万别把软塑料袋、脏披萨盒或碎玻璃丢进黄桶**，否则整桶可能被市议会贴红条拒收！',
+          en: 'NZ standardised kerbside recycling nationwide—putting soft plastics or unwashed containers in the yellow bin can get your bin rejected:',
+        },
+        keyPoints: [
+          { zh: '🔴 **红桶（Rubbish 一般垃圾）**：不可回收的生活垃圾、软塑料包装、保鲜膜、纸巾、尿不湿、碎陶瓷/碎玻璃（包好防割伤）。', en: 'Red bin: general rubbish, soft plastics, tissues, nappies, broken crockery.' },
+          { zh: '🟡 **黄桶（Recycling 可回收 — 须冲净晾干、拧掉瓶盖！）**：仅收 **塑料编号 1、2、5 号硬质容器**、铁铝易拉罐、玻璃瓶罐（部分城市有独立蓝框收玻璃）、干净纸板纸张。**软塑料（超市袋/薯片袋）只能带去超市门口的 Soft Plastic Recycling 回收箱**！', en: 'Yellow bin: clean #1, #2, #5 rigid plastics (lids off), tins/cans, clean paper/cardboard, glass bottles (or separate glass crate).' },
+          { zh: '🟢 **绿桶（Food Scraps / Garden 厨余与花园）**：奥克兰等城市配有小绿桶收厨余（果皮菜叶剩饭，一周一收），另可租花园大绿桶收剪下的草坪树枝。', en: 'Green bin: food scraps (weekly in cities like Auckland) and garden waste.' },
+        ],
+      },
+      {
+        id: 'l10-c2',
+        type: 'concept',
+        title: {
+          zh: '省钱安家宝藏：Op Shop 慈善二手店 + Trade Me + Kmart',
+          en: 'Furnishing Your NZ Home Smartly: Op Shops, Trade Me & Kmart',
+        },
+        body: {
+          zh: '新西兰人工贵、全新实木家具价格惊人，本地 Kiwi 家庭（无论贫富）都非常热爱环保循环的二手文化：',
+          en: 'New furniture can be pricey in NZ, and Kiwis of all backgrounds proudly embrace second-hand quality:',
+        },
+        keyPoints: [
+          { zh: '🛋️ **Op Shop 慈善二手店**：认准 **Salvation Army Family Store、Hospice Shop、Vinnies、Red Cross Shop、Habitat ReStore**。几十纽币就能淘到结实的实木餐桌、书架、餐具和童书，所得全做慈善！', en: 'Hospice, Salvation Army, and Habitat ReStore offer solid timber furniture and kitchenware for a fraction of retail.' },
+          { zh: '💻 **Trade Me（新西兰版淘宝+闲鱼）**：买二手冰箱、洗衣机、实木床、二手车和租房的核心阵地，优先选有 **Ping 平台担保支付** 或 **同城当面验货自提（Pick-up）** 的高好评卖家。', en: 'On Trade Me, prefer Ping buyer-protected payments or in-person cash/bank-transfer pickup.' },
+          { zh: '🛒 **平价新品**：日常锅碗瓢盆、床品、收纳盒去 **Kmart / The Warehouse / Briscoes**（牢记 Briscoes 潜规则：**绝不买原价**，几乎每两周就有全场 40%–60% 大促！）。', en: 'Never pay full price at Briscoes—wait a week for their constant 40–60% sales!' },
+        ],
+      },
+      {
+        id: 'l10-c3',
+        type: 'warning',
+        title: {
+          zh: 'Trade Me 与 Facebook Marketplace 买卖防骗红线',
+          en: 'Second-Hand Trading Anti-Scam Rules (Trade Me & FB Marketplace)',
+        },
+        body: {
+          zh: '新西兰二手交易整体诚信度很高，但近两年针对新移民的 **假快递链接骗局（Courier Scam）** 非常猖獗：',
+          en: 'Watch out for the surging fake-courier phishing scam on Facebook Marketplace and Trade Me:',
+        },
+        keyPoints: [
+          { zh: '❌ 只要买家声称“我叫 NZ Post / Aramex 上门取货并先付钱，你点这个链接填银行卡收款”——**100% 是钓鱼诈骗**！NZ Post 绝不代收二手货款！', en: 'Anyone claiming “NZ Post will collect and pay you via this link” is 100% a scammer!' },
+          { zh: '❌ 当面交易只看“对方手机转账截图”就放货——高危！对方可能用假图或撤销延迟转账，大额交易务必确认**自己银行 App 真实入账**或收现金。', en: 'Screenshots can be faked—confirm cleared funds in your own bank app or accept cash on pickup.' },
+        ],
+      },
+      {
+        id: 'l10-c4',
+        type: 'concept',
+        title: {
+          zh: '读懂 Kiwi 灵魂：周末 Bunnings / Mitre 10 与「8 号铁丝 DIY 精神」',
+          en: 'Kiwi DIY Culture: Bunnings, Mitre 10 & the No. 8 Wire Spirit',
+        },
+        body: {
+          zh: '在新西兰请电工、水管工、木工上门一次动辄 **NZ$120–$200 起步**，因此几乎每个 Kiwi 家里都有一把电钻，周末最爱去 **Bunnings Warehouse** 或 **Mitre 10** 买材料自己修花园、刷露台（Deck）！',
+          en: 'Because trades labour is expensive, Kiwis take huge pride in DIY—making Bunnings and Mitre 10 weekend social hubs:',
+        },
+        keyPoints: [
+          { zh: '🌭 周末门口的 **Sausage Sizzle**：当地学校、运动队或慈善机构常在 Bunnings 门口烤洋葱香肠吐司筹款（约 NZ$3.50），买一根边吃边逛是超地道的 Kiwi 体验！', en: 'Grab a fundraising sausage sizzle outside Bunnings on weekends—pure Kiwi tradition.' },
+          { zh: '⚖️ DIY 法律红线：刷墙、换门把手、修花园、装窗帘都可以自己动手；但**涉及固定强电布线、给排水主管道和燃气设备，依法必须请新西兰持牌电工/水工/燃气工**，私改不仅违法还会导致房屋保险拒赔！', en: 'DIY safely: painting and gardening are fine, but fixed electrical, plumbing, and gas work legally require licensed NZ tradespeople or your house insurance can be voided.' },
+        ],
+      },
+    ],
+    quiz: [
+      {
+        id: 'l10-q1',
+        prompt: {
+          zh: '整理家里垃圾时，超市塑料购物袋、薯片软包装袋以及拧下来的塑料瓶盖，应该怎么投放？',
+          en: 'How should soft plastic bags, chip packets, and plastic bottle lids be disposed of under NZ kerbside rules?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: '全丢进黄桶（Recycling），因为都是塑料', en: 'Put all of them in the yellow recycling bin' },
+            isCorrect: false,
+            feedback: { zh: '错啦！软塑料会缠绕卡死分拣机器，小瓶盖太小无法分拣，这样扔会导致黄桶被拒收！', en: 'Incorrect—soft plastics jam sorting machines and small lids fall through.' },
+          },
+          {
+            id: 'b',
+            text: { zh: '瓶盖丢红桶，干净的软塑料袋带去超市门口 Soft Plastic 回收箱；黄桶只放洗净的 1/2/5 号硬塑料瓶', en: 'Lids in red bin, clean soft plastics to supermarket drop-off bins, only clean #1/#2/#5 rigid plastics in yellow bin' },
+            isCorrect: true,
+            feedback: { zh: '超标准的 Kiwi 环保达人！', en: 'Spot on!' },
+          },
+        ],
+      },
+      {
+        id: 'l10-q2',
+        prompt: {
+          zh: '你在 Facebook Marketplace 卖一台二手微波炉，对方立刻发来一条“NZ Post 快递代付收款链接”让你输入银行卡号和验证码收款。你应该？',
+          en: 'A FB Marketplace buyer sends you an "NZ Post courier payment link" asking for your bank card details. What should you do?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: '立刻拉黑举报！这是新西兰高发的假快递钓鱼诈骗', en: 'Block and report immediately—it is a classic NZ courier phishing scam' },
+            isCorrect: true,
+            feedback: { zh: '火眼金睛！二手交易绝不点陌生收款链接。', en: 'Great catch!' },
+          },
+          {
+            id: 'b',
+            text: { zh: '填借记卡号进去收钱，反正是收款不怕', en: 'Enter your debit card details to receive the money' },
+            isCorrect: false,
+            feedback: { zh: '千万别填！收款只需要银行账号，凡是问你要卡号+有效期+CVV 的 100% 是盗刷！', en: 'Never enter card CVV/expiry to “receive” money—it steals your funds immediately.' },
+          },
+        ],
+      },
+    ],
+    actionTip: {
+      zh: '搜一下你家附近的 Hospice / Salvation Army Op Shop 和本地市议会官网的 Rubbish Collection Day（垃圾清运日查询）。',
+      en: 'Look up your council’s kerbside collection day and visit a local Hospice or Salvation Army Op Shop this weekend.',
+    },
+  },
+
+  {
+    id: 'l-11',
+    number: 11,
+    moduleId: 'mod-2',
+    title: {
+      zh: '新西兰买房入门全流程：拍卖/议价、产权类型与避坑尽调',
+      en: 'Buying a Home in NZ: Sale Methods, Title Types & Due Diligence',
+    },
+    summary: {
+      zh: '看懂 Auction 拍卖、Tender、Deadline Sale 与议价的本质差别，彻底分清 Freehold / Cross-lease / Unit Title 三大产权，掌握 LIM、Building Report 与律师尽调流程。',
+      en: 'Decode NZ property sale methods, compare Freehold vs Cross-lease vs Unit Title, and run airtight LIM, Builder’s Report, and solicitor due diligence.',
+    },
+    targetLevel: 3,
+    durationMin: 10,
+    xpReward: 85,
+    isFlagship: true,
+    verifiedDate: '2026-11',
+    officialSource: 'Settled.govt.nz (Real Estate Authority) / LINZ',
+    terms: [
+      { term: 'Freehold (Fee Simple)', phonetic: '/ˈfriːhəʊld/', zh: '永久完全产权（独立土地+房屋，最省心保值）' },
+      { term: 'Cross-lease', phonetic: '/krɒs liːs/', zh: '交叉租赁产权（多户共享整块地，改建须邻居同意且需查 Flats Plan 是否一致！）' },
+      { term: 'Unit Title / Body Corp', phonetic: '/ˈbɒdi kɔːp/', zh: '公寓/联排共有产权（每年须交物业管理费 Body Corporate Levy，关注长期维修基金）' },
+      { term: 'LIM Report', phonetic: '/lɪm/', zh: '市议会土地信息备忘录（查洪水区、滑坡区、违建 CCC 验收记录的核心文件！）' },
+      { term: 'CCC (Code Compliance Certificate)', phonetic: '/ˌsiː siː ˈsiː/', zh: '建筑合规验收证（加建/改建若缺 CCC 极易影响贷款、保险与转卖）' },
+      { term: 'Unconditional Offer', phonetic: '/ˌʌnkənˈdɪʃənl/', zh: '无条件出价（如拍卖举牌成交即具法律约束力，通常当场付 10% 定金且不可反悔！）' },
+    ],
+    cards: [
+      {
+        id: 'l11-c1',
+        type: 'comparison',
+        title: {
+          zh: '四大卖房方式拆解（拍卖 vs 议价 vs 截止出价 vs 暗标）',
+          en: '4 NZ Property Sale Methods Explained',
+        },
+        body: {
+          zh: '新西兰买房很少只看一口价，不同销售方式的博弈规则和风险截然不同（官方指南见 **settled.govt.nz**）：',
+          en: 'Understanding how a home is being sold determines when you must finish your due diligence:',
+        },
+        keyPoints: [
+          { zh: '🔨 **Auction（公开拍卖）**：一旦落槌即为**无条件成交（Unconditional）**！必须**在拍卖前**就花钱做完贷款预批、律师审产权、LIM 和验房报告，中标当天交 10% 定金不可反悔！', en: 'Auction: unconditionally binding the moment the hammer falls—complete ALL finance, legal, and builder checks BEFORE auction day!' },
+          { zh: '🤝 **By Negotiation / Asking Price（议价 / 标价）**：最适合首次购房者！可以下 **有条件出价（Conditional Offer）**，写明“10 个工作日内通过贷款审批、满意 LIM 与验房报告才生效”，不满意可合法退出不丢定金。', en: 'Negotiation / Asking Price: safest for first-home buyers—submit a Conditional Offer subject to finance, LIM, and builder’s report.' },
+          { zh: '⏳ **Deadline Sale（截止日期出价）** & **Tender（密封暗标）**：买家在指定截止日前递交报价（均可附带条件），卖家综合价格与条件挑一家谈。', en: 'Deadline Sale / Tender: submit your best written offer (conditional or unconditional) before the closing date.' },
+        ],
+      },
+      {
+        id: 'l11-c2',
+        type: 'comparison',
+        title: {
+          zh: '新西兰三大核心产权类型（千万别只看房价不看 Title！）',
+          en: 'NZ Property Title Types: Freehold vs Cross-Lease vs Unit Title',
+        },
+        body: {
+          zh: '同样 80 万纽币的房子，产权不同隐藏成本天差地别：',
+          en: 'Always inspect the Record of Title before falling in love with a house:',
+        },
+        keyPoints: [
+          { zh: '🏡 **Freehold（Fee Simple 永久完全产权）**：你完全拥有房子和脚下那块独立土地，改建只走市议会审批，不受邻居或物业掣肘，流通性最好。', en: 'Freehold: full ownership of land and house—simplest and most liquid.' },
+          { zh: '🏘️ **Cross-lease（交叉租赁）**：几户共享一大块地，再互相签 999 年租约。**大坑警告**：必查产权里的 **Flats Plan 平面图**！如果前屋主私搭了阳光房/车库却没更新 Flats Plan，属于**产权瑕疵（Defective Title）**，银行可能拒贷！', en: 'Cross-lease: shared land—ALWAYS check the Flats Plan matches actual structures, or it is a defective title!' },
+          { zh: '🏢 **Unit Title（公寓/部分联排）**：须按年缴纳 **Body Corporate Levy（物业费，常达 NZ$4,000–$12,000+/年）**。必看 **Pre-contract Disclosure Statement** 和近 3 年业主大会纪要，查清大楼有无**漏水（Leaky Building）或天价大修分摊（Special Levy）**！', en: 'Unit Title: review Body Corp minutes, Long-Term Maintenance Plan, and check for leaky-building special levies!' },
+          { zh: '⚠️ **Leasehold（租赁地权 — 慎碰！）**：只买地上建筑、地皮归别人，每隔几年地租（Ground Rent）暴涨且极难转手，新手强烈避开！', en: 'Leasehold: you own the building but pay escalating ground rent—generally avoid unless you are an expert.' },
+        ],
+      },
+      {
+        id: 'l11-c3',
+        type: 'checklist',
+        title: {
+          zh: '首次买房 6 步安全闭环（含 KiwiSaver 提取与海外买家资格）',
+          en: '6-Step Safe First-Home Buying Workflow in NZ',
+        },
+        body: {
+          zh: '新西兰买房由**持牌过户律师（Property Lawyer / Conveyancer）**与**贷款经纪（Mortgage Adviser，通常免费，由银行付佣）**全程把关：',
+          en: 'Work with a licensed NZ property lawyer and a mortgage adviser from day one:',
+        },
+        keyPoints: [
+          { zh: '① **确认购房资格**：受《海外投资法》限制，通常须持有 **NZ 公民、PRV 或已满足“居住满 1 年且过去 12 个月住满 183 天”的居民签（RV）** 才能买二手住宅（工签一般不可买普通二手房）。', en: 'Verify eligibility: citizens, PRV, or residents meeting the 1-year / 183-day ordinarily-resident test (most work visas cannot buy existing homes).' },
+          { zh: '② **准备首付（Deposit）与贷款预批**：自住房通常需 **20% 首付**（部分符合低首付 LVR 或 Kāinga Ora First Home Loan 条件可 10%–5%）；加入 **KiwiSaver 满 3 年**可提取几乎全部余额作首套房首付（至少留 NZ$1,000 在账户内）。', en: 'Aim for 20% deposit (KiwiSaver First Home Withdrawal available after 3 years of membership, leaving $1,000 minimum).' },
+          { zh: '③ **核查三大尽调文件**：**LIM Report**（看洪水区 Flood Zone、滑坡与 CCC 验收）、**独立持牌验房报告（Building Inspection）**（测墙体含水率防 1990–2004 年代“漏水房 Leaky Home”）、**律师审 Title 与买卖合同（S&P Agreement）**。', en: 'Run the golden trio: Council LIM Report (flood zones/CCC), accredited Building Inspection (moisture test), and Solicitor review.' },
+          { zh: '④ **确认房屋全险（Full Replacement Insurance）**：无条件生效前务必拿到保险公司书面承保报价（老房、地震带或洪水区若买不到保险，银行会立刻撤回贷款！）。', en: 'Secure written house insurance confirmation BEFORE going unconditional—banks will not settle without it!' },
+        ],
+      },
+      {
+        id: 'l11-c4',
+        type: 'warning',
+        title: {
+          zh: '新西兰买房 4 大天价深坑（踩中一个可能亏掉几十万）',
+          en: '4 Costly NZ Property Traps to Spot Immediately',
+        },
+        body: {
+          zh: '买房切忌冲动，这 4 类房子务必提高十级警惕：',
+          en: 'Stay alert for these 4 notorious NZ property hazards:',
+        },
+        keyPoints: [
+          { zh: '① **Plaster / Monolithic Cladding 漏水房高危期（约 1992–2004 建）**：无防雨空腔（Cavity）的灰泥外墙老房极易内部腐烂，必须做侵入式/红外湿气检测。', en: '1992–2004 monolithic plaster homes without drainage cavities carry high weathertightness risk.' },
+          { zh: '② **未获批违建（Unconsented Works）**：前屋主私自多隔卫生间、封车库改卧室却没拿市议会 **CCC**，保险公司可能拒赔火灾/漏水！', en: 'Unconsented bathrooms or garage conversions without CCC can invalidate house insurance.' },
+          { zh: '③ **洪水淹没区（Flood Plain / Overland Flow Path）**：经历 2023 年奥克兰大洪水后，查市议会 GeoMaps 洪水图层已成为全纽买房硬步骤！', en: 'Always inspect council GeoMaps for flood plains and overland flow paths.' },
+          { zh: '④ **绝不要依赖卖家中介（Agent）给你的口头承诺**：在新西兰，房产中介法律上只代表**卖家**拿佣金！任何承诺必须让你的律师白纸黑字写进合同。', en: 'Real estate agents legally work for the SELLER—rely on your own independent lawyer and builder.' },
+        ],
+      },
+    ],
+    quiz: [
+      {
+        id: 'l11-q1',
+        prompt: {
+          zh: '你准备去参加一场新西兰房产 Auction（现场拍卖），以下哪种做法是绝对正确的？',
+          en: 'You plan to bid at an NZ property auction. What is the only safe approach?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: '先拍下来锁定房子，再慢慢申请银行贷款和找验房师检查', en: 'Win the auction first, then arrange finance and building inspection' },
+            isCorrect: false,
+            feedback: { zh: '极其致命！拍卖落槌即为无条件成交，如果之后贷不下款或查出漏水，你会痛失 10% 定金并面临违约索赔！', en: 'Catastrophic risk! Auction bids are unconditional—failing to settle can forfeit your 10% deposit and more.' },
+          },
+          {
+            id: 'b',
+            text: { zh: '必须在拍卖日之前全部完成贷款预批、律师审合同与 Title、查 LIM 报告、验房与确认房屋保险可承保', en: 'Complete finance approval, solicitor review, LIM, building inspection, and insurance confirmation BEFORE auction day' },
+            isCorrect: true,
+            feedback: { zh: '教科书级稳健买房纪律！', en: 'Spot on!' },
+          },
+        ],
+      },
+      {
+        id: 'l11-q2',
+        prompt: {
+          zh: '看中一套 1980 年代的 Cross-lease 产权房，屋主当年自己在后院加建了一间阳光房。尽调时最关键要查什么？',
+          en: 'You are looking at a Cross-lease home where the owner added a conservatory years ago. What must your lawyer check?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: '核对产权里的 Flats Plan 平面图是否已更新涵盖该加建（并查有无市议会 CCC 及邻居书面同意）', en: 'Check if the Flats Plan on the Title was updated to include the addition (plus CCC and neighbour consent)' },
+            isCorrect: true,
+            feedback: { zh: '太专业了！未更新 Flats Plan 构成产权瑕疵，买前可要求卖家整改或借此大幅谈价。', en: 'Exactly right!' },
+          },
+          {
+            id: 'b',
+            text: { zh: '只要房子看着结实、阳光房不漏雨就不用管平面图', en: 'If it looks sturdy and dry, the Flats Plan does not matter' },
+            isCorrect: false,
+            feedback: { zh: '大坑！产权图与实物不符会导致银行拒贷、保险拒赔，未来转手也会被下家砍价。', en: 'Defective cross-lease titles frequently block mortgages and resale.' },
+          },
+        ],
+      },
+    ],
+    actionTip: {
+      zh: '收藏新西兰房产局官方免费中立指南网站 settled.govt.nz，买房前用它核对每一步流程与检查清单。',
+      en: 'Bookmark settled.govt.nz—New Zealand’s free, impartial official home-buying guide.',
+    },
+  },
+
+  {
+    id: 'l-12',
+    number: 12,
+    moduleId: 'mod-2',
+    title: {
+      zh: '房屋持有成本、保险、树篱围栏法与新西兰邻里边界',
+      en: 'Homeownership Costs, Insurance, Fencing Act & Neighbour Etiquette',
+    },
+    summary: {
+      zh: '买完房才是开始！搞懂年度地税（Rates）、房屋/家财险（Sum Insured）、围栏费用平摊法（Fencing Act），以及噪音、修树与木结构房维护常识。',
+      en: 'Budget for ongoing ownership: Council Rates, Sum Insured house insurance, the Fencing Act 1978, noise control, overhanging trees, and timber maintenance.',
+    },
+    targetLevel: 3,
+    durationMin: 7,
+    xpReward: 70,
+    isFlagship: true,
+    verifiedDate: '2026-11',
+    officialSource: 'Consumer Protection NZ / Fencing Act 1978 / Local Councils',
+    terms: [
+      { term: 'Council Rates', phonetic: '/ˈkaʊnsl reɪts/', zh: '地方市议会地税（按房屋估价 RV 每年分季缴纳，用于修路/垃圾/图书馆/公园）' },
+      { term: 'Sum Insured', phonetic: '/sʌm ɪnˈʃʊəd/', zh: '房屋保险定额重建保额（按当今建筑成本估算，设太低出事不够重建！）' },
+      { term: 'NHC (Natural Hazards Commission)', phonetic: '/ˈhæzədz/', zh: '新西兰自然灾害委员会（原 EQC，随房屋险自动附带最高 $30万+GST 地震/滑坡基础赔付）' },
+      { term: 'Fencing Act 1978', phonetic: '/ˈfensɪŋ ækt/', zh: '《围栏法》（两家共用边界围栏需维修/重建时，遵循规范程序可由双方各付一半）' },
+      { term: 'Noise Control', phonetic: '/nɔɪz/', zh: '市议会 24/7 噪音管制热线（遇到邻居深夜狂欢轰趴扰民直接打市议会投诉）' },
+      { term: 'Gutter Cleaning', phonetic: '/ˈɡʌtə/', zh: '清理屋顶排水槽（木结构房每年至少清 1–2 次落叶，防雨水倒灌腐烂屋檐）' },
+    ],
+    cards: [
+      {
+        id: 'l12-c1',
+        type: 'concept',
+        title: {
+          zh: '算清房屋“隐形持有成本”（绝不只是还房贷！）',
+          en: 'The True Ongoing Cost of Owning a Home in New Zealand',
+        },
+        body: {
+          zh: '很多新移民买房时只算了房贷月供，住进去才发现新西兰养房固定支出非常可观，务必提前按年做好预算：',
+          en: 'Beyond your mortgage repayments, budget annually for these mandatory ownership costs:',
+        },
+        keyPoints: [
+          { zh: '🏛️ **地税（Council Rates）**：每年约 **NZ$3,000–$6,000+**（因城市与房产估价而异，通常分 4 季缴纳，奥克兰/惠灵顿近年均有上调）。', en: 'Council Rates: typically NZ$3,000–$6,000+/yr paid quarterly.' },
+          { zh: '🛡️ **房屋险（House Insurance）+ 家财险（Contents）**：受气候灾害与地震再保险涨价影响，独栋木屋房屋险每年常达 **NZ$2,000–$4,500+**！务必用 **Cordell Sum Sure** 计算器核准重建保额（Sum Insured），并记得新西兰房屋险默认含 **NHC（原 EQC）地震/自然灾害基础险（$300k + GST）**。', en: 'House Insurance (~NZ$2k–$4.5k+/yr): accurately estimate rebuild cost (Sum Insured); automatically includes NHC (formerly EQC) natural hazard cover.' },
+          { zh: '🔧 **年度维护基金**：经验法则是每年预留房价的 **1% 左右**，用于每 7–10 年重刷外墙木漆、清理屋顶排水沟（Gutter）、保养 Heat Pump 滤网与屋顶防锈。', en: 'Set aside ~1% of home value per year for exterior repainting, gutter cleaning, and roof maintenance.' },
+        ],
+      },
+      {
+        id: 'l12-c2',
+        type: 'comparison',
+        title: {
+          zh: '邻里相处黄金法则：围栏费、越界树枝与深夜噪音',
+          en: 'Good Neighbour Rules: Shared Fences, Trees & Noise Control',
+        },
+        body: {
+          zh: '新西兰住宅区强调**尊重隐私与边界感（Good fences make good neighbours）**，遇到邻里小摩擦按本地规矩办最体面：',
+          en: 'Kiwi suburbs value privacy, polite communication, and clear legal boundaries:',
+        },
+        keyPoints: [
+          { zh: '🪵 **共用围栏（Fencing Act 1978）**：两家之间的边界围栏腐烂倒塌要重修，通常**双方各付 50% 合理造价**！但千万别先斩后奏自己找人修完再找邻居要钱——必须先友好沟通，或正式发出 **Fencing Notice（21 天异议期）**！', en: 'Shared boundary fences are usually split 50/50 under the Fencing Act—always agree or serve a Fencing Notice BEFORE starting work.' },
+          { zh: '🌳 **邻居树枝伸进我家院子**：先礼貌沟通请邻居修剪；法律上你**有权自己剪掉伸过边界线的树枝**（不可踏入邻居院子、不可伤及树木存活），剪下的树枝礼貌归还或自行清理。', en: 'You may trim branches encroaching over your boundary line (without trespassing or killing the tree), ideally after a friendly chat first.' },
+          { zh: '🔊 **噪音扰民（Noise Control）**：周末偶尔白天割草、办 BBQ 很正常（提前跟隔壁打个招呼超加分！）；但如果半夜震天低音炮睡不着，**不要半夜上门吵架**，直接匿名致电当地市议会 24/7 Noise Control，执法官会上门发警告甚至没收音响！', en: 'For excessive late-night party noise, call your local council’s 24/7 Noise Control rather than confronting drunk neighbours.' },
+        ],
+      },
+      {
+        id: 'l12-c3',
+        type: 'checklist',
+        title: {
+          zh: '木结构独栋房年度保养 5 件事（延长 20 年寿命、少花几万块）',
+          en: '5 Annual Maintenance Habits for NZ Timber Homes',
+        },
+        body: {
+          zh: '新西兰气候紫外线强、冬季雨水多，木头房“怕水怕晒”，每年花两个周末做基础维护能省大钱：',
+          en: 'NZ’s intense UV and wet winters are tough on timber cladding—simple yearly upkeep prevents costly rot:',
+        },
+        keyPoints: [
+          { zh: '① 每年春秋清理一次屋顶 **Gutter（排水槽）** 与落水管，防落叶堵塞造成雨水倒灌进墙体。', en: 'Clear roof gutters and downpipes twice a year.' },
+          { zh: '② 每年用软刷中性洗涤剂清洗一次外墙（**House Wash**），洗掉海风盐分、霉苔和蜘蛛网，防止油漆粉化剥落（慎用高压水枪直射木板缝！）。', en: 'Do an annual gentle soft-wash of exterior cladding (avoid blasting water under weatherboards with high pressure).' },
+          { zh: '③ 检查卫浴玻璃胶（Silicone Seal）与窗台密封胶是否开裂，发现微裂立刻重打防水胶。', en: 'Inspect shower and window silicone seals and re-seal any cracks early.' },
+          { zh: '④ 每 3–6 个月清洗一次 **Heat Pump 室内机滤网**，省电且吹风无异味。', en: 'Vacuum/wash Heat Pump indoor filters every 3–6 months.' },
+          { zh: '⑤ 检查全屋 **烟雾报警器（Smoke Alarms）** 电池与 10 年有效期，卧室门口和走廊必装！', en: 'Test photoelectric smoke alarms at daylight saving clock changes twice a year.' },
+        ],
+      },
+      {
+        id: 'l12-c4',
+        type: 'dialogue',
+        title: {
+          zh: '地道邻里沟通话术：商量合修围栏 / 提前打招呼办聚会',
+          en: 'Friendly Kiwi Neighbour Scripts: Shared Fence & Party Heads-Up',
+        },
+        body: {
+          zh: '一杯咖啡或一张放进信箱的小纸条，就能让你成为整条街最受欢迎的好邻居：',
+          en: 'A quick friendly note in the letterbox works wonders in NZ:',
+        },
+        dialogueLines: [
+          {
+            speaker: 'You (Note in Neighbour’s Letterbox)',
+            en: 'Kia ora neighbours! We’re hosting a small birthday BBQ at #14 this Saturday from 4pm and will wrap up any music by 10pm. Feel free to pop over for a snag, or text me on 021-xxx-xxxx if the noise gets too loud. Cheers, [Your Name]!',
+            zh: '你好邻居！我们本周六下午 4 点在 14 号办个小生日烧烤，音乐晚上 10 点前肯定关。欢迎过来吃根烤肠，如果觉得吵随时短信我 021-xxx-xxxx！谢谢啦，[你的名字]',
+            subtextZh: '新西兰人超级吃这一套！提前给个台阶和手机号，几乎没人会投诉你。',
+          },
+        ],
+      },
+    ],
+    quiz: [
+      {
+        id: 'l12-q1',
+        prompt: {
+          zh: '暴风雨把你和隔壁邻居共用的边界木围栏吹倒了，你非常积极地当天自己花 $4,000 找工人全修好了，然后把 $2,000 账单塞进邻居信箱。邻居依法必须付钱吗？',
+          en: 'A storm knocks down your shared fence. You immediately pay $4,000 to rebuild it yourself without telling the neighbour, then hand them a $2,000 bill. Must they pay?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: '不必！依据《围栏法》你必须事前与邻居达成协议或正式发出 21 天 Fencing Notice，未经同意先斩后奏通常无权强迫分摊', en: 'No—under the Fencing Act you must agree beforehand or serve a formal Fencing Notice before doing the work' },
+            isCorrect: true,
+            feedback: { zh: '记住这个经典本地规矩：先沟通拿 2–3 份报价一起挑，既省钱又不伤邻里和气！', en: 'Spot on! Always get quotes and agree first.' },
+          },
+          {
+            id: 'b',
+            text: { zh: '必须付一半，因为围栏本来就是两家共用的', en: 'Yes, shared fences are automatically 50/50 even without notice' },
+            isCorrect: false,
+            feedback: { zh: '错啦！除了极个别防止牲畜走失的紧急抢修外，不提前商量或发通知就施工，邻居有权拒付！', en: 'Except in narrow emergency cases, unapproved work is not recoverable.' },
+          },
+        ],
+      },
+      {
+        id: 'l12-q2',
+        prompt: {
+          zh: '新西兰每年夏令时/冬令时调表（4 月与 9 月）时，消防局（FENZ）都会全国提醒每家每户顺手检查什么安全设备？',
+          en: 'Twice a year at daylight saving clock changes, Fire and Emergency NZ reminds every household to test what?',
+        },
+        options: [
+          {
+            id: 'a',
+            text: { zh: '全屋光电式烟雾报警器（Smoke Alarms）是否正常响铃及电池状态', en: 'Test all household photoelectric smoke alarms' },
+            isCorrect: true,
+            feedback: { zh: '答对了！“Check your clocks, check your smoke alarms”是全纽家喻户晓的安全口号。', en: 'Correct!' },
+          },
+          {
+            id: 'b',
+            text: { zh: '给电表换电池', en: 'Replace the electricity meter battery' },
+            isCorrect: false,
+            feedback: { zh: '是检查烟雾报警器哦！木结构房一旦起火蔓延极快，烟雾报警器能救命。', en: 'It is smoke alarms—critical for NZ timber homes!' },
+          },
+        ],
+      },
+    ],
+    actionTip: {
+      zh: '无论租房还是自住，今天花 1 分钟按一下家里天花板烟雾报警器的测试键，并记下所在市议会（Council）24 小时服务热线。',
+      en: 'Test your home smoke alarms today and save your local council’s 24/7 phone number.',
+    },
+  },
+];
